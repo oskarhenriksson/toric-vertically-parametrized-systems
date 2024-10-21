@@ -1,0 +1,3786 @@
+
+.DS_Store
+Error reading matrices
+
+BIOMD0000000002
+n=13,r=34,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+
+BIOMD0000000003
+n=3,r=7,d=0
+Full rank
+
+BIOMD0000000004
+n=5,r=7,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000006
+n=4,r=3,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000008
+n=5,r=13,d=0
+Full rank
+
+BIOMD0000000009
+n=26,r=30,d=11
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 11
+Full-dimensional toric invariance space
+Non-conserved quantities in toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+Coset with multistationarity found
+
+BIOMD0000000010
+n=8,r=10,d=3
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000011
+n=22,r=30,d=7
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 7
+Full-dimensional toric invariance space
+Non-conserved quantities in toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+Coset with multistationarity found
+
+BIOMD0000000013
+n=27,r=30,d=7
+Inconsistent
+
+BIOMD0000000014
+n=86,r=300,d=8
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 0
+
+BIOMD0000000015
+n=18,r=37,d=1
+Inconsistent
+
+BIOMD0000000017
+n=19,r=14,d=6
+Inconsistent
+
+BIOMD0000000019
+n=100,r=242,d=19
+Inconsistent
+
+BIOMD0000000021
+n=10,r=26,d=0
+Full rank
+
+BIOMD0000000022
+n=13,r=34,d=1
+Inconsistent
+
+BIOMD0000000023
+n=13,r=22,d=3
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Finitely many cosets
+Mixed volume bound on the number of cosets: 6
+Estimation of generic root count: 6
+Constant number of cosets
+Number of cosets for random parameters: 1
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000024
+n=3,r=4,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000026
+n=11,r=16,d=3
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+
+BIOMD0000000027
+n=5,r=4,d=3
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000028
+n=16,r=27,d=3
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+
+BIOMD0000000029
+n=6,r=7,d=3
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000030
+n=18,r=32,d=3
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+
+BIOMD0000000031
+n=6,r=4,d=4
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000032
+n=37,r=94,d=11
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 6
+
+BIOMD0000000033
+n=32,r=48,d=19
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 19
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000035
+n=10,r=16,d=2
+Inconsistent
+
+BIOMD0000000036
+n=3,r=5,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000037
+n=12,r=12,d=4
+Inconsistent
+
+BIOMD0000000038
+n=17,r=20,d=7
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 7
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000039
+Error reading matrices
+
+BIOMD0000000040
+n=5,r=5,d=1
+Inconsistent
+
+BIOMD0000000041
+n=10,r=17,d=3
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 0
+
+BIOMD0000000042
+n=15,r=34,d=0
+Full rank
+
+BIOMD0000000043
+n=5,r=7,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000044
+n=4,r=8,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000045
+n=4,r=8,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000046
+n=16,r=15,d=4
+Inconsistent
+
+BIOMD0000000048
+n=23,r=47,d=6
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+
+BIOMD0000000049
+n=99,r=216,d=21
+Inconsistent
+
+BIOMD0000000050
+n=14,r=16,d=2
+Inconsistent
+
+BIOMD0000000052
+n=11,r=11,d=3
+Inconsistent
+
+BIOMD0000000053
+n=6,r=12,d=0
+Inconsistent
+
+BIOMD0000000054
+n=3,r=5,d=0
+Inconsistent
+
+BIOMD0000000055
+n=13,r=32,d=0
+Full rank
+
+BIOMD0000000057
+n=6,r=10,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000058
+n=4,r=11,d=0
+Full rank
+
+BIOMD0000000060
+n=4,r=6,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000061
+n=25,r=48,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 0
+
+BIOMD0000000062
+n=4,r=10,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000064
+n=26,r=28,d=9
+Inconsistent
+
+BIOMD0000000065
+n=9,r=16,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000066
+n=11,r=14,d=4
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+Full-dimensional toric invariance space
+Finitely many cosets
+Mixed volume bound on the number of cosets: 3
+Estimation of generic root count: 3
+Constant number of cosets
+Number of cosets for random parameters: 1
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000067
+n=8,r=16,d=0
+Full rank
+
+BIOMD0000000068
+n=9,r=6,d=6
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 6
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000069
+n=10,r=12,d=4
+Inconsistent
+
+BIOMD0000000070
+n=45,r=76,d=8
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 6
+
+BIOMD0000000072
+n=7,r=8,d=2
+Inconsistent
+
+BIOMD0000000073
+n=16,r=52,d=0
+Full rank
+
+BIOMD0000000074
+n=19,r=62,d=0
+Full rank
+
+BIOMD0000000075
+n=13,r=16,d=6
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 5
+
+BIOMD0000000076
+n=3,r=4,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000078
+n=16,r=52,d=0
+Full rank
+
+BIOMD0000000079
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000080
+n=10,r=10,d=4
+Inconsistent
+
+BIOMD0000000082
+n=10,r=10,d=4
+Inconsistent
+
+BIOMD0000000083
+n=19,r=62,d=0
+Full rank
+
+BIOMD0000000084
+n=8,r=16,d=4
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000085
+n=17,r=34,d=5
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+
+BIOMD0000000086
+n=17,r=48,d=5
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+
+BIOMD0000000089
+n=16,r=41,d=0
+Full rank
+
+BIOMD0000000090
+n=26,r=21,d=8
+Inconsistent
+
+BIOMD0000000091
+n=16,r=23,d=4
+Inconsistent
+
+BIOMD0000000092
+n=4,r=6,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+
+BIOMD0000000093
+n=34,r=46,d=7
+Inconsistent
+
+BIOMD0000000098
+n=2,r=6,d=0
+Full rank
+
+BIOMD0000000099
+n=7,r=14,d=0
+Full rank
+
+BIOMD0000000100
+n=5,r=10,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000102
+n=13,r=37,d=0
+Full rank
+
+BIOMD0000000103
+n=17,r=61,d=0
+Full rank
+
+BIOMD0000000105
+n=39,r=94,d=9
+Inconsistent
+
+BIOMD0000000106
+n=25,r=44,d=6
+Inconsistent
+
+BIOMD0000000107
+n=14,r=23,d=4
+Inconsistent
+
+BIOMD0000000108
+n=9,r=18,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000110
+n=15,r=30,d=3
+DZT: Not covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000112
+n=10,r=12,d=2
+Inconsistent
+
+BIOMD0000000113
+n=4,r=8,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000114
+n=2,r=5,d=0
+Full rank
+
+BIOMD0000000115
+n=2,r=5,d=0
+Full rank
+
+BIOMD0000000116
+n=6,r=10,d=0
+Full rank
+
+BIOMD0000000123
+n=14,r=34,d=3
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 0
+
+BIOMD0000000143
+n=20,r=20,d=2
+Inconsistent
+
+BIOMD0000000145
+Error reading matrices
+
+BIOMD0000000146
+n=36,r=47,d=14
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 12
+
+BIOMD0000000147
+n=24,r=70,d=1
+Inconsistent
+
+BIOMD0000000151
+Error reading matrices
+
+BIOMD0000000154
+n=2,r=5,d=0
+Full rank
+
+BIOMD0000000156
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000157
+n=3,r=7,d=0
+Full rank
+
+BIOMD0000000159
+n=3,r=7,d=0
+Full rank
+
+BIOMD0000000161
+n=46,r=86,d=16
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 16
+Full-dimensional toric invariance space
+Too slow for injectivity test! Skipped
+
+BIOMD0000000162
+n=32,r=90,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000163
+n=16,r=26,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 0
+
+BIOMD0000000164
+n=26,r=58,d=7
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+
+BIOMD0000000165
+n=37,r=60,d=13
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 9
+
+BIOMD0000000166
+n=3,r=18,d=0
+Full rank
+
+BIOMD0000000167
+n=9,r=14,d=3
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000169
+n=11,r=27,d=0
+Full rank
+
+BIOMD0000000170
+n=7,r=17,d=0
+Full rank
+
+BIOMD0000000171
+n=12,r=27,d=2
+DZT: Not covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000172
+n=25,r=31,d=6
+Inconsistent
+
+BIOMD0000000173
+n=26,r=42,d=7
+Inconsistent
+
+BIOMD0000000174
+n=4,r=10,d=0
+Full rank
+
+BIOMD0000000176
+n=25,r=32,d=6
+Inconsistent
+
+BIOMD0000000177
+n=28,r=35,d=7
+Inconsistent
+
+BIOMD0000000178
+n=6,r=4,d=2
+Inconsistent
+
+BIOMD0000000181
+n=6,r=18,d=0
+Full rank
+
+BIOMD0000000182
+n=37,r=64,d=18
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 14
+
+BIOMD0000000184
+n=3,r=7,d=0
+Full rank
+
+BIOMD0000000185
+n=8,r=20,d=0
+Full rank
+
+BIOMD0000000191
+n=3,r=5,d=0
+Inconsistent
+
+BIOMD0000000192
+n=13,r=18,d=5
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+
+BIOMD0000000198
+n=12,r=12,d=5
+Inconsistent
+
+BIOMD0000000199
+Error reading matrices
+
+BIOMD0000000200
+n=22,r=46,d=7
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+
+BIOMD0000000201
+n=26,r=36,d=10
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 10
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000203
+n=12,r=10,d=2
+Inconsistent
+
+BIOMD0000000204
+n=12,r=10,d=2
+Inconsistent
+
+BIOMD0000000205
+n=194,r=313,d=36
+Inconsistent
+
+BIOMD0000000206
+Error reading matrices
+
+BIOMD0000000208
+n=6,r=15,d=0
+Full rank
+
+BIOMD0000000209
+n=20,r=12,d=8
+Inconsistent
+
+BIOMD0000000210
+n=18,r=12,d=6
+Inconsistent
+
+BIOMD0000000211
+n=27,r=39,d=6
+Inconsistent
+
+BIOMD0000000212
+n=31,r=25,d=18
+Inconsistent
+
+BIOMD0000000213
+n=14,r=12,d=9
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 9
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000214
+n=16,r=25,d=4
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000215
+n=7,r=14,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000216
+n=6,r=17,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+
+BIOMD0000000217
+n=22,r=32,d=9
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 7
+
+BIOMD0000000218
+n=13,r=28,d=1
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Finitely many cosets
+Mixed volume bound on the number of cosets: 1
+Estimation of generic root count: 1
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000219
+n=13,r=30,d=1
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Finitely many cosets
+Mixed volume bound on the number of cosets: 1
+Estimation of generic root count: 1
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000220
+n=58,r=70,d=18
+Inconsistent
+
+BIOMD0000000221
+n=12,r=22,d=1
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Finitely many cosets
+Mixed volume bound on the number of cosets: 1
+Estimation of generic root count: 1
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000222
+n=12,r=22,d=1
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Finitely many cosets
+Mixed volume bound on the number of cosets: 1
+Estimation of generic root count: 1
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000224
+n=4,r=6,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000225
+n=5,r=3,d=2
+Inconsistent
+
+BIOMD0000000226
+n=24,r=24,d=4
+Inconsistent
+
+BIOMD0000000228
+n=9,r=22,d=0
+Full rank
+
+BIOMD0000000229
+n=7,r=28,d=0
+Full rank
+
+BIOMD0000000230
+n=26,r=64,d=1
+Inconsistent
+
+BIOMD0000000231
+n=6,r=8,d=2
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000233
+n=4,r=4,d=1
+Inconsistent
+
+BIOMD0000000236
+n=7,r=7,d=3
+Inconsistent
+
+BIOMD0000000237
+n=26,r=62,d=6
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+
+BIOMD0000000239
+n=59,r=74,d=17
+Inconsistent
+
+BIOMD0000000240
+n=6,r=14,d=0
+Full rank
+
+BIOMD0000000242
+n=6,r=12,d=0
+Full rank
+
+BIOMD0000000243
+n=23,r=23,d=3
+Inconsistent
+
+BIOMD0000000247
+n=31,r=46,d=6
+Inconsistent
+
+BIOMD0000000249
+n=9,r=20,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000250
+n=49,r=93,d=12
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 12
+Full-dimensional toric invariance space
+Too slow for injectivity test! Skipped
+
+BIOMD0000000251
+n=10,r=9,d=1
+Inconsistent
+
+BIOMD0000000252
+Error reading matrices
+
+BIOMD0000000253
+n=6,r=4,d=2
+Inconsistent
+
+BIOMD0000000254
+Error reading matrices
+
+BIOMD0000000257
+n=11,r=19,d=0
+Inconsistent
+
+BIOMD0000000258
+n=3,r=7,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000259
+n=17,r=29,d=1
+Inconsistent
+
+BIOMD0000000260
+n=17,r=29,d=1
+Inconsistent
+
+BIOMD0000000261
+n=17,r=29,d=1
+Inconsistent
+
+BIOMD0000000262
+n=11,r=14,d=2
+Inconsistent
+
+BIOMD0000000263
+n=11,r=14,d=2
+Inconsistent
+
+BIOMD0000000264
+n=14,r=21,d=2
+Inconsistent
+
+BIOMD0000000267
+n=4,r=3,d=1
+Inconsistent
+
+BIOMD0000000268
+n=44,r=122,d=3
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+
+BIOMD0000000269
+n=18,r=22,d=6
+Inconsistent
+
+BIOMD0000000270
+n=33,r=42,d=10
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 10
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000271
+n=6,r=8,d=1
+Inconsistent
+
+BIOMD0000000272
+n=6,r=8,d=1
+Inconsistent
+
+BIOMD0000000274
+Error reading matrices
+
+BIOMD0000000275
+n=5,r=9,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000278
+Error reading matrices
+
+BIOMD0000000282
+n=6,r=4,d=3
+Inconsistent
+
+BIOMD0000000283
+n=4,r=3,d=2
+Inconsistent
+
+BIOMD0000000284
+n=9,r=16,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000286
+n=59,r=93,d=13
+Inconsistent
+
+BIOMD0000000288
+n=19,r=26,d=6
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 6
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000289
+n=5,r=12,d=0
+Inconsistent
+
+BIOMD0000000290
+n=5,r=12,d=0
+Inconsistent
+
+BIOMD0000000291
+Error reading matrices
+
+BIOMD0000000292
+n=6,r=4,d=3
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Non-conserved quantities in toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000294
+n=11,r=26,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000295
+n=5,r=10,d=0
+Full rank
+
+BIOMD0000000296
+n=7,r=8,d=2
+Inconsistent
+
+BIOMD0000000298
+Error reading matrices
+
+BIOMD0000000299
+Error reading matrices
+
+BIOMD0000000300
+n=16,r=10,d=13
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 13
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000303
+n=42,r=68,d=13
+Inconsistent
+
+BIOMD0000000306
+n=5,r=8,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000307
+n=5,r=5,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000308
+n=6,r=6,d=3
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000309
+n=4,r=4,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000310
+n=4,r=6,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000311
+n=4,r=5,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000312
+n=3,r=4,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000313
+n=16,r=16,d=5
+Inconsistent
+
+BIOMD0000000314
+n=12,r=12,d=4
+Inconsistent
+
+BIOMD0000000315
+n=20,r=45,d=3
+Inconsistent
+
+BIOMD0000000319
+Error reading matrices
+
+BIOMD0000000320
+n=9,r=16,d=0
+Inconsistent
+
+BIOMD0000000321
+n=3,r=6,d=0
+Inconsistent
+
+BIOMD0000000322
+n=4,r=9,d=0
+Full rank
+
+BIOMD0000000323
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000325
+n=6,r=12,d=0
+Inconsistent
+
+BIOMD0000000328
+n=18,r=29,d=1
+Inconsistent
+
+BIOMD0000000329
+n=3,r=8,d=0
+Full rank
+
+BIOMD0000000332
+n=78,r=69,d=16
+Inconsistent
+
+BIOMD0000000333
+n=54,r=45,d=12
+Inconsistent
+
+BIOMD0000000334
+n=74,r=66,d=15
+Inconsistent
+
+BIOMD0000000335
+n=34,r=43,d=10
+Inconsistent
+
+BIOMD0000000341
+Error reading matrices
+
+BIOMD0000000346
+Error reading matrices
+
+BIOMD0000000347
+n=26,r=38,d=4
+Inconsistent
+
+BIOMD0000000350
+n=14,r=30,d=0
+Full rank
+
+BIOMD0000000353
+Error reading matrices
+
+BIOMD0000000354
+n=6,r=11,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000355
+n=9,r=17,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000357
+n=9,r=12,d=2
+Inconsistent
+
+BIOMD0000000358
+n=12,r=9,d=5
+Inconsistent
+
+BIOMD0000000359
+n=9,r=15,d=3
+Inconsistent
+
+BIOMD0000000360
+n=9,r=15,d=3
+Inconsistent
+
+BIOMD0000000361
+n=8,r=9,d=3
+Inconsistent
+
+BIOMD0000000362
+n=34,r=45,d=10
+Inconsistent
+
+BIOMD0000000363
+n=4,r=4,d=1
+Inconsistent
+
+BIOMD0000000364
+n=14,r=22,d=2
+Inconsistent
+
+BIOMD0000000365
+n=30,r=57,d=4
+Inconsistent
+
+BIOMD0000000366
+n=12,r=9,d=5
+Inconsistent
+
+BIOMD0000000368
+Error reading matrices
+
+BIOMD0000000369
+Error reading matrices
+
+BIOMD0000000370
+Error reading matrices
+
+BIOMD0000000383
+Error reading matrices
+
+BIOMD0000000384
+Error reading matrices
+
+BIOMD0000000388
+Error reading matrices
+
+BIOMD0000000389
+n=22,r=21,d=5
+Inconsistent
+
+BIOMD0000000390
+n=11,r=8,d=5
+Inconsistent
+
+BIOMD0000000391
+n=22,r=32,d=3
+Inconsistent
+
+BIOMD0000000396
+n=36,r=30,d=20
+Inconsistent
+
+BIOMD0000000397
+n=50,r=55,d=21
+Inconsistent
+
+BIOMD0000000399
+n=100,r=242,d=19
+Inconsistent
+
+BIOMD0000000400
+Error reading matrices
+
+BIOMD0000000405
+n=6,r=8,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+
+BIOMD0000000406
+n=49,r=55,d=19
+Inconsistent
+
+BIOMD0000000407
+n=47,r=106,d=0
+Inconsistent
+
+BIOMD0000000409
+n=24,r=62,d=6
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 6
+Full-dimensional toric invariance space
+Too slow for injectivity test! Skipped
+
+BIOMD0000000410
+n=53,r=125,d=1
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 0
+
+BIOMD0000000411
+n=10,r=13,d=0
+Inconsistent
+
+BIOMD0000000413
+n=5,r=9,d=1
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 0
+
+BIOMD0000000414
+n=1,r=3,d=0
+Full rank
+
+BIOMD0000000415
+Error reading matrices
+
+BIOMD0000000416
+n=32,r=20,d=12
+Inconsistent
+
+BIOMD0000000423
+n=9,r=11,d=3
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000424
+n=55,r=58,d=14
+Inconsistent
+
+BIOMD0000000425
+n=1,r=4,d=0
+Full rank
+
+BIOMD0000000426
+Error reading matrices
+
+BIOMD0000000427
+n=21,r=22,d=11
+Inconsistent
+
+BIOMD0000000428
+n=31,r=46,d=8
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 8
+Full-dimensional toric invariance space
+Too slow for injectivity test! Skipped
+
+BIOMD0000000430
+n=27,r=44,d=6
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 5
+
+BIOMD0000000431
+n=27,r=44,d=6
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+
+BIOMD0000000432
+n=11,r=10,d=6
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 6
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000433
+n=11,r=10,d=6
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 6
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000434
+n=34,r=35,d=10
+Inconsistent
+
+BIOMD0000000435
+n=4,r=8,d=0
+Full rank
+
+BIOMD0000000440
+n=11,r=10,d=6
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 6
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000441
+n=11,r=10,d=6
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 6
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000442
+n=13,r=12,d=7
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 7
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000443
+n=19,r=26,d=7
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 7
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000444
+n=18,r=26,d=6
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 6
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000446
+n=27,r=62,d=0
+Full rank
+
+BIOMD0000000447
+n=13,r=36,d=0
+Full rank
+
+BIOMD0000000448
+n=27,r=34,d=10
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 10
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000449
+n=27,r=34,d=10
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 10
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000451
+n=94,r=96,d=41
+Inconsistent
+
+BIOMD0000000452
+n=109,r=186,d=23
+Inconsistent
+
+BIOMD0000000453
+n=109,r=186,d=23
+Inconsistent
+
+BIOMD0000000454
+n=8,r=8,d=4
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000455
+n=9,r=10,d=4
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000456
+n=11,r=12,d=5
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 5
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000457
+n=166,r=200,d=25
+Inconsistent
+
+BIOMD0000000458
+n=7,r=6,d=4
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000459
+n=4,r=6,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000460
+n=4,r=6,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000461
+n=4,r=6,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000462
+n=6,r=8,d=1
+Inconsistent
+
+BIOMD0000000463
+Error reading matrices
+
+BIOMD0000000464
+n=14,r=10,d=5
+Inconsistent
+
+BIOMD0000000465
+n=16,r=14,d=9
+Inconsistent
+
+BIOMD0000000466
+n=34,r=34,d=14
+Inconsistent
+
+BIOMD0000000467
+n=20,r=32,d=5
+Inconsistent
+
+BIOMD0000000468
+n=79,r=90,d=28
+Inconsistent
+
+BIOMD0000000474
+n=133,r=367,d=51
+Inconsistent
+
+BIOMD0000000475
+n=23,r=25,d=7
+Inconsistent
+
+BIOMD0000000476
+n=16,r=41,d=0
+Full rank
+
+BIOMD0000000477
+n=43,r=49,d=1
+Inconsistent
+
+BIOMD0000000478
+n=33,r=39,d=11
+Inconsistent
+
+BIOMD0000000482
+n=23,r=37,d=5
+Inconsistent
+
+BIOMD0000000483
+n=8,r=8,d=4
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000484
+n=2,r=2,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000485
+n=2,r=4,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000486
+n=2,r=2,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000487
+n=6,r=6,d=3
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Non-conserved quantities in toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000489
+n=53,r=84,d=20
+Inconsistent
+
+BIOMD0000000491
+n=57,r=172,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Too slow for injectivity test! Skipped
+
+BIOMD0000000492
+n=52,r=176,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Too slow for injectivity test! Skipped
+
+BIOMD0000000498
+n=21,r=44,d=0
+Inconsistent
+
+BIOMD0000000499
+Error reading matrices
+
+BIOMD0000000500
+n=14,r=36,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+
+BIOMD0000000501
+n=35,r=114,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+
+BIOMD0000000502
+n=21,r=16,d=10
+Inconsistent
+
+BIOMD0000000504
+n=75,r=132,d=14
+Inconsistent
+
+BIOMD0000000505
+n=54,r=118,d=9
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 9
+Full-dimensional toric invariance space
+Too slow for injectivity test! Skipped
+
+BIOMD0000000506
+n=54,r=118,d=9
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 9
+Full-dimensional toric invariance space
+Too slow for injectivity test! Skipped
+
+BIOMD0000000507
+n=3,r=4,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000510
+n=47,r=66,d=13
+Inconsistent
+
+BIOMD0000000511
+n=46,r=66,d=12
+Inconsistent
+
+BIOMD0000000512
+n=39,r=75,d=0
+Inconsistent
+
+BIOMD0000000513
+n=31,r=39,d=10
+Inconsistent
+
+BIOMD0000000514
+n=46,r=64,d=13
+Inconsistent
+
+BIOMD0000000515
+n=51,r=74,d=13
+Inconsistent
+
+BIOMD0000000516
+n=50,r=75,d=12
+Inconsistent
+
+BIOMD0000000517
+n=4,r=9,d=0
+Full rank
+
+BIOMD0000000518
+n=4,r=9,d=0
+Full rank
+
+BIOMD0000000519
+n=3,r=7,d=0
+Full rank
+
+BIOMD0000000520
+n=3,r=7,d=0
+Full rank
+
+BIOMD0000000521
+Error reading matrices
+
+BIOMD0000000522
+Error reading matrices
+
+BIOMD0000000523
+n=18,r=13,d=9
+Inconsistent
+
+BIOMD0000000524
+n=18,r=13,d=9
+Inconsistent
+
+BIOMD0000000525
+n=18,r=19,d=9
+Inconsistent
+
+BIOMD0000000526
+n=18,r=19,d=9
+Inconsistent
+
+BIOMD0000000530
+n=10,r=17,d=3
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000533
+Error reading matrices
+
+BIOMD0000000538
+Error reading matrices
+
+BIOMD0000000539
+n=6,r=11,d=1
+DZT: Not covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000543
+n=111,r=199,d=24
+Inconsistent
+
+BIOMD0000000544
+n=108,r=187,d=24
+Inconsistent
+
+BIOMD0000000545
+n=14,r=13,d=6
+Inconsistent
+
+BIOMD0000000548
+Error reading matrices
+
+BIOMD0000000549
+Error reading matrices
+
+BIOMD0000000550
+Error reading matrices
+
+BIOMD0000000552
+n=3,r=4,d=1
+Inconsistent
+
+BIOMD0000000553
+n=3,r=4,d=1
+Inconsistent
+
+BIOMD0000000557
+n=25,r=31,d=9
+Inconsistent
+
+BIOMD0000000558
+n=2,r=4,d=0
+Full rank
+
+BIOMD0000000559
+n=90,r=136,d=2
+Inconsistent
+
+BIOMD0000000560
+n=65,r=117,d=11
+Inconsistent
+
+BIOMD0000000561
+Error reading matrices
+
+BIOMD0000000565
+n=26,r=102,d=0
+Full rank
+
+BIOMD0000000567
+n=2,r=2,d=1
+Inconsistent
+
+BIOMD0000000572
+n=26,r=29,d=6
+Inconsistent
+
+BIOMD0000000573
+n=2,r=7,d=0
+Full rank
+
+BIOMD0000000576
+n=42,r=71,d=10
+Inconsistent
+
+BIOMD0000000580
+n=39,r=26,d=25
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 25
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000581
+n=28,r=32,d=11
+Inconsistent
+
+BIOMD0000000582
+n=40,r=41,d=22
+Inconsistent
+
+BIOMD0000000583
+n=23,r=32,d=2
+Inconsistent
+
+BIOMD0000000585
+Error reading matrices
+
+BIOMD0000000588
+n=76,r=165,d=15
+Inconsistent
+
+BIOMD0000000590
+n=9,r=40,d=0
+Full rank
+
+BIOMD0000000594
+n=33,r=240,d=7
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+
+BIOMD0000000599
+n=30,r=51,d=3
+Inconsistent
+
+BIOMD0000000600
+n=18,r=29,d=3
+Inconsistent
+
+BIOMD0000000602
+n=56,r=46,d=25
+Inconsistent
+
+BIOMD0000000608
+Error reading matrices
+
+BIOMD0000000609
+n=5,r=10,d=0
+Inconsistent
+
+BIOMD0000000614
+n=1,r=8,d=0
+Full rank
+
+BIOMD0000000615
+n=4,r=34,d=0
+Full rank
+
+BIOMD0000000616
+n=4,r=20,d=0
+Full rank
+
+BIOMD0000000622
+n=11,r=19,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000623
+n=31,r=32,d=16
+Inconsistent
+
+BIOMD0000000624
+n=7,r=5,d=2
+Inconsistent
+
+BIOMD0000000625
+n=19,r=38,d=0
+Full rank
+
+BIOMD0000000626
+n=6,r=10,d=0
+Inconsistent
+
+BIOMD0000000629
+n=5,r=4,d=3
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000630
+n=6,r=15,d=0
+Full rank
+
+BIOMD0000000631
+n=12,r=66,d=0
+Full rank
+
+BIOMD0000000637
+n=12,r=35,d=3
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 0
+
+BIOMD0000000638
+n=21,r=81,d=4
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 0
+
+BIOMD0000000639
+n=17,r=11,d=8
+Inconsistent
+
+BIOMD0000000640
+n=45,r=48,d=25
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 25
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000641
+Error reading matrices
+
+BIOMD0000000642
+Error reading matrices
+
+BIOMD0000000646
+n=18,r=28,d=8
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 7
+
+BIOMD0000000647
+n=11,r=11,d=5
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+
+BIOMD0000000648
+n=54,r=128,d=19
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+
+BIOMD0000000651
+n=29,r=31,d=13
+Inconsistent
+
+BIOMD0000000652
+n=54,r=126,d=19
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+
+BIOMD0000000653
+n=54,r=124,d=19
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+
+BIOMD0000000654
+n=54,r=126,d=19
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 5
+
+BIOMD0000000655
+n=54,r=126,d=19
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 5
+
+BIOMD0000000656
+n=54,r=124,d=21
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 5
+
+BIOMD0000000657
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000658
+n=16,r=22,d=5
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 4
+
+BIOMD0000000660
+n=20,r=40,d=5
+Inconsistent
+
+BIOMD0000000661
+n=7,r=17,d=0
+Inconsistent
+
+BIOMD0000000662
+n=5,r=10,d=1
+Inconsistent
+
+BIOMD0000000663
+n=3,r=9,d=0
+Full rank
+
+BIOMD0000000664
+n=8,r=15,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000665
+n=8,r=13,d=1
+Inconsistent
+
+BIOMD0000000666
+n=48,r=49,d=26
+Inconsistent
+
+BIOMD0000000667
+n=103,r=243,d=8
+Inconsistent
+
+BIOMD0000000668
+n=14,r=10,d=4
+Inconsistent
+
+BIOMD0000000670
+Error reading matrices
+
+BIOMD0000000671
+Error reading matrices
+
+BIOMD0000000676
+n=15,r=21,d=2
+Inconsistent
+
+BIOMD0000000678
+n=4,r=4,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000679
+n=4,r=8,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000680
+Error reading matrices
+
+BIOMD0000000683
+n=4,r=9,d=0
+Full rank
+
+BIOMD0000000687
+n=15,r=25,d=0
+Inconsistent
+
+BIOMD0000000688
+n=16,r=30,d=0
+Inconsistent
+
+BIOMD0000000689
+n=17,r=11,d=8
+Inconsistent
+
+BIOMD0000000690
+n=17,r=11,d=8
+Inconsistent
+
+BIOMD0000000691
+n=19,r=18,d=4
+Inconsistent
+
+BIOMD0000000692
+n=8,r=10,d=3
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000697
+n=16,r=30,d=3
+Inconsistent
+
+BIOMD0000000698
+n=7,r=10,d=1
+Inconsistent
+
+BIOMD0000000700
+n=30,r=57,d=9
+Inconsistent
+
+BIOMD0000000704
+n=17,r=33,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000705
+n=43,r=61,d=24
+Inconsistent
+
+BIOMD0000000707
+n=5,r=10,d=0
+Full rank
+
+BIOMD0000000708
+n=5,r=11,d=0
+Full rank
+
+BIOMD0000000709
+n=5,r=11,d=0
+Full rank
+
+BIOMD0000000710
+n=7,r=16,d=0
+Full rank
+
+BIOMD0000000713
+n=3,r=9,d=0
+Full rank
+
+BIOMD0000000714
+n=4,r=10,d=0
+Full rank
+
+BIOMD0000000715
+n=5,r=11,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000716
+n=4,r=10,d=0
+Full rank
+
+BIOMD0000000717
+n=4,r=10,d=0
+Full rank
+
+BIOMD0000000720
+n=9,r=25,d=1
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000721
+n=5,r=10,d=0
+Inconsistent
+
+BIOMD0000000722
+n=5,r=15,d=0
+Inconsistent
+
+BIOMD0000000724
+n=39,r=34,d=21
+Inconsistent
+
+BIOMD0000000725
+n=51,r=40,d=20
+Inconsistent
+
+BIOMD0000000726
+n=8,r=23,d=0
+Full rank
+
+BIOMD0000000728
+n=2,r=5,d=0
+Full rank
+
+BIOMD0000000729
+n=3,r=7,d=0
+Full rank
+
+BIOMD0000000730
+n=45,r=108,d=1
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Too slow for injectivity test! Skipped
+
+BIOMD0000000732
+n=5,r=6,d=1
+Inconsistent
+
+BIOMD0000000733
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000737
+n=12,r=22,d=1
+Inconsistent
+
+BIOMD0000000738
+n=12,r=22,d=1
+Inconsistent
+
+BIOMD0000000740
+Error reading matrices
+
+BIOMD0000000741
+n=4,r=10,d=0
+Full rank
+
+BIOMD0000000742
+n=2,r=6,d=0
+Full rank
+
+BIOMD0000000743
+n=4,r=14,d=0
+Full rank
+
+BIOMD0000000744
+n=5,r=14,d=0
+Full rank
+
+BIOMD0000000745
+n=5,r=10,d=0
+Full rank
+
+BIOMD0000000746
+n=4,r=11,d=0
+Full rank
+
+BIOMD0000000747
+n=33,r=43,d=9
+Inconsistent
+
+BIOMD0000000748
+n=4,r=11,d=0
+Full rank
+
+BIOMD0000000750
+n=8,r=25,d=0
+Inconsistent
+
+BIOMD0000000751
+n=2,r=3,d=0
+Inconsistent
+
+BIOMD0000000752
+n=3,r=5,d=0
+Inconsistent
+
+BIOMD0000000753
+n=2,r=7,d=0
+Full rank
+
+BIOMD0000000754
+n=3,r=10,d=0
+Full rank
+
+BIOMD0000000755
+n=9,r=7,d=3
+Inconsistent
+
+BIOMD0000000756
+n=4,r=11,d=0
+Full rank
+
+BIOMD0000000757
+n=10,r=18,d=3
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000758
+n=2,r=4,d=0
+Full rank
+
+BIOMD0000000759
+n=6,r=19,d=0
+Full rank
+
+BIOMD0000000760
+n=2,r=4,d=0
+Inconsistent
+
+BIOMD0000000761
+n=6,r=14,d=0
+Full rank
+
+BIOMD0000000762
+n=2,r=7,d=0
+Full rank
+
+BIOMD0000000763
+n=3,r=9,d=0
+Full rank
+
+BIOMD0000000764
+n=4,r=9,d=0
+Full rank
+
+BIOMD0000000765
+n=4,r=9,d=0
+Full rank
+
+BIOMD0000000766
+n=5,r=11,d=0
+Inconsistent
+
+BIOMD0000000767
+n=3,r=5,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000768
+n=5,r=13,d=0
+Full rank
+
+BIOMD0000000769
+n=5,r=24,d=0
+Full rank
+
+BIOMD0000000770
+n=4,r=14,d=0
+Full rank
+
+BIOMD0000000771
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000772
+n=4,r=7,d=0
+Inconsistent
+
+BIOMD0000000773
+n=3,r=6,d=0
+Inconsistent
+
+BIOMD0000000774
+n=2,r=4,d=0
+Inconsistent
+
+BIOMD0000000776
+n=2,r=5,d=0
+Full rank
+
+BIOMD0000000777
+n=3,r=8,d=0
+Full rank
+
+BIOMD0000000778
+n=3,r=8,d=0
+Full rank
+
+BIOMD0000000779
+n=6,r=25,d=0
+Full rank
+
+BIOMD0000000780
+n=4,r=12,d=0
+Full rank
+
+BIOMD0000000781
+n=3,r=8,d=0
+Full rank
+
+BIOMD0000000782
+n=2,r=5,d=0
+Full rank
+
+BIOMD0000000783
+n=3,r=8,d=0
+Full rank
+
+BIOMD0000000785
+n=2,r=5,d=0
+Full rank
+
+BIOMD0000000788
+n=8,r=22,d=0
+Inconsistent
+
+BIOMD0000000790
+n=4,r=14,d=0
+Full rank
+
+BIOMD0000000792
+n=6,r=14,d=0
+Full rank
+
+BIOMD0000000793
+n=2,r=5,d=0
+Full rank
+
+BIOMD0000000795
+n=2,r=6,d=0
+Full rank
+
+BIOMD0000000796
+n=5,r=13,d=0
+Full rank
+
+BIOMD0000000797
+n=4,r=12,d=0
+Full rank
+
+BIOMD0000000798
+n=5,r=9,d=0
+Full rank
+
+BIOMD0000000799
+n=2,r=4,d=0
+Full rank
+
+BIOMD0000000800
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000801
+n=4,r=13,d=0
+Full rank
+
+BIOMD0000000802
+n=4,r=8,d=0
+Inconsistent
+
+BIOMD0000000807
+n=3,r=15,d=0
+Full rank
+
+BIOMD0000000808
+n=6,r=15,d=0
+Full rank
+
+BIOMD0000000810
+n=14,r=53,d=1
+Linear kinetics
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000811
+n=6,r=29,d=0
+Full rank
+
+BIOMD0000000812
+n=6,r=9,d=2
+DZT: Not covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000813
+n=3,r=8,d=0
+Full rank
+
+BIOMD0000000815
+n=2,r=6,d=0
+Full rank
+
+BIOMD0000000821
+n=3,r=7,d=0
+Inconsistent
+
+BIOMD0000000823
+n=16,r=20,d=6
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 6
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000824
+n=2,r=3,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000826
+n=13,r=25,d=0
+Inconsistent
+
+BIOMD0000000827
+n=10,r=10,d=3
+Inconsistent
+
+BIOMD0000000831
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000832
+n=20,r=29,d=7
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 5
+
+BIOMD0000000833
+n=61,r=83,d=22
+Inconsistent
+
+BIOMD0000000835
+n=55,r=74,d=23
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 23
+Full-dimensional toric invariance space
+Too slow for injectivity test! Skipped
+
+BIOMD0000000836
+Error reading matrices
+
+BIOMD0000000837
+n=8,r=17,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000838
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000839
+n=8,r=20,d=0
+Full rank
+
+BIOMD0000000840
+n=5,r=11,d=0
+Full rank
+
+BIOMD0000000841
+n=4,r=11,d=0
+Full rank
+
+BIOMD0000000842
+n=21,r=26,d=10
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 7
+
+BIOMD0000000847
+n=4,r=7,d=0
+Full rank
+
+BIOMD0000000848
+n=9,r=21,d=0
+Inconsistent
+
+BIOMD0000000850
+n=3,r=4,d=0
+Full rank
+
+BIOMD0000000851
+n=5,r=4,d=1
+Inconsistent
+
+BIOMD0000000852
+n=6,r=15,d=0
+Full rank
+
+BIOMD0000000853
+n=9,r=21,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000854
+n=4,r=7,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000855
+n=4,r=12,d=0
+Full rank
+
+BIOMD0000000857
+n=10,r=20,d=0
+Inconsistent
+
+BIOMD0000000858
+n=10,r=20,d=0
+Inconsistent
+
+BIOMD0000000859
+n=13,r=25,d=0
+Inconsistent
+
+BIOMD0000000861
+n=26,r=38,d=4
+Inconsistent
+
+BIOMD0000000863
+n=6,r=13,d=0
+Full rank
+
+BIOMD0000000866
+n=4,r=4,d=1
+Inconsistent
+
+BIOMD0000000867
+n=10,r=31,d=0
+Full rank
+
+BIOMD0000000868
+n=5,r=6,d=1
+Inconsistent
+
+BIOMD0000000869
+n=5,r=8,d=1
+Inconsistent
+
+BIOMD0000000870
+n=7,r=12,d=1
+Inconsistent
+
+BIOMD0000000871
+n=8,r=17,d=1
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 0
+
+BIOMD0000000874
+n=4,r=8,d=0
+Full rank
+
+BIOMD0000000875
+n=4,r=9,d=0
+Full rank
+
+BIOMD0000000876
+n=4,r=9,d=0
+Full rank
+
+BIOMD0000000877
+n=4,r=9,d=0
+Full rank
+
+BIOMD0000000878
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000879
+n=3,r=11,d=0
+Full rank
+
+BIOMD0000000880
+n=4,r=11,d=0
+Full rank
+
+BIOMD0000000881
+n=4,r=10,d=0
+Full rank
+
+BIOMD0000000882
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000883
+n=75,r=85,d=27
+Inconsistent
+
+BIOMD0000000884
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000885
+n=4,r=8,d=0
+Full rank
+
+BIOMD0000000886
+n=5,r=10,d=0
+Full rank
+
+BIOMD0000000887
+n=4,r=10,d=0
+Full rank
+
+BIOMD0000000888
+n=4,r=8,d=0
+Full rank
+
+BIOMD0000000889
+n=12,r=20,d=0
+Inconsistent
+
+BIOMD0000000890
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000891
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000892
+n=4,r=8,d=0
+Full rank
+
+BIOMD0000000893
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000894
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000895
+n=9,r=29,d=0
+Inconsistent
+
+BIOMD0000000896
+n=9,r=15,d=2
+DZT: Not covered
+DOT: Not covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+
+BIOMD0000000897
+n=2,r=4,d=0
+Full rank
+
+BIOMD0000000898
+n=5,r=8,d=0
+Full rank
+
+BIOMD0000000902
+n=4,r=7,d=0
+Inconsistent
+
+BIOMD0000000903
+n=5,r=10,d=0
+Full rank
+
+BIOMD0000000904
+n=4,r=7,d=0
+Inconsistent
+
+BIOMD0000000905
+n=5,r=10,d=0
+Full rank
+
+BIOMD0000000906
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000907
+n=34,r=25,d=9
+Inconsistent
+
+BIOMD0000000909
+n=4,r=8,d=0
+Full rank
+
+BIOMD0000000910
+n=3,r=5,d=0
+Inconsistent
+
+BIOMD0000000911
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000912
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000913
+n=6,r=12,d=0
+Full rank
+
+BIOMD0000000914
+n=5,r=9,d=0
+Inconsistent
+
+BIOMD0000000915
+n=9,r=8,d=1
+Inconsistent
+
+BIOMD0000000916
+n=5,r=5,d=1
+Inconsistent
+
+BIOMD0000000919
+n=2,r=5,d=0
+Full rank
+
+BIOMD0000000920
+n=4,r=4,d=0
+Inconsistent
+
+BIOMD0000000921
+n=5,r=13,d=0
+Full rank
+
+BIOMD0000000922
+n=3,r=3,d=0
+Inconsistent
+
+BIOMD0000000924
+n=6,r=11,d=0
+Inconsistent
+
+BIOMD0000000929
+n=5,r=24,d=0
+Full rank
+
+BIOMD0000000930
+n=4,r=14,d=0
+Full rank
+
+BIOMD0000000932
+n=4,r=5,d=0
+Inconsistent
+
+BIOMD0000000933
+n=3,r=3,d=0
+Inconsistent
+
+BIOMD0000000934
+n=16,r=19,d=3
+Inconsistent
+
+BIOMD0000000935
+n=2,r=4,d=0
+Full rank
+
+BIOMD0000000936
+n=1,r=2,d=0
+Full rank
+
+BIOMD0000000937
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000938
+n=5,r=8,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000939
+n=60,r=127,d=10
+Inconsistent
+
+BIOMD0000000940
+n=20,r=60,d=0
+Full rank
+
+BIOMD0000000941
+n=8,r=12,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000942
+n=18,r=15,d=11
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 11
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000944
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000000945
+Error reading matrices
+
+BIOMD0000000946
+Error reading matrices
+
+BIOMD0000000947
+Error reading matrices
+
+BIOMD0000000948
+n=6,r=6,d=2
+Inconsistent
+
+BIOMD0000000949
+n=7,r=17,d=0
+Full rank
+
+BIOMD0000000950
+Error reading matrices
+
+BIOMD0000000951
+n=34,r=45,d=10
+Inconsistent
+
+BIOMD0000000957
+n=4,r=3,d=1
+Inconsistent
+
+BIOMD0000000958
+n=8,r=12,d=1
+Inconsistent
+
+BIOMD0000000962
+n=5,r=3,d=2
+Inconsistent
+
+BIOMD0000000964
+n=6,r=14,d=0
+Full rank
+
+BIOMD0000000968
+n=10,r=10,d=4
+Inconsistent
+
+BIOMD0000000970
+n=5,r=3,d=2
+Inconsistent
+
+BIOMD0000000972
+n=8,r=13,d=0
+Inconsistent
+
+BIOMD0000000974
+n=6,r=4,d=2
+Inconsistent
+
+BIOMD0000000977
+n=6,r=15,d=0
+Inconsistent
+
+BIOMD0000000979
+n=5,r=4,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000980
+n=5,r=4,d=2
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 2
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000000982
+n=3,r=2,d=1
+Inconsistent
+
+BIOMD0000000984
+n=5,r=3,d=2
+Inconsistent
+
+BIOMD0000000985
+n=7,r=9,d=1
+Inconsistent
+
+BIOMD0000000987
+n=9,r=10,d=0
+Full rank
+
+BIOMD0000000989
+n=23,r=65,d=0
+Full rank
+
+BIOMD0000000990
+n=23,r=65,d=0
+Full rank
+
+BIOMD0000000991
+n=9,r=10,d=2
+Inconsistent
+
+BIOMD0000000997
+n=23,r=65,d=0
+Full rank
+
+BIOMD0000000998
+n=23,r=66,d=0
+Full rank
+
+BIOMD0000000999
+n=23,r=66,d=0
+Full rank
+
+BIOMD0000001000
+n=23,r=66,d=0
+Full rank
+
+BIOMD0000001001
+n=23,r=66,d=0
+Full rank
+
+BIOMD0000001002
+n=23,r=66,d=0
+Full rank
+
+BIOMD0000001003
+n=23,r=66,d=0
+Full rank
+
+BIOMD0000001004
+n=10,r=18,d=2
+Inconsistent
+
+BIOMD0000001005
+n=41,r=83,d=0
+Inconsistent
+
+BIOMD0000001010
+n=3,r=4,d=1
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 1
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000001011
+n=3,r=5,d=0
+Inconsistent
+
+BIOMD0000001012
+n=4,r=7,d=0
+Full rank
+
+BIOMD0000001013
+n=2,r=4,d=0
+Full rank
+
+BIOMD0000001014
+n=5,r=7,d=1
+Inconsistent
+
+BIOMD0000001016
+n=8,r=11,d=1
+Inconsistent
+
+BIOMD0000001017
+n=13,r=19,d=2
+Inconsistent
+
+BIOMD0000001018
+n=22,r=35,d=6
+Inconsistent
+
+BIOMD0000001021
+n=7,r=10,d=1
+Inconsistent
+
+BIOMD0000001022
+n=4,r=6,d=0
+Inconsistent
+
+BIOMD0000001023
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000001024
+n=2,r=4,d=0
+Full rank
+
+BIOMD0000001025
+n=4,r=2,d=3
+Linear kinetics
+DZT: Covered
+DOT: Covered
+Generically nondegenerate
+Dimension of toric invariance space: 3
+Full-dimensional toric invariance space
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+
+BIOMD0000001030
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000001031
+n=3,r=4,d=0
+Full rank
+
+BIOMD0000001033
+n=6,r=14,d=0
+Full rank
+
+BIOMD0000001034
+n=4,r=7,d=0
+Full rank
+
+BIOMD0000001035
+n=4,r=8,d=0
+Full rank
+
+BIOMD0000001036
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000001037
+n=2,r=3,d=0
+Inconsistent
+
+BIOMD0000001038
+n=3,r=6,d=0
+Full rank
+
+BIOMD0000001041
+n=4,r=4,d=1
+Inconsistent
