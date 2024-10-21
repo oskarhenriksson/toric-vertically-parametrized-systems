@@ -159,8 +159,7 @@ function coset_counting_analysis(N::QQMatrix, M::ZZMatrix, A::ZZMatrix; printing
         return (toricity=toricity_flag, finite=finite_flag)
     end
 
-    # Todo: Change to not involving A, i.e. all_positive_roots_nondegenerate(C, M)
-    if all_positive_roots_nondegenerate(C, M, QQ.(A))
+    if all_positive_roots_nondegenerate(C, M)
         printing_function("Finitely many cosets")
         finite_flag = true
     end
