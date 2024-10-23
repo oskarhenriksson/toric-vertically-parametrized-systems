@@ -20,7 +20,7 @@ end
 # Function for saving a csv file
 function save_as_csv(vector::Vector, filename::String)
     open(filename, "w") do file
-        write(file, join(vector, ","))
+        write(file, join(vector, "\n"))
     end
 end
 
@@ -239,4 +239,73 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
         end
 
     end
+
+    # Summerize the results
+    write_both(file, "\nError reading matrices:\n$(error_reading)")
+    write_both(file, length(error_reading))
+
+    write_both(file, "\nToo large models:\n$(too_large)")
+    write_both(file, length(too_large))
+
+    write_both(file, "\nInconsistent models:\n$(inconsistent)")
+    write_both(file, length(inconsistent))
+
+    write_both(file, "\nFull rank models:\n$(full_rank)")
+    write_both(file, length(full_rank))
+
+    write_both(file, "\nLinear models:\n$(linear)")
+    write_both(file, length(linear))
+
+    write_both(file, "\nDZT covered models:\n$(dzt)")
+    write_both(file, length(dzt))
+
+    write_both(file, "\nDOT covered models:\n$(dot)")
+    write_both(file, length(dot))
+
+    write_both(file, "\nNondegenerate models:\n$(nondegenerate)")
+    write_both(file, length(nondegenerate))
+
+    write_both(file, "\nDegenerate models:\n$(degenerate)")
+    write_both(file, length(degenerate))
+
+    write_both(file, "\nNonconserved in invariance space:\n$(nonconserved_in_invariance_space)")
+    write_both(file, length(nonconserved_in_invariance_space))
+
+    write_both(file, "\nFull-dimensional invariance space:\n$(fulldimensional_invariance_space)")
+    write_both(file, length(fulldimensional_invariance_space))
+
+    write_both(file, "\nSkipped injectivity test:\n$(skipped_injectivity)")
+    write_both(file, length(skipped_injectivity))
+
+    write_both(file, "\nToricity:$(toric)")
+    write_both(file, length(toric))
+
+    write_both(file, "\nLocal toricity:\n$(finite)")
+    write_both(file, length(finite))
+
+    write_both(file, "\nMultistationarity:\n$(multistat)")
+    write_both(file, length(multistat))
+
+    write_both(file, "\nMultistationarity precluded:\n$(multistat_precluded)")
+    write_both(file, length(multistat_precluded))
+
+    write_both(file, "\nACR:\n$(acr)")
+    write_both(file, length(acr))
+
+    write_both(file, "\nLocal ACR:\n$(local_acr)")
+    write_both(file, length(local_acr))
+
+    write_both(file, "\nGeneric binomiality:\n$(generic_bin)")
+    write_both(file, length(generic_bin))
+
+    write_both(file, "\nBinomiality for all positive:\n$(bin_for_all)")
+    write_both(file, length(bin_for_all))
+
 end
+
+save_as_csv(toric, timestamp_str * "_" * choice_of_models * "/toric_networks.csv")
+save_as_csv(finite, timestamp_str * "_" * choice_of_models * "/locally_toric_networks.csv")
+save_as_csv(multistat, timestamp_str * "_" * choice_of_models * "/multistationary_networks.csv")
+save_as_csv(multistat_precluded, timestamp_str * "_" * choice_of_models * "/non_multistationarity_networks.csv")
+save_as_csv(acr, timestamp_str * "_" * choice_of_models * "/acr_networks.csv")
+save_as_csv(local_acr, timestamp_str * "_" * choice_of_models * "/local_acr_networks.csv")
