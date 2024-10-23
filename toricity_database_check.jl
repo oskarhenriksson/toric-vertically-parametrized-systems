@@ -168,7 +168,7 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
 
         end
 
-        # Todo: Can we say something about infinitely many cosets?
+        # Todo: Conclusion about infinitely many cosets?
 
         # Analyze the coset counting system for the full network
         if !toricity_flag && rank(C) + rank(A) == nrows(M)
@@ -187,6 +187,17 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
                 write_both(file, "Multistationarity precluded")
             end
         end
+
+        # (Local) ACR checks
+        local_acr_species = zero_columns(A)
+        if !isempty(local_acr_species)
+            if toricity_flag
+                write_both(file, "Species with ACR: $(local_acr_species)")
+            elseif finite_flag
+                write_both(file, "Species with local ACR: $(local_acr_species)")
+            end
+        end
+        
 
     end
 end
