@@ -92,8 +92,8 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
             continue
         end
 
-         # Check for linear kinetics
-         if is_linear(M)
+        # Check for linear kinetics
+        if is_linear(M)
             write_both(file, "Linear kinetics")
             #continue
         end
@@ -138,70 +138,64 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
         A = lift_exponent_matrix(Atilde, M, intermediates_result)
         write_both(file, "Dimension of toric invariance space: $(rank(A))")
 
-        if rank(A) == d
-            write_both(file, "Full-dimensional toric invariance space")
-        else
-            continue
-        end
-
         if !all(is_zero, A * N)
             write_both(file, "Non-conserved quantities in toric invariance space")
         end
 
-        toricity_flag = false
-        all_nondeg = false
 
-        if model_id in ["BIOMD0000000161","BIOMD0000000250","BIOMD0000000409","BIOMD0000000428","BIOMD0000000505","BIOMD0000000594","BIOMD0000000835"]
-            write_both(file, "Too slow for injectivity test! Skipped")
-        else
+        if rank(A) == d
+            write_both(file, "Full-dimensional toric invariance space")
 
-            # Analyze the coset counting system for the reduced network
-            if rank(Ctilde) + rank(Atilde) == nrows(Mtilde)
+            toricity_flag = false
+            all_nondeg = false
 
-                result = coset_counting_analysis(Ntilde, Mtilde, Atilde, printing_function=s->write_both(file, s))
-                toricity_flag = result.toricity
-                finite_flag = result.finite
-
-            end
-
-            # Todo: Conclusion about infinitely many cosets?
-
-            # Analyze the coset counting system for the full network
-            if !toricity_flag && rank(C) + rank(A) == nrows(M)
-                result = coset_counting_analysis(N, M, A, printing_function=s->write_both(file, s))
-                
-                toricity_flag = result.toricity
-                finite_flag = result.finite
-            end
-
-            # Capacity for multistationarity
-            if coset_with_multistationarity(A, W)
-                write_both(file, "Coset with multistationarity found")
+            if model_id in ["BIOMD0000000161", "BIOMD0000000250", "BIOMD0000000409", "BIOMD0000000428", "BIOMD0000000505", "BIOMD0000000594", "BIOMD0000000835"]
+                write_both(file, "Too slow for injectivity test! Skipped")
             else
-                write_both(file, "No coset with multistationarity found")
-                if toricity_flag
-                    write_both(file, "Multistationarity precluded")
-                end
-            end
 
-            # (Local) ACR checks
-            local_acr_species = zero_columns(A)
-            if !isempty(local_acr_species)
-                if toricity_flag
-                    write_both(file, "Species with ACR: $(local_acr_species)")
-                elseif finite_flag
-                    write_both(file, "Species with local ACR: $(local_acr_species)")
+                # Analyze the coset counting system for the reduced network
+                if rank(Ctilde) + rank(Atilde) == nrows(Mtilde)
+
+                    result = coset_counting_analysis(Ntilde, Mtilde, Atilde, printing_function=s -> write_both(file, s))
+                    toricity_flag = result.toricity
+                    finite_flag = result.finite
+
+                end
+
+                # Todo: Conclusion about infinitely many cosets?
+
+                # Analyze the coset counting system for the full network
+                if !toricity_flag && rank(C) + rank(A) == nrows(M)
+                    result = coset_counting_analysis(N, M, A, printing_function=s -> write_both(file, s))
+
+                    toricity_flag = result.toricity
+                    finite_flag = result.finite
+                end
+
+                # Capacity for multistationarity
+                if coset_with_multistationarity(A, W)
+                    write_both(file, "Coset with multistationarity found")
+                else
+                    write_both(file, "No coset with multistationarity found")
+                    if toricity_flag
+                        write_both(file, "Multistationarity precluded")
+                    end
+                end
+
+                # (Local) ACR checks
+                local_acr_species = zero_columns(A)
+                if !isempty(local_acr_species)
+                    if toricity_flag
+                        write_both(file, "Species with ACR: $(local_acr_species)")
+                    elseif finite_flag
+                        write_both(file, "Species with local ACR: $(local_acr_species)")
+                    end
                 end
             end
         end
-        
-        if ncols(M) < 10 
-            G = groebner_basis(ideal(vertical_system(N, M)))
-            if all(is_binomial, G)
-                write_both(file, "Gröbner basis: Generically binomial")
-            else
-                write_both(file, "Gröbner basis: Generically non-binomial")
-            end
+
+        if ncols(M) < 10
+            binomiality_result = binomiality_check(vertical_system(C, M))
         else
             write_both(file, "Gröbner basis: Skipped")
         end
