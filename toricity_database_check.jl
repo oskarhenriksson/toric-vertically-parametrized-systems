@@ -48,6 +48,27 @@ function collect_matrices(model_id)
     return B, N
 end
 
+error_reading = []
+too_large = []
+inconsistent = []
+full_rank = []
+linear = []
+dzt = []
+dot = []
+nondegenerate = []
+degenerate = []
+nonconserved_in_invariance_space = []
+fulldimensional_invariance_space = []
+skipped_injectivity = []
+toric = []
+finite = []
+multistat = []
+multistat_precluded = []
+acr = []
+local_acr = []
+generic_bin = []
+bin_for_all = []
+
 # Run the analysis on each model
 mkdir(timestamp_str * "_" * choice_of_models)
 open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
@@ -63,6 +84,7 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
         catch e
             write_both(file, "Error reading matrices")
             println(e)
+            push!(error_reading, model_id)
             continue  # Skip to the next model
         end
 
@@ -78,29 +100,34 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
 
         if r > 100
             write_both(file, "Too many reactions")
+            push!(too_large, model_id)
             continue
         end
 
         # Consistency
         if !nonempty_positive_kernel(C)
             write_both(file, "Inconsistent")
+            push!(inconsistent, model_id)
             continue
         end
 
         if d == 0
             write_both(file, "Full rank")
+            push!(full_rank, model_id)
             continue
         end
 
         # Check for linear kinetics
         if is_linear(M)
             write_both(file, "Linear kinetics")
+            push!(linear, model_id)
             #continue
         end
 
         # The deficiency zero theorem
         if covered_by_deficiency_zero_theorem(N, M)
             write_both(file, "DZT: Covered")
+            push!(dzt, model_id)
         else
             write_both(file, "DZT: Not covered")
         end
@@ -108,6 +135,7 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
         # The deficiency one theorem
         if convered_by_deficiency_one_theorem(N, M)
             write_both(file, "DOT: Covered")
+            push!(dot, model_id)
         else
             write_both(file, "DOT: Not covered")
         end
@@ -115,17 +143,13 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
         # Conserved quantities
         W = kernel(N, side=:left)
 
-        # Graph structure and deficiency
-        g, embedding = reaction_graph(N, M)
-        m = length(Graphs.vertices(g))
-        ell = length(Graphs.weakly_connected_components(g))
-        delta(N, M)
-
         # Generic nondegeneracy
         if has_nondegenerate_zero(N, M)
             write_both(file, "Generically nondegenerate")
+            push!(nondegenerate, model_id)
         else
             write_both(file, "Degenerate")
+            push!(degenerate, model_id)
         end
 
         # Model reduction
@@ -140,17 +164,20 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
 
         if !all(is_zero, A * N)
             write_both(file, "Non-conserved quantities in toric invariance space")
+            push!(nonconserved_in_invariance_space, model_id)
         end
 
 
         if rank(A) == d
             write_both(file, "Full-dimensional toric invariance space")
+            push!(fulldimensional_invariance_space, model_id)
 
             toricity_flag = false
             all_nondeg = false
 
-            if model_id in ["BIOMD0000000161", "BIOMD0000000250", "BIOMD0000000409", "BIOMD0000000428", "BIOMD0000000505", "BIOMD0000000594", "BIOMD0000000835"]
+            if model_id in ["BIOMD0000000161", "BIOMD0000000250", "BIOMD0000000409", "BIOMD0000000428", "BIOMD0000000505", "BIOMD0000000594", "BIOMD0000000835", "BIOMD0000000640"]
                 write_both(file, "Too slow for injectivity test! Skipped")
+                push!(skipped_injectivity, model_id)
             else
 
                 # Analyze the coset counting system for the reduced network
@@ -170,15 +197,21 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
 
                     toricity_flag = result.toricity
                     finite_flag = result.finite
+
                 end
+
+                toricity_flag && push!(toric, model_id)
+                finite_flag && push!(finite, model_id)
 
                 # Capacity for multistationarity
                 if coset_with_multistationarity(A, W)
                     write_both(file, "Coset with multistationarity found")
+                    push!(multistat, model_id)
                 else
                     write_both(file, "No coset with multistationarity found")
                     if toricity_flag
                         write_both(file, "Multistationarity precluded")
+                        push!(multistat_precluded, model_id)
                     end
                 end
 
@@ -187,8 +220,11 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
                 if !isempty(local_acr_species)
                     if toricity_flag
                         write_both(file, "Species with ACR: $(local_acr_species)")
+                        push!(acr, model_id)
+                        push!(local_acr, model_id)
                     elseif finite_flag
                         write_both(file, "Species with local ACR: $(local_acr_species)")
+                        push!(local_acr, model_id)
                     end
                 end
             end
@@ -196,6 +232,8 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
 
         if ncols(M) < 10
             binomiality_result = binomiality_check(vertical_system(C, M))
+            binomiality_result.generically && push!(generic_bin, model_id)
+            binomiality_result.for_all_positive && push!(bin_for_all, model_id)
         else
             write_both(file, "Gröbner basis: Skipped")
         end
