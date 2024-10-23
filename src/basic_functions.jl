@@ -25,6 +25,10 @@ supp(v::Vector) = findall(is_non_zero, v)
 # Row space
 row_space(A::MatrixElem) = rref(A)[2][1:rank(A), :]
 
+# Zero columns of matrix
+zero_columns(A::MatrixElem) = [i for i in 1:ncols(A) if all(is_zero, A[:, i])]
+
+
 
 # Checks whether N has a positive vector in its kernel
 # If N is the stoichiometric matrix of a network, this corresponds to checking if the network is consistent
