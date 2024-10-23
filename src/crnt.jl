@@ -61,7 +61,6 @@ function minimal_siphons(N::QQMatrix, M::ZZMatrix)
         return siphons_accum  # Return the accumulator containing siphons
     end
 
-    # Directly return the result of extend_siphon
     return extend_siphon(Set{Int}(), 1:n, Set{Int}[])
 end
 
@@ -74,4 +73,19 @@ function siphon_test(N::QQMatrix, M::ZZMatrix)
         end
     end
     return true
+end
+
+function reconstruct_stoichiometric_matrix_with_row_space_and_conserved_quantities(C::QQMatrix, W::QQMatrix)
+    @req nrows(W) == rank(W) "Matrix of conserved quantities needs to have full row rank"
+    @req nrows(C) == rank(C) "Coefficient matrix needs to have full row rank"
+    @req nrows(C) + nrows(W) == ncols(W) "Not enough conserved quantities"
+    pivot_colums = [findfirst(row .!= 0) for row in eachrow(W)]
+    non_pivot_columns = setdiff(1:ncols(W), pivot_colums)
+    N = zero_matrix(QQ,ncols(W),ncols(C))
+    N[non_pivot_columns,:] = C 
+    N[pivot_colums,:] = -W[:,non_pivot_columns]*C
+    # Todo: Remove these checks
+    @req row_space(kernel(N, side=:left)) == row_space(W) "Reconstruction failed"
+    @req row_space(N) == row_space(C) "Reconstruction failed"
+    return N
 end

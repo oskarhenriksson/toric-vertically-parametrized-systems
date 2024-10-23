@@ -179,7 +179,8 @@ function coset_counting_analysis(N::QQMatrix, M::ZZMatrix, A::ZZMatrix; printing
         end
 
         # Constant number of cosets?
-        if positive_vector_in_rowspace(A) && siphon_test(N, M)
+        N_A = reconstruct_stoichiometric_matrix_with_row_space_and_conserved_quantities(C, QQ.(A))
+        if positive_vector_in_rowspace(A) && siphon_test(N_A, M)
             printing_function("Constant number of cosets")
             coset_count = nothing
             try
