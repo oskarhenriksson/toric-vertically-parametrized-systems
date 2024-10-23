@@ -1,5 +1,4 @@
 using Oscar
-using Catalyst
 
 function intermediates(N::QQMatrix, M::ZZMatrix; only_single_input::Bool=false)
 
@@ -82,9 +81,6 @@ end
 function single_input_intermediates(N::QQMatrix, M::ZZMatrix)
     return intermediates(N, M, only_single_input=true)
 end
-
-
-
 
 function lift_exponent_matrix(Atilde::ZZMatrix, B::ZZMatrix, intermediates_result::Vector{NamedTuple{(:species, :input_reactions, :output_reactions),Tuple{Int, Vector{Int},Vector{Int}}}})
     n = nrows(B)

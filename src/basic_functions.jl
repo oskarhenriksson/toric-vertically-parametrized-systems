@@ -6,10 +6,16 @@
 Base.eachrow(a::MatrixElem) = Slices(a, (1, :), (axes(a, 1),))
 Base.eachcol(a::MatrixElem) = Slices(a, (:, 1), (axes(a, 2),))
 
+
+function is_polynomial_of_constant_signs(f::MPolyRingElem)
+    coeffs = coefficients(f)
+    signs = sign.(coeffs)
+    return  all(signs .== 1) || all(signs .== -1)
+end
+
 function has_minor_of_constant_sign(M::MatrixElem, r::Int)
     for minor in minors_iterator(M, r)
-        signs = [sign(c) for c in Oscar.coefficients(minor)]
-        if all(signs .== 1) || all(signs .== -1)
+        if is_polynomial_of_constant_signs(minor)
             return true
         end
     end
@@ -27,8 +33,6 @@ row_space(A::MatrixElem) = rref(A)[2][1:rank(A), :]
 
 # Zero columns of matrix
 zero_columns(A::MatrixElem) = [i for i in 1:ncols(A) if all(is_zero, A[:, i])]
-
-
 
 # Checks whether N has a positive vector in its kernel
 # If N is the stoichiometric matrix of a network, this corresponds to checking if the network is consistent
