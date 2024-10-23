@@ -65,6 +65,9 @@ function run_tests()
         # Capacity for multistationarity
         @test coset_with_multistationarity(A, W) == false
 
+        # ACR
+        @test zero_columns(A) == [7]
+
         # The deficiency one theorem
         @test convered_by_deficiency_one_theorem(N, M) == false
 
