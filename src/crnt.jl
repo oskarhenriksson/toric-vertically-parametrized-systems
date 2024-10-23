@@ -79,6 +79,8 @@ function reconstruct_stoichiometric_matrix_with_row_space_and_conserved_quantiti
     @req nrows(W) == rank(W) "Matrix of conserved quantities needs to have full row rank"
     @req nrows(C) == rank(C) "Coefficient matrix needs to have full row rank"
     @req nrows(C) + nrows(W) == ncols(W) "Not enough conserved quantities"
+    W = rref(W)[2]
+    C = rref(C)[2]
     pivot_colums = [findfirst(row .!= 0) for row in eachrow(W)]
     non_pivot_columns = setdiff(1:ncols(W), pivot_colums)
     N = zero_matrix(QQ,ncols(W),ncols(C))
