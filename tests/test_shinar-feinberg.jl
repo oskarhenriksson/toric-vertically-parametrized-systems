@@ -74,6 +74,12 @@ function run_tests()
         # The deficiency one theorem
         @test convered_by_deficiency_one_theorem(N, M) == false
 
+        # binomiality
+        F = vertical_system(C, M)
+        binomiality_result = binomiality_check(F)
+        @test binomiality_result.generically == true 
+        @test binomiality_result.for_all_positive == true
+
     end
 end
 
