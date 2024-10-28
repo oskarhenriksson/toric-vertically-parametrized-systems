@@ -244,19 +244,19 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
         end
 
         if model_id ∉ [
-            "BIOMD0000000002", 
-            "BIOMD0000000028", 
-            "BIOMD0000000030", 
-            "BIOMD0000000032", 
-            "BIOMD0000000048", 
-            "BIOMD0000000061", 
-            "BIOMD0000000070", 
-            "BIOMD0000000085", 
-            "BIOMD0000000086", 
-            "BIOMD0000000108", 
-            "BIOMD0000000123", 
-            "BIOMD0000000161", 
-            "BIOMD0000000162", 
+            "BIOMD0000000002",
+            "BIOMD0000000028",
+            "BIOMD0000000030",
+            "BIOMD0000000032",
+            "BIOMD0000000048",
+            "BIOMD0000000061",
+            "BIOMD0000000070",
+            "BIOMD0000000085",
+            "BIOMD0000000086",
+            "BIOMD0000000108",
+            "BIOMD0000000123",
+            "BIOMD0000000161",
+            "BIOMD0000000162",
             "BIOMD0000000164",
             "BIOMD0000000165",
             "BIOMD0000000182",
@@ -264,7 +264,7 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
             "BIOMD0000000237",
             "BIOMD0000000250",
             "BIOMD0000000294",
-            "BIOMD0000000409", 
+            "BIOMD0000000409",
             "BIOMD0000000430",
             "BIOMD0000000431",
             "BIOMD0000000500",
@@ -272,9 +272,16 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
             "BIOMD0000000637",
             "BIOMD0000000638",
             "BIOMD0000000835"]
-            binomiality_result = binomiality_check(vertical_system(C, M))
-            binomiality_result.generically && push!(generic_bin, model_id)
-            binomiality_result.for_all_positive && push!(bin_for_all, model_id)
+            if nrows(Ctilde) ==0 || ncols(Mtilde) == 0 
+                write_both(file, "Gröbner basis: Generically binomial!")
+                write_both(file, "Specialization for all rate constants: Verified")
+                push!(generic_bin, model_id)
+                push!(bin_for_all, model_id)
+            else
+                binomiality_result = binomiality_check(vertical_system(Ctilde, Mtilde), printing_function=s -> write_both(file, s))
+                binomiality_result.generically && push!(generic_bin, model_id)
+                binomiality_result.for_all_positive && push!(bin_for_all, model_id)
+            end
         else
             write_both(file, "Gröbner basis: Skipped")
         end
@@ -282,8 +289,8 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
     end
 
     # Summerize the results
-    write_both(file, "Number of analyzed networks: $(length(error_reading))")
-    
+    write_both(file, "\nNumber of analyzed networks: $(length(error_reading))")
+
     write_both(file, "\nError reading matrices:\n$(error_reading)")
     write_both(file, length(error_reading))
 
