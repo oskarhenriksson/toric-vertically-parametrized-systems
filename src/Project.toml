@@ -1,0 +1,6 @@
+[deps]
+Catalyst = "479239e8-5488-4da2-87a7-35f2df7eef83"
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+Graphs = "86223c79-3864-5bf0-83f7-82e725a168b6"
+Oscar = "f1435218-dba5-11e9-1e4d-f1a5fab5fc13"
+Z3 = "06b161dc-0161-11ea-0f74-41f836f4024b"
