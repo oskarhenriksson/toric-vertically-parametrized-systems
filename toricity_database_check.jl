@@ -52,6 +52,7 @@ error_reading = []
 too_large = []
 inconsistent = []
 full_rank = []
+analyzed = []
 linear = []
 dzt = []
 dot = []
@@ -68,6 +69,7 @@ acr = []
 local_acr = []
 generic_bin = []
 bin_for_all = []
+has_irrelevant_species = []
 
 # Run the analysis on each model
 mkdir(timestamp_str * "_" * choice_of_models)
@@ -87,6 +89,15 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
             push!(error_reading, model_id)
             continue  # Skip to the next model
         end
+
+        # Check for irrelevant species and remove them
+        irrelevant_species = [i for i = 1:nrows(M) if (all(iszero, M[i, :]) && all(iszero, N[i, :]))]
+        if !isempty(irrelevant_species)
+            write_both(file, "Irrelevant species (ignored in subsequent analysis): $irrelevant_species")
+            push!(has_irrelevant_species, model_id)
+        end
+        N = N[setdiff(1:nrows(N), irrelevant_species), :]
+        M = M[setdiff(1:nrows(M), irrelevant_species), :]
 
         # Basic info
         n = nrows(M)
@@ -116,6 +127,8 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
             push!(full_rank, model_id)
             continue
         end
+
+        push!(analyzed, model_id)
 
         # Check for linear kinetics
         if is_linear(M)
@@ -230,7 +243,35 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
             end
         end
 
-        if ncols(M) < 10
+        if model_id ∉ [
+            "BIOMD0000000002", 
+            "BIOMD0000000028", 
+            "BIOMD0000000030", 
+            "BIOMD0000000032", 
+            "BIOMD0000000048", 
+            "BIOMD0000000061", 
+            "BIOMD0000000070", 
+            "BIOMD0000000085", 
+            "BIOMD0000000086", 
+            "BIOMD0000000108", 
+            "BIOMD0000000123", 
+            "BIOMD0000000161", 
+            "BIOMD0000000162", 
+            "BIOMD0000000164",
+            "BIOMD0000000165",
+            "BIOMD0000000182",
+            "BIOMD0000000200",
+            "BIOMD0000000237",
+            "BIOMD0000000250",
+            "BIOMD0000000294",
+            "BIOMD0000000409", 
+            "BIOMD0000000430",
+            "BIOMD0000000431",
+            "BIOMD0000000500",
+            "BIOMD0000000530",
+            "BIOMD0000000637",
+            "BIOMD0000000638",
+            "BIOMD0000000835"]
             binomiality_result = binomiality_check(vertical_system(C, M))
             binomiality_result.generically && push!(generic_bin, model_id)
             binomiality_result.for_all_positive && push!(bin_for_all, model_id)
@@ -241,6 +282,8 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
     end
 
     # Summerize the results
+    write_both(file, "Number of analyzed networks: $(length(error_reading))")
+    
     write_both(file, "\nError reading matrices:\n$(error_reading)")
     write_both(file, length(error_reading))
 
@@ -277,7 +320,7 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
     write_both(file, "\nSkipped injectivity test:\n$(skipped_injectivity)")
     write_both(file, length(skipped_injectivity))
 
-    write_both(file, "\nToricity:$(toric)")
+    write_both(file, "\nToricity\n:$(toric)")
     write_both(file, length(toric))
 
     write_both(file, "\nLocal toricity:\n$(finite)")
@@ -303,9 +346,25 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
 
 end
 
+save_as_csv(analyzed, timestamp_str * "_" * choice_of_models * "/analyzed.csv")
 save_as_csv(toric, timestamp_str * "_" * choice_of_models * "/toric_networks.csv")
 save_as_csv(finite, timestamp_str * "_" * choice_of_models * "/locally_toric_networks.csv")
 save_as_csv(multistat, timestamp_str * "_" * choice_of_models * "/multistationary_networks.csv")
 save_as_csv(multistat_precluded, timestamp_str * "_" * choice_of_models * "/non_multistationarity_networks.csv")
 save_as_csv(acr, timestamp_str * "_" * choice_of_models * "/acr_networks.csv")
 save_as_csv(local_acr, timestamp_str * "_" * choice_of_models * "/local_acr_networks.csv")
+save_as_csv(generic_bin, timestamp_str * "_" * choice_of_models * "/generic_binomiality_networks.csv")
+save_as_csv(bin_for_all, timestamp_str * "_" * choice_of_models * "/binomiality_for_all_positive_networks.csv")
+save_as_csv(has_irrelevant_species, timestamp_str * "_" * choice_of_models * "/irrelevant_species.csv")
+save_as_csv(error_reading, timestamp_str * "_" * choice_of_models * "/error_reading.csv")
+save_as_csv(too_large, timestamp_str * "_" * choice_of_models * "/too_large.csv")
+save_as_csv(inconsistent, timestamp_str * "_" * choice_of_models * "/inconsistent.csv")
+save_as_csv(full_rank, timestamp_str * "_" * choice_of_models * "/full_rank.csv")
+save_as_csv(linear, timestamp_str * "_" * choice_of_models * "/linear.csv")
+save_as_csv(dzt, timestamp_str * "_" * choice_of_models * "/dzt.csv")
+save_as_csv(dot, timestamp_str * "_" * choice_of_models * "/dot.csv")
+save_as_csv(nondegenerate, timestamp_str * "_" * choice_of_models * "/nondegenerate.csv")
+save_as_csv(degenerate, timestamp_str * "_" * choice_of_models * "/degenerate.csv")
+save_as_csv(nonconserved_in_invariance_space, timestamp_str * "_" * choice_of_models * "/nonconserved_in_invariance_space.csv")
+save_as_csv(fulldimensional_invariance_space, timestamp_str * "_" * choice_of_models * "/fulldimensional_invariance_space.csv")
+save_as_csv(skipped_injectivity, timestamp_str * "_" * choice_of_models * "/skipped_injectivity.csv")
