@@ -1,6 +1,22 @@
 using Oscar
 
 function binomiality_check(F)
+
+    # Specialize F at random parameters and check if binomiality can be ruled out
+    Qax = parent(first(F))
+    Qa = base_ring(Qax)
+    @req isa(Qa, AbstractAlgebra.Generic.RationalFunctionField{QQFieldElem, QQMPolyRingElem}) "Coefficient field must be a rational function field"
+    Qx, x = polynomial_ring(QQ, symbols(Qax))
+    a_star = rand(-100:100, ngens(Qa))
+    phi = hom(Qax, Qx, c->evaluate(c,a_star), x)
+    F_specialized = phi.(F)
+    G_specialized = groebner_basis(ideal(F_specialized), complete_reduction=true)
+    if !all(is_binomial, G_specialized)
+        println("Gröbner basis: Not binomial!")
+        return (generically = false, for_all_positive = false)
+    end
+
+    # Compute a Gröbner basis over the rational function field
     G, T = groebner_basis_with_transformation_matrix(ideal(F), complete_reduction=true)
     if all(is_binomial, G)
         println("Gröbner basis: Generically binomial!")
