@@ -24,6 +24,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [1]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000006
 Irrelevant species (ignored in subsequent analysis): [4]
@@ -38,6 +40,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000008
 n=5,r=13,d=0
@@ -55,6 +59,8 @@ Full-dimensional toric invariance space
 Injectivity test passed for reduced network
 Toricity!
 Coset with multistationarity found
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000010
 n=8,r=10,d=3
@@ -68,6 +74,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000011
 n=22,r=30,d=7
@@ -80,6 +88,8 @@ Full-dimensional toric invariance space
 Injectivity test passed for reduced network
 Toricity!
 Coset with multistationarity found
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000013
 n=27,r=30,d=7
@@ -127,6 +137,8 @@ Number of cosets for random parameters: 1
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000024
 n=3,r=4,d=1
@@ -140,6 +152,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000026
 n=11,r=16,d=3
@@ -147,6 +161,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 2
+Gröbner basis: Not binomial!
 
 BIOMD0000000027
 Irrelevant species (ignored in subsequent analysis): [4, 5]
@@ -161,6 +176,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000028
 n=16,r=27,d=3
@@ -183,6 +200,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000030
 n=18,r=32,d=3
@@ -205,6 +224,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000032
 n=37,r=94,d=11
@@ -226,6 +247,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000035
 n=10,r=16,d=2
@@ -243,6 +266,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000037
 n=12,r=12,d=4
@@ -259,6 +284,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000039
 Error reading matrices
@@ -273,6 +300,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Gröbner basis: Not binomial!
 
 BIOMD0000000042
 n=15,r=34,d=0
@@ -290,6 +318,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000044
 n=4,r=8,d=1
@@ -304,6 +334,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [3]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000045
 n=4,r=8,d=1
@@ -317,6 +349,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000046
 n=16,r=15,d=4
@@ -367,6 +401,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000058
 n=4,r=11,d=0
@@ -384,6 +420,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000061
 n=25,r=48,d=2
@@ -423,6 +461,8 @@ Number of cosets for random parameters: 1
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000067
 n=8,r=16,d=0
@@ -440,6 +480,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000069
 n=10,r=12,d=4
@@ -472,6 +514,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 2
+Gröbner basis: Not binomial!
 
 BIOMD0000000076
 n=3,r=4,d=1
@@ -485,6 +528,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000078
 n=16,r=52,d=0
@@ -518,6 +563,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000085
 n=17,r=34,d=5
@@ -554,6 +601,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 1
+Gröbner basis: Not binomial!
 
 BIOMD0000000093
 n=34,r=46,d=7
@@ -580,6 +628,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [3, 5]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000102
 n=13,r=37,d=0
@@ -655,6 +705,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 9
+Gröbner basis: Not binomial!
 
 BIOMD0000000147
 n=24,r=70,d=1
@@ -701,6 +752,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Gröbner basis: Not binomial!
 
 BIOMD0000000164
 Irrelevant species (ignored in subsequent analysis): [3, 8, 25]
@@ -737,6 +789,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [7]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000169
 n=11,r=27,d=0
@@ -811,6 +865,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 3
+Gröbner basis: Not binomial!
 
 BIOMD0000000198
 Irrelevant species (ignored in subsequent analysis): [11, 12]
@@ -842,6 +897,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000203
 Irrelevant species (ignored in subsequent analysis): [6, 7]
@@ -896,6 +953,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000214
 Irrelevant species (ignored in subsequent analysis): [13, 14, 15, 16]
@@ -914,6 +973,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Gröbner basis: Not binomial!
 
 BIOMD0000000217
 n=22,r=32,d=9
@@ -921,6 +981,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 7
+Gröbner basis: Not binomial!
 
 BIOMD0000000218
 n=13,r=28,d=1
@@ -936,6 +997,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000219
 n=13,r=30,d=1
@@ -951,6 +1014,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000220
 n=58,r=70,d=18
@@ -970,6 +1035,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [2, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000222
 n=12,r=22,d=1
@@ -985,6 +1052,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [2, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000224
 n=4,r=6,d=1
@@ -999,6 +1068,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [2, 4]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000225
 Irrelevant species (ignored in subsequent analysis): [3]
@@ -1033,6 +1104,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [4]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000233
 n=4,r=4,d=1
@@ -1120,6 +1193,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000259
 n=17,r=29,d=1
@@ -1172,6 +1247,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000271
 n=6,r=8,d=1
@@ -1212,6 +1289,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000286
 Irrelevant species (ignored in subsequent analysis): [10, 22]
@@ -1246,6 +1325,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000294
 Irrelevant species (ignored in subsequent analysis): [1]
@@ -1291,6 +1372,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [1, 2]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000307
 Irrelevant species (ignored in subsequent analysis): [3]
@@ -1306,6 +1389,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [1, 2]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000308
 Irrelevant species (ignored in subsequent analysis): [4]
@@ -1321,6 +1406,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [2]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000309
 Irrelevant species (ignored in subsequent analysis): [2]
@@ -1336,6 +1423,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [1]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000310
 Irrelevant species (ignored in subsequent analysis): [2]
@@ -1351,6 +1440,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [1]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000311
 Irrelevant species (ignored in subsequent analysis): [2]
@@ -1366,6 +1457,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [1]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000312
 Irrelevant species (ignored in subsequent analysis): [3]
@@ -1563,6 +1656,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Gröbner basis: Not binomial!
 
 BIOMD0000000406
 Irrelevant species (ignored in subsequent analysis): [1, 2, 6, 16, 43, 47]
@@ -1598,6 +1692,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Gröbner basis: Not binomial!
 
 BIOMD0000000414
 n=1,r=3,d=0
@@ -1623,6 +1718,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000424
 n=55,r=58,d=14
@@ -1648,6 +1745,8 @@ Generically nondegenerate
 Dimension of toric invariance space: 7
 Full-dimensional toric invariance space
 Too slow for injectivity test! Skipped
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000430
 n=27,r=44,d=6
@@ -1679,6 +1778,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000433
 Irrelevant species (ignored in subsequent analysis): [9, 10, 11]
@@ -1693,6 +1794,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000434
 Irrelevant species (ignored in subsequent analysis): [14, 15, 22, 24, 31, 33, 34]
@@ -1716,6 +1819,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000441
 Irrelevant species (ignored in subsequent analysis): [9, 10, 11]
@@ -1730,6 +1835,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000442
 Irrelevant species (ignored in subsequent analysis): [9, 10, 11]
@@ -1744,6 +1851,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000443
 Irrelevant species (ignored in subsequent analysis): [9, 10, 11, 16]
@@ -1759,6 +1868,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [10, 11, 12, 15]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000444
 Irrelevant species (ignored in subsequent analysis): [9, 10, 11]
@@ -1774,6 +1885,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [10, 11, 12, 13]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000446
 n=27,r=62,d=0
@@ -1795,6 +1908,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000449
 n=27,r=34,d=10
@@ -1808,6 +1923,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000451
 Irrelevant species (ignored in subsequent analysis): [12, 13]
@@ -1835,6 +1952,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000455
 n=9,r=10,d=4
@@ -1847,6 +1966,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000456
 n=11,r=12,d=5
@@ -1859,6 +1980,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000457
 Irrelevant species (ignored in subsequent analysis): [26]
@@ -1878,6 +2001,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000459
 n=4,r=6,d=1
@@ -1891,6 +2016,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000460
 n=4,r=6,d=1
@@ -1904,6 +2031,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000461
 n=4,r=6,d=1
@@ -1917,6 +2046,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000462
 n=6,r=8,d=1
@@ -1986,6 +2117,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000484
 n=2,r=2,d=1
@@ -1999,6 +2132,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000485
 n=2,r=4,d=1
@@ -2012,6 +2147,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000486
 n=2,r=2,d=1
@@ -2025,6 +2162,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000487
 n=6,r=6,d=3
@@ -2038,6 +2177,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000489
 n=53,r=84,d=20
@@ -2194,6 +2335,7 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [1, 4, 5, 6]
+Gröbner basis: Not binomial!
 
 BIOMD0000000543
 Irrelevant species (ignored in subsequent analysis): [91, 92]
@@ -2282,6 +2424,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000581
 Irrelevant species (ignored in subsequent analysis): [28]
@@ -2358,6 +2502,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [1, 2, 3, 4, 5, 6, 7, 8]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000623
 Irrelevant species (ignored in subsequent analysis): [27, 28, 29, 30]
@@ -2387,6 +2533,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000630
 n=6,r=15,d=0
@@ -2426,6 +2574,8 @@ Generically nondegenerate
 Dimension of toric invariance space: 11
 Full-dimensional toric invariance space
 Too slow for injectivity test! Skipped
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000641
 Error reading matrices
@@ -2440,6 +2590,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Gröbner basis: Not binomial!
 
 BIOMD0000000647
 n=11,r=11,d=5
@@ -2448,6 +2599,7 @@ DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 4
 Non-conserved quantities in toric invariance space
+Gröbner basis: Not binomial!
 
 BIOMD0000000648
 n=54,r=128,d=19
@@ -2490,6 +2642,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 3
+Gröbner basis: Not binomial!
 
 BIOMD0000000660
 Irrelevant species (ignored in subsequent analysis): [15, 16, 18, 19, 20]
@@ -2557,6 +2710,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000679
 Irrelevant species (ignored in subsequent analysis): [1]
@@ -2602,6 +2757,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000697
 Irrelevant species (ignored in subsequent analysis): [4, 14, 15]
@@ -2630,6 +2787,9 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Inconclusive
+Potential non-vanishing denominator: inconclusive!
 
 BIOMD0000000705
 Irrelevant species (ignored in subsequent analysis): [15, 16, 17, 18, 19, 20, 21, 22, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43]
@@ -2996,6 +3156,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [14, 15]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000824
 Irrelevant species (ignored in subsequent analysis): [1]
@@ -3020,6 +3182,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 5
+Gröbner basis: Not binomial!
 
 BIOMD0000000833
 Irrelevant species (ignored in subsequent analysis): [13]
@@ -3069,6 +3232,7 @@ DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 4
 Non-conserved quantities in toric invariance space
+Gröbner basis: Not binomial!
 
 BIOMD0000000847
 n=4,r=7,d=0
@@ -3103,6 +3267,8 @@ Toricity!
 No coset with multistationarity found
 Multistationarity precluded
 Species with ACR: [1, 2, 3, 4]
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000854
 n=4,r=7,d=1
@@ -3116,6 +3282,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000855
 n=4,r=12,d=0
@@ -3170,6 +3338,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Gröbner basis: Not binomial!
 
 BIOMD0000000874
 n=4,r=8,d=0
@@ -3266,6 +3435,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 1
+Gröbner basis: Not binomial!
 
 BIOMD0000000897
 n=2,r=4,d=0
@@ -3491,6 +3661,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000980
 Irrelevant species (ignored in subsequent analysis): [5]
@@ -3505,6 +3677,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000982
 n=3,r=2,d=1
@@ -3668,6 +3842,8 @@ Irrelevant species (ignored in subsequent analysis): [4]
 n=3,r=4,d=0
 Inconsistent
 
+Number of analyzed networks: 48
+
 Error reading matrices:
 Any["BIOMD0000000039", "BIOMD0000000145", "BIOMD0000000151", "BIOMD0000000199", "BIOMD0000000206", "BIOMD0000000252", "BIOMD0000000254", "BIOMD0000000274", "BIOMD0000000278", "BIOMD0000000291", "BIOMD0000000298", "BIOMD0000000299", "BIOMD0000000319", "BIOMD0000000341", "BIOMD0000000346", "BIOMD0000000353", "BIOMD0000000368", "BIOMD0000000369", "BIOMD0000000370", "BIOMD0000000383", "BIOMD0000000384", "BIOMD0000000388", "BIOMD0000000400", "BIOMD0000000415", "BIOMD0000000426", "BIOMD0000000463", "BIOMD0000000499", "BIOMD0000000521", "BIOMD0000000522", "BIOMD0000000533", "BIOMD0000000538", "BIOMD0000000548", "BIOMD0000000549", "BIOMD0000000550", "BIOMD0000000561", "BIOMD0000000585", "BIOMD0000000608", "BIOMD0000000641", "BIOMD0000000642", "BIOMD0000000670", "BIOMD0000000671", "BIOMD0000000680", "BIOMD0000000740", "BIOMD0000000836", "BIOMD0000000945", "BIOMD0000000946", "BIOMD0000000947", "BIOMD0000000950"]
 48
@@ -3716,7 +3892,8 @@ Skipped injectivity test:
 Any["BIOMD0000000161", "BIOMD0000000250", "BIOMD0000000409", "BIOMD0000000428", "BIOMD0000000640", "BIOMD0000000835"]
 6
 
-Toricity:Any["BIOMD0000000004", "BIOMD0000000006", "BIOMD0000000009", "BIOMD0000000010", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000024", "BIOMD0000000027", "BIOMD0000000029", "BIOMD0000000031", "BIOMD0000000033", "BIOMD0000000036", "BIOMD0000000038", "BIOMD0000000043", "BIOMD0000000044", "BIOMD0000000045", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000076", "BIOMD0000000084", "BIOMD0000000100", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000213", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000258", "BIOMD0000000270", "BIOMD0000000284", "BIOMD0000000292", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000423", "BIOMD0000000432", "BIOMD0000000433", "BIOMD0000000440", "BIOMD0000000441", "BIOMD0000000442", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000448", "BIOMD0000000449", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000458", "BIOMD0000000459", "BIOMD0000000460", "BIOMD0000000461", "BIOMD0000000483", "BIOMD0000000484", "BIOMD0000000485", "BIOMD0000000486", "BIOMD0000000487", "BIOMD0000000539", "BIOMD0000000580", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000678", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000853", "BIOMD0000000854", "BIOMD0000000979", "BIOMD0000000980"]
+Toricity
+:Any["BIOMD0000000004", "BIOMD0000000006", "BIOMD0000000009", "BIOMD0000000010", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000024", "BIOMD0000000027", "BIOMD0000000029", "BIOMD0000000031", "BIOMD0000000033", "BIOMD0000000036", "BIOMD0000000038", "BIOMD0000000043", "BIOMD0000000044", "BIOMD0000000045", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000076", "BIOMD0000000084", "BIOMD0000000100", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000213", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000258", "BIOMD0000000270", "BIOMD0000000284", "BIOMD0000000292", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000423", "BIOMD0000000432", "BIOMD0000000433", "BIOMD0000000440", "BIOMD0000000441", "BIOMD0000000442", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000448", "BIOMD0000000449", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000458", "BIOMD0000000459", "BIOMD0000000460", "BIOMD0000000461", "BIOMD0000000483", "BIOMD0000000484", "BIOMD0000000485", "BIOMD0000000486", "BIOMD0000000487", "BIOMD0000000539", "BIOMD0000000580", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000678", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000853", "BIOMD0000000854", "BIOMD0000000979", "BIOMD0000000980"]
 76
 
 Local toricity:
