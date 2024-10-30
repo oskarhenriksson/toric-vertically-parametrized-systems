@@ -1,157 +1,138 @@
 using Oscar
+import Graphs
+
+# Given a list of (candidate) intermediate vertices, find their inputs and outputs.
+# If an intermediate vertex has no inputs or outputs, it is removed from the list of intermediates,
+# and the analysis is re-done
+function true_intermediate_vertices_with_inputs_outputs(g::Graphs.DiGraph, intermediate_vertex_candidates::Vector{Int}; only_single_input::Bool=false)
+
+    result = []
+
+    non_intermediate_vertices = setdiff(Graphs.vertices(g), intermediate_vertex_candidates)
+
+    # Find inputs for each intermediate vertex
+    for Y in intermediate_vertex_candidates
+        inputs = Int[] 
+
+        # For each non-intermediate vertex, run a DFS to find a path to Y
+        for X in non_intermediate_vertices
+            visited = Set{Int}()
+            stack = [X]
+            found_path = false
+
+            while !isempty(stack) && !found_path
+                current = pop!(stack) # last-in, first-out
+
+                # Skip vertex if already visited
+                if current in visited
+                    continue
+                end
+                push!(visited, current)
+
+                # If we have reached Y, record X as an input for Y
+                if current == Y
+                    push!(inputs, X)
+                    found_path = true
+                    break
+                end
+
+                # Add only intermediate neighbors for further exploration
+                for neighbor in Graphs.outneighbors(g, current)
+                    if neighbor in intermediate_vertex_candidates
+                        push!(stack, neighbor)
+                    end
+                end
+            end
+        end
+
+        # If no inputs were found, remove Y from list of intermediates and re-run
+        if isempty(inputs)
+            new_candidates = setdiff(intermediate_vertex_candidates, [Y])
+            return true_intermediate_vertices_with_inputs_outputs(g, new_candidates, only_single_input=only_single_input)
+        end
+
+        # Remove if there are multiple inputs and we only wanted single inputs
+        if only_single_input && length(inputs) > 1
+            new_candidates = setdiff(intermediate_vertex_candidates, [Y])
+            return true_intermediate_vertices_with_inputs_outputs(g, new_candidates, only_single_input=only_single_input)
+        end
+
+        # Find outputs for each intermediate vertex
+        outputs = Int[]  
+        visited = Set{Int}()
+        stack = [Y]
+        while !isempty(stack)
+            current = pop!(stack)
+
+            # Skip if already visited
+            if current in visited
+                continue
+            end
+            push!(visited, current)
+
+            # If we reach a non-intermediate, record it as an output for Y
+            if current in non_intermediate_vertices
+                push!(outputs, current)
+                continue
+            end
+
+            # Continue exploring neighbors
+            for neighbor in Graphs.outneighbors(g, current)
+                push!(stack, neighbor)
+            end
+        end
+
+        # If no outputs were found, remove Y from list of intermediates and re-run
+        if isempty(outputs)
+            new_candidates = setdiff(intermediate_vertex_candidates, [Y])
+            return true_intermediate_vertices_with_inputs_outputs(g, new_candidates, only_single_input=only_single_input)
+        end
+
+        push!(result, (intermediate_vertex=Y, inputs=inputs, outputs=outputs))
+    end
+
+    return result
+end
+
 
 function intermediates(N::QQMatrix, M::ZZMatrix; only_single_input::Bool=false)
 
-    @req size(N) == size(M) "Stoichiometric and kinetic matrix must have the same size"
-    n = size(N, 1)  # Number of species (rows in N)
-    r = size(N, 2)  # Number of reactions (columns in N)
-    P = M + N       # Product matrix
+    n = nrows(M)
+    G, embedding = reaction_graph(N, M)
+    vertex_list = keys(embedding)
 
-    intermediates_data = Vector{NamedTuple{(:species, :input_reactions, :output_reactions),Tuple{Int,Vector{Int},Vector{Int}}}}()  # List to store named tuples of intermediates and their reactions
-
-    # Loop over all species 
-    for i in 1:n
-        in_rxns = Int[]   # Input reactions where species i is formed
-        out_rxns = Int[]  # Output reactions where species i is consumed
-
-        skip_species = false  # Flag used to skip species
-
-        # Loop over all reactions
-        for j in 1:r
-
-            # Skip reaction if species i is neither consumed nor produced
-            if M[i, j] == 0 && P[i, j] == 0
-                continue
-            end
-
-            # The species is not an intermediate if it appears with coefficient greater than 1
-            if M[i, j] > 1 || P[i, j] > 1
-                skip_species = true
-                break
-            end
-
-            # List out-reactions and check that species i does not react with another species
-            if M[i, j] == 1
-                for row in 1:n
-                    # Not an intermediate if it reacts with another species
-                    if row != i && M[row, j] > 0
-                        skip_species = true
-                        break
-                    end
+    # Find the monomoleculuar complexes for which the species only appears in that complex
+    intermediate_candidate_vertices = Int[]
+    for v in vertex_list
+        for i = 1:n
+            if embedding[v] == unit_vector(n, i)
+                if is_empty([w for w in vertex_list if (w != v && embedding[w][i] > 0)])
+                    push!(intermediate_candidate_vertices, v)
                 end
-                if skip_species
-                    break
-                end
-                push!(out_rxns, j)
             end
-
-            # List in-reactions and check that species i is not produced with another species
-            if P[i, j] == 1
-                for row in 1:n
-                    # Not an intermediate if it is produced with another species
-                    if row != i && P[row, j] > 0
-                        skip_species = true
-                        break
-                    end
-                end
-                if skip_species
-                    break
-                end
-                push!(in_rxns, j)
-            end
-        end
-
-        # If species should be skipped, move to the next species
-        if skip_species
-            continue
-        end
-
-        # Species i is an intermediate if it has exactly 1 input reaction and at least 1 output reaction
-        if length(in_rxns) > 0 && length(out_rxns) > 0
-            if only_single_input && length(in_rxns) > 1
-                continue
-            end
-            push!(intermediates_data, (species=i, input_reactions=in_rxns, output_reactions=out_rxns))
         end
     end
 
-    return intermediates_data
+    # Check which of these complexes are truly intermediates, and what their input/output vertices are
+    intermediate_vertices = true_intermediate_vertices_with_inputs_outputs(G, intermediate_candidate_vertices, only_single_input=only_single_input)
+
+    # Compute the species and the input/output complexes
+    result = NamedTuple{(:species, :input_complexes, :output_complexes),Tuple{Int,Vector{Vector{Int}},Vector{Vector{Int}}}}[]
+    for I in intermediate_vertices
+        species = findfirst(!is_zero, embedding[I.intermediate_vertex])
+        input_complexes = [Int.(embedding[v]) for v in I.inputs]
+        output_complexes = [Int.(embedding[v]) for v in I.outputs]
+        push!(result, (species=species, input_complexes=input_complexes, output_complexes=output_complexes))
+    end
+
+    return sort(result, by = x -> x.species)
 end
 
 function single_input_intermediates(N::QQMatrix, M::ZZMatrix)
     return intermediates(N, M, only_single_input=true)
 end
 
-function lift_exponent_matrix(Atilde::ZZMatrix, B::ZZMatrix, intermediates_result::Vector{NamedTuple{(:species, :input_reactions, :output_reactions),Tuple{Int, Vector{Int},Vector{Int}}}})
-    n = nrows(B)
-    non_intermediates = setdiff(1:n, [I.species for I in intermediates_result])
-    A = zero_matrix(ZZ, nrows(Atilde), n)
-    A[:, non_intermediates] = Atilde
-    filled_in = deepcopy(non_intermediates)
-
-    # Keep working while not all species have been filled into A
-    while Set(filled_in) != Set(1:n)
-        i = setdiff(1:n, filled_in)[1]
-        
-        # Find the corresponding index for species i in the intermediates list
-        idx = findfirst(I -> I.species == i, intermediates_result)
-
-        # Initialize a chain starting with species i
-        chain = [i]
-        end_of_chain = false
-
-        # Process the chain until it reaches a species whose dependencies are all filled in
-        while !end_of_chain
-            # Get the first input reaction for the current intermediate species
-            next_complex = B[:, [I.input_reactions[1] for I in intermediates_result][idx]]
-            
-            # Check if all species involved in this next complex have been filled in
-            if Set(supp(next_complex)) ⊆ filled_in
-                end_of_chain = true
-                
-                # Once the chain has reached a fully filled complex, update A for all species in the chain
-                for j in chain
-                    A[:, j] = A[:, j] + A * next_complex
-                end
-                
-                # Mark all species in the chain as filled in
-                filled_in = Set(filled_in) ∪ Set(chain)
-            
-            # If the next complex involves exactly one species, extend the chain
-            elseif length(supp(next_complex)) == 1
-                i = supp(next_complex)[1]
-                
-                # Find the corresponding intermediate index for this species
-                idx = findfirst(I -> I.species == i, intermediates_result)
-                
-                # Check if the species is already in the chain 
-                if i in chain
-                    # If a cycle is detected, create a new row in A for the chain and stop extending
-                    new_row = zero_matrix(ZZ, 1, n)
-                    new_row[1, chain] = ones(Int, length(chain)) 
-                    A = vcat(A, new_row) 
-                    filled_in = Set(filled_in) ∪ Set(chain) 
-                    end_of_chain = true
-                else
-                    # If no cycle is detected, add the species to the chain and continue
-                    push!(chain, i)
-                end
-            else
-                # If the complex involves multiple species, raise an error
-                error("Error!")
-            end
-        end
-    end
-    return A
-end
-
-
-
-
-
-
 # To do: Decide how to deal with the trivial species (zero-rows in both N and M)
-# To do: Check that the intermediates truly are intermediates?
 function reduced_network(N::QQMatrix, M::ZZMatrix, intermediate_species::Union{Nothing,Vector{Int}}=nothing)
     reactions = reaction_pairs(N, M)
     reduced_reactions = deepcopy(reactions)
@@ -189,7 +170,23 @@ function reduced_network(N::QQMatrix, M::ZZMatrix, intermediate_species::Union{N
 end
 
 
-function reduced_network(N::QQMatrix, M::ZZMatrix, 
-    intermediates_result::Vector{NamedTuple{(:species, :input_reactions, :output_reactions),Tuple{Int, Vector{Int},Vector{Int}}}})
+function reduced_network(N::QQMatrix, M::ZZMatrix,
+    intermediates_result::Vector{NamedTuple{(:species, :input_complexes, :output_complexes),
+        Tuple{Int,Vector{Vector{Int}},Vector{Vector{Int}}}}})
     return reduced_network(N, M, [i.species for i in intermediates_result])
+end
+
+
+function lift_exponent_matrix(Atilde::ZZMatrix, M::ZZMatrix, intermediates_result::Vector{NamedTuple{(:species, :input_complexes, :output_complexes),Tuple{Int,Vector{Vector{Int}},Vector{Vector{Int}}}}})
+    n = nrows(M)
+    intermediates = [i.species for i in intermediates_result]
+    non_intermediates = setdiff(1:n, intermediates)
+    A = zero_matrix(ZZ, nrows(Atilde), n)
+    A[:, non_intermediates] = Atilde
+    for I in intermediates_result
+        @req length(I.input_complexes) == 1 "Only single-input intermediates are allowed"
+        i = I.species
+        A[:, i] = Atilde * first(I.input_complexes)[non_intermediates]
+    end
+    return A
 end
