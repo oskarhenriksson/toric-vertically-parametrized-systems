@@ -132,31 +132,36 @@ function single_input_intermediates(N::QQMatrix, M::ZZMatrix)
     return intermediates(N, M, only_single_input=true)
 end
 
-# To do: Decide how to deal with the trivial species (zero-rows in both N and M)
-function reduced_network(N::QQMatrix, M::ZZMatrix, intermediate_species::Union{Nothing,Vector{Int}}=nothing)
+
+function reduced_network(N::QQMatrix, M::ZZMatrix,
+    intermediates_result::Vector{NamedTuple{(:species, :input_complexes, :output_complexes),Tuple{Int,Vector{Vector{Int}},Vector{Vector{Int}}}}})
     reactions = reaction_pairs(N, M)
     reduced_reactions = deepcopy(reactions)
-    if isnothing(intermediate_species)
-        intermediate_species = [i.species for i in intermediates(N, M)]
-    end
-    for i in intermediate_species
-        in_reactions = [rxn for rxn in reduced_reactions if rxn.product == identity_matrix(ZZ, nrows(M))[:, i]]
-        out_reactions = [rxn for rxn in reduced_reactions if rxn.reactant == identity_matrix(ZZ, nrows(M))[:, i]]
-        for in_rxn in in_reactions
-            for out_rxn in out_reactions
-                # Combine only if it gives a nontrivial reaction
-                if in_rxn.reactant != out_rxn.product
-                    # New reaction bypassing the intermediate
-                    push!(reduced_reactions, (reactant=in_rxn.reactant, product=out_rxn.product))
+    for I in intermediates_result
+        i = I.species
+        inputs = I.input_complexes
+        outputs = I.output_complexes
+        
+        # Remove reactions where i participates
+        for rxn in reduced_reactions
+            if rxn.reactant[i] > 0 ||   rxn.product[i] > 0 
+                reduced_reactions = setdiff(reduced_reactions, [rxn])
+            end 
+        end
+
+        # Add reactions bypassing i
+        for c in inputs
+            for cprime in outputs
+                if c != cprime
+                    new_rxn = (reactant=c, product=cprime)
+                    if new_rxn ∉ reduced_reactions
+                        push!(reduced_reactions, new_rxn)
+                    end 
                 end
             end
         end
-        # Remove old reactions involving the intermediate
-        reactions_to_remove = union(in_reactions, out_reactions)
-        reduced_reactions = setdiff(reduced_reactions, reactions_to_remove)
     end
-
-    # Deal with the special case of the reduced network being empty
+    
     if length(reduced_reactions) == 0
         N_reduced = zero_matrix(QQ, nrows(M), 0)
         B_reduced = zero_matrix(ZZ, nrows(M), 0)
@@ -164,17 +169,17 @@ function reduced_network(N::QQMatrix, M::ZZMatrix, intermediate_species::Union{N
         N_reduced, B_reduced = stoichiometric_and_kinetic_matrix_from_reaction_pairs(reduced_reactions)
     end
 
-    # Remove the rows corresponding to the intermediate before returning
-    new_species = [i for i = 1:nrows(M) if i ∉ intermediate_species]
-    return N_reduced[new_species, :], B_reduced[new_species, :]
+    non_intermediates = setdiff(1:nrows(M), [I.species for I in intermediates_result])
+
+    return N_reduced[non_intermediates, :], M_reduced[non_intermediates, :]
 end
 
 
-function reduced_network(N::QQMatrix, M::ZZMatrix,
-    intermediates_result::Vector{NamedTuple{(:species, :input_complexes, :output_complexes),
-        Tuple{Int,Vector{Vector{Int}},Vector{Vector{Int}}}}})
-    return reduced_network(N, M, [i.species for i in intermediates_result])
-end
+# function reduced_network(N::QQMatrix, M::ZZMatrix,
+#     intermediates_result::Vector{NamedTuple{(:species, :input_complexes, :output_complexes),
+#         Tuple{Int,Vector{Vector{Int}},Vector{Vector{Int}}}}})
+#     return reduced_network(N, M, [i.species for i in intermediates_result])
+# end
 
 
 function lift_exponent_matrix(Atilde::ZZMatrix, M::ZZMatrix, intermediates_result::Vector{NamedTuple{(:species, :input_complexes, :output_complexes),Tuple{Int,Vector{Vector{Int}},Vector{Vector{Int}}}}})

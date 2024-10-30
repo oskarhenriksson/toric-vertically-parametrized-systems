@@ -29,7 +29,14 @@ is_non_zero(x) = !is_zero(x)
 supp(v::Vector) = findall(is_non_zero, v)
 
 # Row space
-row_space(A::MatrixElem) = rref(A)[2][1:rank(A), :]
+function row_space(A::MatrixElem) 
+    Arref = rref(A)[2][1:rank(A), :]
+    if ncols(Arref) > 0 && nrows(Arref) > 0
+        return Arref*sign(Arref[1,1])
+    else
+        return Arref
+    end
+end
 
 # Zero columns of matrix
 zero_columns(A::MatrixElem) = [i for i in 1:ncols(A) if all(is_zero, A[:, i])]
