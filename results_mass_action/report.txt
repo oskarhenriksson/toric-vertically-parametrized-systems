@@ -5,6 +5,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 1
+Infinitely many cosets in open region
 Gröbner basis: Skipped
 
 BIOMD0000000011
@@ -18,6 +19,8 @@ Full-dimensional toric invariance space
 Injectivity test passed for reduced network
 Toricity!
 Coset with multistationarity found
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000014
 n=86,r=300,d=8
@@ -29,6 +32,8 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 2
+Infinitely many cosets in open region
+Gröbner basis: Not binomial!
 
 BIOMD0000000028
 n=16,r=27,d=3
@@ -36,6 +41,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 2
+Infinitely many cosets in open region
 Gröbner basis: Skipped
 
 BIOMD0000000030
@@ -44,6 +50,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 2
+Infinitely many cosets in open region
 Gröbner basis: Skipped
 
 BIOMD0000000035
@@ -61,6 +68,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000040
 n=5,r=5,d=1
@@ -86,6 +95,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000060
 n=4,r=6,d=1
@@ -99,6 +110,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000080
 n=10,r=10,d=4
@@ -114,6 +127,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 1
+Infinitely many cosets in open region
 Gröbner basis: Skipped
 
 BIOMD0000000086
@@ -122,6 +136,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 1
+Infinitely many cosets in open region
 Gröbner basis: Skipped
 
 BIOMD0000000092
@@ -130,6 +145,8 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 1
+Infinitely many cosets in open region
+Gröbner basis: Not binomial!
 
 BIOMD0000000200
 Irrelevant species (ignored in subsequent analysis): [22]
@@ -138,6 +155,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Infinitely many cosets in open region
 Gröbner basis: Skipped
 
 BIOMD0000000205
@@ -232,6 +250,8 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Infinitely many cosets in open region
+Gröbner basis: Not binomial!
 
 BIOMD0000000413
 n=5,r=9,d=1
@@ -239,6 +259,8 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Infinitely many cosets in open region
+Gröbner basis: Not binomial!
 
 BIOMD0000000430
 n=27,r=44,d=6
@@ -247,6 +269,7 @@ DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 5
 Non-conserved quantities in toric invariance space
+Infinitely many cosets in open region
 Gröbner basis: Skipped
 
 BIOMD0000000431
@@ -255,6 +278,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 2
+Infinitely many cosets in open region
 Gröbner basis: Skipped
 
 BIOMD0000000447
@@ -277,6 +301,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000487
 n=6,r=6,d=3
@@ -290,6 +316,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000491
 n=57,r=172,d=1
@@ -305,6 +333,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 1
+Infinitely many cosets in open region
 Gröbner basis: Skipped
 
 BIOMD0000000501
@@ -339,6 +368,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000637
 n=12,r=35,d=3
@@ -346,6 +377,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Infinitely many cosets in open region
 Gröbner basis: Skipped
 
 BIOMD0000000638
@@ -354,6 +386,7 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Infinitely many cosets in open region
 Gröbner basis: Skipped
 
 BIOMD0000000647
@@ -363,6 +396,8 @@ DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 4
 Non-conserved quantities in toric invariance space
+Infinitely many cosets in open region
+Gröbner basis: Not binomial!
 
 BIOMD0000000692
 n=8,r=10,d=3
@@ -375,6 +410,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000747
 n=33,r=43,d=9
@@ -396,6 +433,8 @@ Injectivity test passed for reduced network
 Toricity!
 No coset with multistationarity found
 Multistationarity precluded
+Gröbner basis: Generically binomial!
+Specialization for all rate constants: Verified
 
 BIOMD0000000868
 n=5,r=6,d=1
@@ -411,6 +450,8 @@ DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 0
+Infinitely many cosets in open region
+Gröbner basis: Not binomial!
 
 BIOMD0000000916
 n=5,r=5,d=1
@@ -427,6 +468,7 @@ Full rank
 BIOMD0000001004
 n=10,r=18,d=2
 Inconsistent
+
 Number of analyzed networks: 0
 
 Error reading matrices:
@@ -465,6 +507,9 @@ Degenerate models:
 Any[]
 0
 
+Infinitely many cosets:
+Any["BIOMD0000000002", "BIOMD0000000026", "BIOMD0000000028", "BIOMD0000000030", "BIOMD0000000085", "BIOMD0000000086", "BIOMD0000000092", "BIOMD0000000200", "BIOMD0000000405", "BIOMD0000000413", "BIOMD0000000430", "BIOMD0000000431", "BIOMD0000000500", "BIOMD0000000637", "BIOMD0000000638", "BIOMD0000000647", "BIOMD0000000871"]
+
 Nonconserved in invariance space:
 Any["BIOMD0000000011", "BIOMD0000000430", "BIOMD0000000487", "BIOMD0000000647"]
 4
@@ -485,6 +530,14 @@ Local toricity:
 Any["BIOMD0000000011", "BIOMD0000000038", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000486", "BIOMD0000000487", "BIOMD0000000629", "BIOMD0000000692", "BIOMD0000000854"]
 9
 
+Locally toric but not toric:
+Any[]
+0
+
+Toric but not covered by dzt or dot:
+Any["BIOMD0000000011", "BIOMD0000000487"]
+2
+
 Multistationarity:
 Any["BIOMD0000000011"]
 1
@@ -500,6 +553,9 @@ Any[]
 Local ACR:
 Any[]
 0
+
+Non-binomial:
+Any["BIOMD0000000026", "BIOMD0000000092", "BIOMD0000000405", "BIOMD0000000413", "BIOMD0000000647", "BIOMD0000000871"]
 
 Generic binomiality:
 Any["BIOMD0000000011", "BIOMD0000000038", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000486", "BIOMD0000000487", "BIOMD0000000629", "BIOMD0000000692", "BIOMD0000000854"]
