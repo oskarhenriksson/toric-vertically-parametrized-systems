@@ -69,3 +69,8 @@ end
 function is_unit_vector(v::Vector)
     sum(v) == 1 && all(x -> x == 0 || x == 1, v)
 end
+
+function unit_vector(n::Int, i::Int)
+    @req 1 <= i <= n "Index i must be between 1 and n"
+    return [j == i ? 1 : 0 for j in 1:n]
+end
