@@ -41,10 +41,11 @@ function all_positive_roots_nondegenerate(C::QQMatrix, M::ZZMatrix, L::Union{Not
     if isnothing(L)
         L = zero_matrix(QQ, 0, nrows(M))
     end
+    
     # Start with a simplified check
     G = kernel(C, side=:right)
     R, alpha, h = polynomial_ring(QQ, "alpha" => 1:ncols(G), "h" => 1:nrows(M))
-    simplified_nondeg_matrix = vcat(C * diagonal_matrix(G * alpha) * transpose(M) * diagonal_matrix(h), R.(L))
+    simplified_nondeg_matrix = vcat(C * diagonal_matrix(R, R.(G) * alpha) * transpose(M) * diagonal_matrix(R, h), R.(L))
     if has_minor_of_constant_sign(simplified_nondeg_matrix, rank(C) + nrows(L))
         return true
     end
@@ -57,3 +58,6 @@ function all_positive_roots_nondegenerate(C::QQMatrix, M::ZZMatrix, L::Union{Not
     nondeg_matrix = vcat(C * diagonal_matrix(extreme_rays * lambda) * transpose(M) * diagonal_matrix(h), R.(L))
     return has_minor_of_constant_sign(nondeg_matrix, rank(C) + nrows(L))
 end
+
+all_positive_roots_nondegenerate(C::QQMatrix, M::ZZMatrix, L::ZZMatrix; extreme_rays=nothing) = 
+    all_positive_roots_nondegenerate(C, M, QQ.(L), extreme_rays=extreme_rays)
