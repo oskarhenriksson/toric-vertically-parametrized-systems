@@ -164,22 +164,15 @@ function reduced_network(N::QQMatrix, M::ZZMatrix,
     
     if length(reduced_reactions) == 0
         N_reduced = zero_matrix(QQ, nrows(M), 0)
-        B_reduced = zero_matrix(ZZ, nrows(M), 0)
+        M_reduced = zero_matrix(ZZ, nrows(M), 0)
     else
-        N_reduced, B_reduced = stoichiometric_and_kinetic_matrix_from_reaction_pairs(reduced_reactions)
+        N_reduced, M_reduced = stoichiometric_and_kinetic_matrix_from_reaction_pairs(reduced_reactions)
     end
 
     non_intermediates = setdiff(1:nrows(M), [I.species for I in intermediates_result])
 
     return N_reduced[non_intermediates, :], M_reduced[non_intermediates, :]
 end
-
-
-# function reduced_network(N::QQMatrix, M::ZZMatrix,
-#     intermediates_result::Vector{NamedTuple{(:species, :input_complexes, :output_complexes),
-#         Tuple{Int,Vector{Vector{Int}},Vector{Vector{Int}}}}})
-#     return reduced_network(N, M, [i.species for i in intermediates_result])
-# end
 
 
 function lift_exponent_matrix(Atilde::ZZMatrix, M::ZZMatrix, intermediates_result::Vector{NamedTuple{(:species, :input_complexes, :output_complexes),Tuple{Int,Vector{Vector{Int}},Vector{Vector{Int}}}}})
