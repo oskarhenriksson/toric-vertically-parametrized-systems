@@ -44,24 +44,23 @@ function minimal_siphons(N::QQMatrix, M::ZZMatrix)
         return true
     end
 
-    # Recursively try to grow the siphons
-    function extend_siphon(current_siphon, remaining_indices, siphons_accum)
-        if is_siphon(current_siphon)
-            # Check if it's already subsumed by a known siphon
-            if !any(subset -> issubset(subset, current_siphon) && subset != current_siphon, siphons_accum)
-                push!(siphons_accum, current_siphon)
+    # Helper function for growing siphons
+    function extend_to_siphon(candidate, remaining_indices, list_of_siphons)
+        # Add current candidate to the list if it is a siphon and does not contain a smaller siphon
+        if is_siphon(candidate)
+            if !any(s -> issubset(s, candidate) && s != candidate, list_of_siphons)
+                push!(list_of_siphons, candidate)
             end
         end
-        # Try adding new elements to the current siphon
         for i in remaining_indices
-            new_siphon = union(current_siphon, [i])
+            new_candidate = union(candidate, [i])
             new_remaining = filter(x -> x > i, remaining_indices)
-            extend_siphon(new_siphon, new_remaining, siphons_accum)
+            extend_to_siphon(new_candidate, new_remaining, list_of_siphons)
         end
-        return siphons_accum  # Return the accumulator containing siphons
+        return list_of_siphons 
     end
 
-    return extend_siphon(Set{Int}(), 1:n, Set{Int}[])
+    return extend_to_siphon(Set{Int}(), 1:n, Set{Int}[])
 end
 
 function siphon_test(N::QQMatrix, M::ZZMatrix)
