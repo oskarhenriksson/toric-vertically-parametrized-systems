@@ -51,8 +51,7 @@ function run_tests()
             A_cyclic_expected = matrix(ZZ, [[1, 1, 1]])
             @test rref(A_cyclic)[2] == A_cyclic_expected
 
-            intermediate_species_cyclic = [i.species for i in result_cyclic]
-            N_cyclic_reduced, M_cyclic_reduced = reduced_network(N_cyclic, M_cyclic, intermediate_species_cyclic)
+            N_cyclic_reduced, M_cyclic_reduced = reduced_network(N_cyclic, M_cyclic, result_cyclic)
             A_cyclic_tilde = toric_invariance_space(N_cyclic_reduced, M_cyclic_reduced)
             A_cyclic_lifted = lift_exponent_matrix(A_cyclic_tilde, M_cyclic, result_cyclic)
             @test row_space(A_cyclic_lifted) == A_cyclic_expected
@@ -85,8 +84,7 @@ function run_tests()
             @test row_space(A_reversible_pairs) == row_space(A_reversible_pairs_expected)
 
             # Toric invariance space via reduced network
-            intermediate_species_reversible_pairs = [i.species for i in result_reversible_pairs]
-            N_reversible_pairs_reduced, M_reversible_pairs_reduced = reduced_network(N_reversible_pairs, M_reversible_pairs, intermediate_species_reversible_pairs)
+            N_reversible_pairs_reduced, M_reversible_pairs_reduced = reduced_network(N_reversible_pairs, M_reversible_pairs, result_reversible_pairs)
             A_reversible_pairs_tilde = toric_invariance_space(N_reversible_pairs_reduced, M_reversible_pairs_reduced)
             A_reversible_pairs_lifted = lift_exponent_matrix(A_reversible_pairs_tilde, M_reversible_pairs, result_reversible_pairs)
             @test row_space(A_reversible_pairs_lifted) == row_space(A_reversible_pairs_expected)
@@ -114,8 +112,7 @@ function run_tests()
             @test result_sf == expected_sf
 
             # Find toric invariance space for reduced network and lift to original network
-            intermediate_species_sf = [i.species for i in result_sf]
-            N_sf_reduced, M_sf_reduced = reduced_network(N_sf, M_sf, intermediate_species_sf)
+            N_sf_reduced, M_sf_reduced = reduced_network(N_sf, M_sf, result_sf)
             A_sf_tilde = toric_invariance_space(N_sf_reduced, M_sf_reduced)
             A_sf_lifted = lift_exponent_matrix(A_sf_tilde, M_sf, result_sf)
             @test row_space(A_sf_lifted) == row_space(A_sf_expected)
@@ -125,3 +122,20 @@ function run_tests()
 end
 
 run_tests();
+
+# X1 + X2 -> X3
+# X3 -> X4
+# X4 -> X5
+# X5 -> X1 +X2
+# X1 + X2 -> X3
+# X3 -> X6
+
+# X1 + X2 -> X3 -> X4 -> X5 -> X6 -> X3 -> X7
+
+# c -> Y2 -> Y1 -> Y2 -> c'
+# c -> Y2 -> c'
+# c -> c'
+
+# c -> Y1 -> c'
+# c'' -> Y1 -> c'''
+
