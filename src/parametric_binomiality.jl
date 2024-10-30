@@ -1,6 +1,6 @@
 using Oscar
 
-function binomiality_check(F)
+function binomiality_check(F; printing_function=println, verbose::Bool=true)
 
     # Specialize F at random parameters and check if binomiality can be ruled out
     Qax = parent(first(F))
@@ -12,16 +12,16 @@ function binomiality_check(F)
     F_specialized = phi.(F)
     G_specialized = groebner_basis(ideal(F_specialized), complete_reduction=true)
     if !all(is_binomial, G_specialized)
-        println("Gröbner basis: Not binomial!")
+        verbose && printing_function("Gröbner basis: Not binomial!")
         return (generically = false, for_all_positive = false)
     end
 
     # Compute a Gröbner basis over the rational function field
     G, T = groebner_basis_with_transformation_matrix(ideal(F), complete_reduction=true)
     if all(is_binomial, G)
-        println("Gröbner basis: Generically binomial!")
+        verbose && printing_function("Gröbner basis: Generically binomial!")
     else
-        println("Gröbner basis: Not binomial!")
+        verbose && printing_function("Gröbner basis: Not binomial!")
         return (generically = false, for_all_positive = false)
     end
 
@@ -30,8 +30,8 @@ function binomiality_check(F)
     for c in LC   
         signs_of_numerator = sign.(coefficients(numerator(c)))
         if !all(s -> s .== 1 || s .== -1, signs_of_numerator)
-            println("Specialization for all rate constants: Inconclusive")
-            println("Nonvansishing leading coefficient")
+            verbose && printing_function("Specialization for all rate constants: Inconclusive")
+            verbose && printing_function("Nonvansishing leading coefficient")
             return (generically = true, for_all_positive = false)
         end
     end
@@ -40,8 +40,8 @@ function binomiality_check(F)
     for p in T
         for c in coefficients(p)
             if !is_polynomial_of_constant_signs(denominator(c))
-                println("Specialization for all rate constants: Inconclusive")
-                println("Potential non-vanishing denominator in transformation matrix")
+                verbose && printing_function("Specialization for all rate constants: Inconclusive")
+                verbose && printing_function("Potential non-vanishing denominator in transformation matrix")
                 return (generically = true, for_all_positive = false)
             end
         end
@@ -54,14 +54,14 @@ function binomiality_check(F)
         for p in Q
             for c in coefficients(p)
                 if !is_polynomial_of_constant_signs(denominator(c))
-                    println("Specialization for all rate constants: Inconclusive")
-                    println("Potential non-vanishing denominator: inconclusive!")
+                    verbose && printing_function("Specialization for all rate constants: Inconclusive")
+                    verbose && printing_function("Potential non-vanishing denominator: inconclusive!")
                     return (generically = true, for_all_positive = false)
                 end
             end
         end
     end
 
-    println("Specialization for all rate constants: Verified")
+    verbose && printing_function("Specialization for all rate constants: Verified")
     return (generically = true, for_all_positive = true)
 end

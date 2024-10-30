@@ -70,10 +70,7 @@ end
 # Injectivity wrt ker(A)
 function injectivity_matrix(C::QQMatrix, M::ZZMatrix, A::QQMatrix)
     R, mu, alpha = polynomial_ring(QQ, "mu" => 1:ncols(M), "alpha" => 1:nrows(M))
-    # Fix for bug for diagonal_matrix of empty vector
-    ncols(M) > 0 ? diagmu = diagonal_matrix(mu) : diagmu = zero_matrix(R, 0, 0)
-    nrows(M) >0 ? diagalpha = diagonal_matrix(alpha) : diagalpha = zero_matrix(R, 0, 0)
-    return vcat(C * diagmu * transpose(M) * diagalpha, R.(A))
+    return vcat(C * diagonal_matrix(R, mu) * transpose(M) * diagonal_matrix(R, alpha), R.(A))
 end
 
 function injectivity_test(C::QQMatrix, M::ZZMatrix, A::QQMatrix)
