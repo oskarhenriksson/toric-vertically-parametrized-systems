@@ -76,7 +76,7 @@ function run_tests()
 
         # binomiality
         F = vertical_system(C, M)
-        binomiality_result = binomiality_check(F)
+        binomiality_result = binomiality_check(F, verbose=false)
         @test binomiality_result.generically == true 
         @test binomiality_result.for_all_positive == true
 
