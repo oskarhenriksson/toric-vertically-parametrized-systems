@@ -15,34 +15,11 @@ Full rank
 BIOMD0000000004
 n=5,r=7,d=2
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 2
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [1]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000006
 Irrelevant species (ignored in subsequent analysis): [4]
 n=3,r=3,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000008
 n=5,r=13,d=0
@@ -66,17 +43,6 @@ Specialization for all rate constants: Verified
 BIOMD0000000010
 n=8,r=10,d=3
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 3
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000011
 n=22,r=30,d=7
@@ -144,17 +110,6 @@ Specialization for all rate constants: Verified
 BIOMD0000000024
 n=3,r=4,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000026
 n=11,r=16,d=3
@@ -169,17 +124,6 @@ BIOMD0000000027
 Irrelevant species (ignored in subsequent analysis): [4, 5]
 n=3,r=4,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000028
 n=16,r=27,d=3
@@ -194,17 +138,6 @@ BIOMD0000000029
 Irrelevant species (ignored in subsequent analysis): [5, 6]
 n=4,r=7,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000030
 n=18,r=32,d=3
@@ -219,17 +152,6 @@ BIOMD0000000031
 Irrelevant species (ignored in subsequent analysis): [4, 5, 6]
 n=3,r=4,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000032
 n=37,r=94,d=11
@@ -262,17 +184,6 @@ Inconsistent
 BIOMD0000000036
 n=3,r=5,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000037
 n=12,r=12,d=4
@@ -315,48 +226,14 @@ Full rank
 BIOMD0000000043
 n=5,r=7,d=2
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 2
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000044
 n=4,r=8,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [3]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000045
 n=4,r=8,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000046
 n=16,r=15,d=4
@@ -399,17 +276,6 @@ Full rank
 BIOMD0000000057
 n=6,r=10,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000058
 n=4,r=11,d=0
@@ -418,17 +284,6 @@ Full rank
 BIOMD0000000060
 n=4,r=6,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000061
 n=25,r=48,d=2
@@ -529,17 +384,6 @@ Gröbner basis: Not binomial!
 BIOMD0000000076
 n=3,r=4,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000078
 n=16,r=52,d=0
@@ -564,17 +408,6 @@ Full rank
 BIOMD0000000084
 n=8,r=16,d=4
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 4
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000085
 n=17,r=34,d=5
@@ -631,18 +464,6 @@ Full rank
 BIOMD0000000100
 n=5,r=10,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [3, 5]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000102
 n=13,r=37,d=0
@@ -753,7 +574,10 @@ DOT: Covered
 Generically nondegenerate
 Dimension of toric invariance space: 14
 Full-dimensional toric invariance space
-Too slow for injectivity test! Skipped
+Injectivity test passed for reduced network
+Toricity!
+Skipped multistationarity test!
+Species with ACR: [15, 20, 23, 32]
 Gröbner basis: Skipped
 
 BIOMD0000000162
@@ -965,17 +789,6 @@ BIOMD0000000213
 Irrelevant species (ignored in subsequent analysis): [7, 8, 9, 10, 11, 12, 13, 14]
 n=6,r=12,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000214
 Irrelevant species (ignored in subsequent analysis): [13, 14, 15, 16]
@@ -1081,18 +894,6 @@ Specialization for all rate constants: Verified
 BIOMD0000000224
 n=4,r=6,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [2, 4]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000225
 Irrelevant species (ignored in subsequent analysis): [3]
@@ -1182,7 +983,11 @@ DOT: Not covered
 Generically nondegenerate
 Dimension of toric invariance space: 10
 Full-dimensional toric invariance space
-Too slow for injectivity test! Skipped
+Injectivity test passed for reduced network
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
+Species with ACR: [7, 11, 12, 13, 14, 15, 20, 21, 33, 34, 35, 36, 37, 44, 45, 46]
 Gröbner basis: Skipped
 
 BIOMD0000000251
@@ -1208,17 +1013,6 @@ Inconsistent
 BIOMD0000000258
 n=3,r=7,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000259
 n=17,r=29,d=1
@@ -1262,17 +1056,6 @@ BIOMD0000000270
 Irrelevant species (ignored in subsequent analysis): [33]
 n=32,r=42,d=9
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 9
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000271
 n=6,r=8,d=1
@@ -1304,17 +1087,6 @@ Inconsistent
 BIOMD0000000284
 n=9,r=16,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000286
 Irrelevant species (ignored in subsequent analysis): [10, 22]
@@ -1386,103 +1158,31 @@ BIOMD0000000306
 Irrelevant species (ignored in subsequent analysis): [3]
 n=4,r=8,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [1, 2]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000307
 Irrelevant species (ignored in subsequent analysis): [3]
 n=4,r=5,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [1, 2]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000308
 Irrelevant species (ignored in subsequent analysis): [4]
 n=5,r=6,d=2
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 2
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [2]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000309
 Irrelevant species (ignored in subsequent analysis): [2]
 n=3,r=4,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [1]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000310
 Irrelevant species (ignored in subsequent analysis): [2]
 n=3,r=6,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [1]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000311
 Irrelevant species (ignored in subsequent analysis): [2]
 n=3,r=5,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [1]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000312
 Irrelevant species (ignored in subsequent analysis): [3]
@@ -1700,7 +1400,7 @@ DOT: Covered
 Generically nondegenerate
 Dimension of toric invariance space: 4
 Full-dimensional toric invariance space
-Too slow for injectivity test! Skipped
+Skipped injectivity test!
 Gröbner basis: Skipped
 
 BIOMD0000000410
@@ -1735,17 +1435,6 @@ Inconsistent
 BIOMD0000000423
 n=9,r=11,d=3
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 3
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000424
 n=55,r=58,d=14
@@ -1770,7 +1459,14 @@ DOT: Covered
 Generically nondegenerate
 Dimension of toric invariance space: 7
 Full-dimensional toric invariance space
-Too slow for injectivity test! Skipped
+Finitely many cosets
+Mixed volume bound on the number of cosets: 13
+Estimation of generic root count: 13
+Constant number of cosets
+Number of cosets for random parameters: 1
+Toricity!
+No coset with multistationarity found
+Multistationarity precluded
 Gröbner basis: Generically binomial!
 Specialization for all rate constants: Verified
 
@@ -1797,33 +1493,11 @@ BIOMD0000000432
 Irrelevant species (ignored in subsequent analysis): [9, 10, 11]
 n=8,r=10,d=3
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 3
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000433
 Irrelevant species (ignored in subsequent analysis): [9, 10, 11]
 n=8,r=10,d=3
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 3
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000434
 Irrelevant species (ignored in subsequent analysis): [14, 15, 22, 24, 31, 33, 34]
@@ -1838,83 +1512,26 @@ BIOMD0000000440
 Irrelevant species (ignored in subsequent analysis): [9, 10, 11]
 n=8,r=10,d=3
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 3
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000441
 Irrelevant species (ignored in subsequent analysis): [9, 10, 11]
 n=8,r=10,d=3
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 3
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000442
 Irrelevant species (ignored in subsequent analysis): [9, 10, 11]
 n=10,r=12,d=4
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 4
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000443
 Irrelevant species (ignored in subsequent analysis): [9, 10, 11, 16]
 n=15,r=26,d=3
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 3
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [10, 11, 12, 15]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000444
 Irrelevant species (ignored in subsequent analysis): [9, 10, 11]
 n=15,r=26,d=3
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 3
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [10, 11, 12, 13]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000446
 n=27,r=62,d=0
@@ -1927,32 +1544,10 @@ Full rank
 BIOMD0000000448
 n=27,r=34,d=10
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 10
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000449
 n=27,r=34,d=10
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 10
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000451
 Irrelevant species (ignored in subsequent analysis): [12, 13]
@@ -2020,62 +1615,18 @@ BIOMD0000000458
 Irrelevant species (ignored in subsequent analysis): [5, 6, 7]
 n=4,r=6,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000459
 n=4,r=6,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000460
 n=4,r=6,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000461
 n=4,r=6,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000462
 n=6,r=8,d=1
@@ -2151,47 +1702,14 @@ Specialization for all rate constants: Verified
 BIOMD0000000484
 n=2,r=2,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000485
 n=2,r=4,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000486
 n=2,r=2,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000487
 n=6,r=6,d=3
@@ -2444,17 +1962,6 @@ BIOMD0000000580
 Irrelevant species (ignored in subsequent analysis): [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
 n=26,r=26,d=12
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 12
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000581
 Irrelevant species (ignored in subsequent analysis): [28]
@@ -2599,17 +2106,6 @@ BIOMD0000000640
 Irrelevant species (ignored in subsequent analysis): [32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45]
 n=31,r=48,d=11
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 11
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000641
 Error reading matrices
@@ -2738,17 +2234,6 @@ BIOMD0000000678
 Irrelevant species (ignored in subsequent analysis): [4]
 n=3,r=4,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000679
 Irrelevant species (ignored in subsequent analysis): [1]
@@ -3303,33 +2788,10 @@ Full rank
 BIOMD0000000853
 n=9,r=21,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Species with ACR: [1, 2, 3, 4]
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000854
 n=4,r=7,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000855
 n=4,r=12,d=0
@@ -3700,33 +3162,11 @@ BIOMD0000000979
 Irrelevant species (ignored in subsequent analysis): [5]
 n=4,r=4,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000980
 Irrelevant species (ignored in subsequent analysis): [5]
 n=4,r=4,d=1
 Linear kinetics
-DZT: Covered
-DOT: Covered
-Generically nondegenerate
-Dimension of toric invariance space: 1
-Full-dimensional toric invariance space
-Injectivity test passed for reduced network
-Toricity!
-No coset with multistationarity found
-Multistationarity precluded
-Gröbner basis: Generically binomial!
-Specialization for all rate constants: Verified
 
 BIOMD0000000982
 n=3,r=2,d=1
@@ -3913,16 +3353,16 @@ Any["BIOMD0000000004", "BIOMD0000000006", "BIOMD0000000010", "BIOMD0000000024", 
 51
 
 DZT covered models:
-Any["BIOMD0000000004", "BIOMD0000000006", "BIOMD0000000010", "BIOMD0000000023", "BIOMD0000000024", "BIOMD0000000027", "BIOMD0000000029", "BIOMD0000000031", "BIOMD0000000033", "BIOMD0000000036", "BIOMD0000000038", "BIOMD0000000043", "BIOMD0000000044", "BIOMD0000000045", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000076", "BIOMD0000000084", "BIOMD0000000100", "BIOMD0000000161", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000213", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000258", "BIOMD0000000270", "BIOMD0000000284", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000409", "BIOMD0000000423", "BIOMD0000000428", "BIOMD0000000432", "BIOMD0000000433", "BIOMD0000000440", "BIOMD0000000441", "BIOMD0000000442", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000448", "BIOMD0000000449", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000458", "BIOMD0000000459", "BIOMD0000000460", "BIOMD0000000461", "BIOMD0000000483", "BIOMD0000000484", "BIOMD0000000485", "BIOMD0000000486", "BIOMD0000000580", "BIOMD0000000629", "BIOMD0000000640", "BIOMD0000000678", "BIOMD0000000692", "BIOMD0000000823", "BIOMD0000000835", "BIOMD0000000853", "BIOMD0000000854", "BIOMD0000000979", "BIOMD0000000980"]
-74
+Any["BIOMD0000000023", "BIOMD0000000033", "BIOMD0000000038", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000161", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000231", "BIOMD0000000409", "BIOMD0000000428", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000483", "BIOMD0000000629", "BIOMD0000000692", "BIOMD0000000823", "BIOMD0000000835"]
+23
 
 DOT covered models:
-Any["BIOMD0000000004", "BIOMD0000000006", "BIOMD0000000010", "BIOMD0000000023", "BIOMD0000000024", "BIOMD0000000027", "BIOMD0000000029", "BIOMD0000000031", "BIOMD0000000033", "BIOMD0000000036", "BIOMD0000000038", "BIOMD0000000043", "BIOMD0000000044", "BIOMD0000000045", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000076", "BIOMD0000000084", "BIOMD0000000100", "BIOMD0000000161", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000213", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000258", "BIOMD0000000270", "BIOMD0000000284", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000409", "BIOMD0000000423", "BIOMD0000000428", "BIOMD0000000432", "BIOMD0000000433", "BIOMD0000000440", "BIOMD0000000441", "BIOMD0000000442", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000448", "BIOMD0000000449", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000458", "BIOMD0000000459", "BIOMD0000000460", "BIOMD0000000461", "BIOMD0000000483", "BIOMD0000000484", "BIOMD0000000485", "BIOMD0000000486", "BIOMD0000000539", "BIOMD0000000580", "BIOMD0000000629", "BIOMD0000000640", "BIOMD0000000678", "BIOMD0000000692", "BIOMD0000000823", "BIOMD0000000835", "BIOMD0000000853", "BIOMD0000000854", "BIOMD0000000979", "BIOMD0000000980"]
-75
+Any["BIOMD0000000023", "BIOMD0000000033", "BIOMD0000000038", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000161", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000231", "BIOMD0000000409", "BIOMD0000000428", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000483", "BIOMD0000000539", "BIOMD0000000629", "BIOMD0000000692", "BIOMD0000000823", "BIOMD0000000835"]
+24
 
 Nondegenerate models:
-Any["BIOMD0000000002", "BIOMD0000000004", "BIOMD0000000006", "BIOMD0000000009", "BIOMD0000000010", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000024", "BIOMD0000000026", "BIOMD0000000027", "BIOMD0000000028", "BIOMD0000000029", "BIOMD0000000030", "BIOMD0000000031", "BIOMD0000000032", "BIOMD0000000033", "BIOMD0000000036", "BIOMD0000000038", "BIOMD0000000041", "BIOMD0000000043", "BIOMD0000000044", "BIOMD0000000045", "BIOMD0000000048", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000061", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000070", "BIOMD0000000075", "BIOMD0000000076", "BIOMD0000000084", "BIOMD0000000085", "BIOMD0000000086", "BIOMD0000000092", "BIOMD0000000100", "BIOMD0000000123", "BIOMD0000000146", "BIOMD0000000161", "BIOMD0000000163", "BIOMD0000000164", "BIOMD0000000165", "BIOMD0000000167", "BIOMD0000000182", "BIOMD0000000192", "BIOMD0000000200", "BIOMD0000000201", "BIOMD0000000213", "BIOMD0000000216", "BIOMD0000000217", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000237", "BIOMD0000000250", "BIOMD0000000258", "BIOMD0000000270", "BIOMD0000000284", "BIOMD0000000292", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000405", "BIOMD0000000409", "BIOMD0000000413", "BIOMD0000000423", "BIOMD0000000428", "BIOMD0000000430", "BIOMD0000000431", "BIOMD0000000432", "BIOMD0000000433", "BIOMD0000000440", "BIOMD0000000441", "BIOMD0000000442", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000448", "BIOMD0000000449", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000458", "BIOMD0000000459", "BIOMD0000000460", "BIOMD0000000461", "BIOMD0000000483", "BIOMD0000000484", "BIOMD0000000485", "BIOMD0000000486", "BIOMD0000000487", "BIOMD0000000500", "BIOMD0000000539", "BIOMD0000000580", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000637", "BIOMD0000000638", "BIOMD0000000640", "BIOMD0000000646", "BIOMD0000000647", "BIOMD0000000658", "BIOMD0000000678", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000832", "BIOMD0000000835", "BIOMD0000000842", "BIOMD0000000853", "BIOMD0000000854", "BIOMD0000000871", "BIOMD0000000896", "BIOMD0000000979", "BIOMD0000000980"]
-120
+Any["BIOMD0000000002", "BIOMD0000000009", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000026", "BIOMD0000000028", "BIOMD0000000030", "BIOMD0000000032", "BIOMD0000000033", "BIOMD0000000038", "BIOMD0000000041", "BIOMD0000000048", "BIOMD0000000061", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000070", "BIOMD0000000075", "BIOMD0000000085", "BIOMD0000000086", "BIOMD0000000092", "BIOMD0000000123", "BIOMD0000000146", "BIOMD0000000161", "BIOMD0000000163", "BIOMD0000000164", "BIOMD0000000165", "BIOMD0000000167", "BIOMD0000000182", "BIOMD0000000192", "BIOMD0000000200", "BIOMD0000000201", "BIOMD0000000216", "BIOMD0000000217", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000231", "BIOMD0000000237", "BIOMD0000000250", "BIOMD0000000292", "BIOMD0000000405", "BIOMD0000000409", "BIOMD0000000413", "BIOMD0000000428", "BIOMD0000000430", "BIOMD0000000431", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000483", "BIOMD0000000487", "BIOMD0000000500", "BIOMD0000000539", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000637", "BIOMD0000000638", "BIOMD0000000646", "BIOMD0000000647", "BIOMD0000000658", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000832", "BIOMD0000000835", "BIOMD0000000842", "BIOMD0000000871", "BIOMD0000000896"]
+69
 
 Degenerate models:
 Any[]
@@ -3930,58 +3370,60 @@ Any[]
 
 Infinitely many cosets:
 Any["BIOMD0000000002", "BIOMD0000000026", "BIOMD0000000028", "BIOMD0000000030", "BIOMD0000000032", "BIOMD0000000041", "BIOMD0000000048", "BIOMD0000000061", "BIOMD0000000070", "BIOMD0000000075", "BIOMD0000000085", "BIOMD0000000086", "BIOMD0000000092", "BIOMD0000000123", "BIOMD0000000146", "BIOMD0000000163", "BIOMD0000000164", "BIOMD0000000165", "BIOMD0000000182", "BIOMD0000000192", "BIOMD0000000200", "BIOMD0000000216", "BIOMD0000000217", "BIOMD0000000237", "BIOMD0000000405", "BIOMD0000000413", "BIOMD0000000430", "BIOMD0000000431", "BIOMD0000000500", "BIOMD0000000637", "BIOMD0000000638", "BIOMD0000000646", "BIOMD0000000647", "BIOMD0000000658", "BIOMD0000000832", "BIOMD0000000842", "BIOMD0000000871", "BIOMD0000000896"]
+38
 
 Nonconserved in invariance space:
 Any["BIOMD0000000009", "BIOMD0000000011", "BIOMD0000000292", "BIOMD0000000430", "BIOMD0000000487", "BIOMD0000000647", "BIOMD0000000842"]
 7
 
 Full-dimensional invariance space:
-Any["BIOMD0000000004", "BIOMD0000000006", "BIOMD0000000009", "BIOMD0000000010", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000024", "BIOMD0000000027", "BIOMD0000000029", "BIOMD0000000031", "BIOMD0000000033", "BIOMD0000000036", "BIOMD0000000038", "BIOMD0000000043", "BIOMD0000000044", "BIOMD0000000045", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000076", "BIOMD0000000084", "BIOMD0000000100", "BIOMD0000000161", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000213", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000250", "BIOMD0000000258", "BIOMD0000000270", "BIOMD0000000284", "BIOMD0000000292", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000409", "BIOMD0000000423", "BIOMD0000000428", "BIOMD0000000432", "BIOMD0000000433", "BIOMD0000000440", "BIOMD0000000441", "BIOMD0000000442", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000448", "BIOMD0000000449", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000458", "BIOMD0000000459", "BIOMD0000000460", "BIOMD0000000461", "BIOMD0000000483", "BIOMD0000000484", "BIOMD0000000485", "BIOMD0000000486", "BIOMD0000000487", "BIOMD0000000539", "BIOMD0000000580", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000640", "BIOMD0000000678", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000835", "BIOMD0000000853", "BIOMD0000000854", "BIOMD0000000979", "BIOMD0000000980"]
-82
+Any["BIOMD0000000009", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000033", "BIOMD0000000038", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000161", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000231", "BIOMD0000000250", "BIOMD0000000292", "BIOMD0000000409", "BIOMD0000000428", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000483", "BIOMD0000000487", "BIOMD0000000539", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000835"]
+31
 
 Skipped injectivity test:
-Any["BIOMD0000000161", "BIOMD0000000250", "BIOMD0000000409", "BIOMD0000000428"]
-4
+Any["BIOMD0000000409"]
+1
 
 Toricity
-:Any["BIOMD0000000004", "BIOMD0000000006", "BIOMD0000000009", "BIOMD0000000010", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000024", "BIOMD0000000027", "BIOMD0000000029", "BIOMD0000000031", "BIOMD0000000033", "BIOMD0000000036", "BIOMD0000000038", "BIOMD0000000043", "BIOMD0000000044", "BIOMD0000000045", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000076", "BIOMD0000000084", "BIOMD0000000100", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000213", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000258", "BIOMD0000000270", "BIOMD0000000284", "BIOMD0000000292", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000423", "BIOMD0000000432", "BIOMD0000000433", "BIOMD0000000440", "BIOMD0000000441", "BIOMD0000000442", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000448", "BIOMD0000000449", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000458", "BIOMD0000000459", "BIOMD0000000460", "BIOMD0000000461", "BIOMD0000000483", "BIOMD0000000484", "BIOMD0000000485", "BIOMD0000000486", "BIOMD0000000487", "BIOMD0000000539", "BIOMD0000000580", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000640", "BIOMD0000000678", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000853", "BIOMD0000000854", "BIOMD0000000979", "BIOMD0000000980"]
-77
+:Any["BIOMD0000000009", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000033", "BIOMD0000000038", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000161", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000231", "BIOMD0000000250", "BIOMD0000000292", "BIOMD0000000428", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000483", "BIOMD0000000487", "BIOMD0000000539", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823"]
+29
 
 Local toricity:
-Any["BIOMD0000000004", "BIOMD0000000006", "BIOMD0000000009", "BIOMD0000000010", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000024", "BIOMD0000000027", "BIOMD0000000029", "BIOMD0000000031", "BIOMD0000000033", "BIOMD0000000036", "BIOMD0000000038", "BIOMD0000000043", "BIOMD0000000044", "BIOMD0000000045", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000076", "BIOMD0000000084", "BIOMD0000000100", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000213", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000258", "BIOMD0000000270", "BIOMD0000000284", "BIOMD0000000292", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000423", "BIOMD0000000432", "BIOMD0000000433", "BIOMD0000000440", "BIOMD0000000441", "BIOMD0000000442", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000448", "BIOMD0000000449", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000458", "BIOMD0000000459", "BIOMD0000000460", "BIOMD0000000461", "BIOMD0000000483", "BIOMD0000000484", "BIOMD0000000485", "BIOMD0000000486", "BIOMD0000000487", "BIOMD0000000539", "BIOMD0000000580", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000640", "BIOMD0000000678", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000835", "BIOMD0000000853", "BIOMD0000000854", "BIOMD0000000979", "BIOMD0000000980"]
-78
+Any["BIOMD0000000009", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000033", "BIOMD0000000038", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000161", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000231", "BIOMD0000000250", "BIOMD0000000292", "BIOMD0000000428", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000483", "BIOMD0000000487", "BIOMD0000000539", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000835"]
+30
 
 Locally toric but not toric:
 Any["BIOMD0000000835"]
 1
 
 Toric but not covered by dzt or dot:
-Any["BIOMD0000000009", "BIOMD0000000011", "BIOMD0000000292", "BIOMD0000000487", "BIOMD0000000622", "BIOMD0000000704"]
-6
+Any["BIOMD0000000009", "BIOMD0000000011", "BIOMD0000000250", "BIOMD0000000292", "BIOMD0000000487", "BIOMD0000000622", "BIOMD0000000704"]
+7
 
 Multistationarity:
 Any["BIOMD0000000009", "BIOMD0000000011"]
 2
 
 Multistationarity precluded:
-Any["BIOMD0000000004", "BIOMD0000000006", "BIOMD0000000010", "BIOMD0000000023", "BIOMD0000000024", "BIOMD0000000027", "BIOMD0000000029", "BIOMD0000000031", "BIOMD0000000033", "BIOMD0000000036", "BIOMD0000000038", "BIOMD0000000043", "BIOMD0000000044", "BIOMD0000000045", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000076", "BIOMD0000000084", "BIOMD0000000100", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000213", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000258", "BIOMD0000000270", "BIOMD0000000284", "BIOMD0000000292", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000423", "BIOMD0000000432", "BIOMD0000000433", "BIOMD0000000440", "BIOMD0000000441", "BIOMD0000000442", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000448", "BIOMD0000000449", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000458", "BIOMD0000000459", "BIOMD0000000460", "BIOMD0000000461", "BIOMD0000000483", "BIOMD0000000484", "BIOMD0000000485", "BIOMD0000000486", "BIOMD0000000487", "BIOMD0000000539", "BIOMD0000000580", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000640", "BIOMD0000000678", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000853", "BIOMD0000000854", "BIOMD0000000979", "BIOMD0000000980"]
-75
+Any["BIOMD0000000023", "BIOMD0000000033", "BIOMD0000000038", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000231", "BIOMD0000000250", "BIOMD0000000292", "BIOMD0000000428", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000483", "BIOMD0000000487", "BIOMD0000000539", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823"]
+26
 
 ACR:
-Any["BIOMD0000000004", "BIOMD0000000044", "BIOMD0000000100", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000539", "BIOMD0000000622", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000853"]
-24
+Any["BIOMD0000000161", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000231", "BIOMD0000000250", "BIOMD0000000539", "BIOMD0000000622", "BIOMD0000000704", "BIOMD0000000823"]
+13
 
 Local ACR:
-Any["BIOMD0000000004", "BIOMD0000000044", "BIOMD0000000100", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000539", "BIOMD0000000622", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000835", "BIOMD0000000853"]
-25
+Any["BIOMD0000000161", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000231", "BIOMD0000000250", "BIOMD0000000539", "BIOMD0000000622", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000835"]
+14
 
 Non-binomial:
 Any["BIOMD0000000026", "BIOMD0000000041", "BIOMD0000000075", "BIOMD0000000092", "BIOMD0000000146", "BIOMD0000000163", "BIOMD0000000192", "BIOMD0000000216", "BIOMD0000000217", "BIOMD0000000405", "BIOMD0000000413", "BIOMD0000000539", "BIOMD0000000646", "BIOMD0000000647", "BIOMD0000000658", "BIOMD0000000832", "BIOMD0000000842", "BIOMD0000000871", "BIOMD0000000896"]
+19
 
 Generic binomiality:
-Any["BIOMD0000000004", "BIOMD0000000006", "BIOMD0000000009", "BIOMD0000000010", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000024", "BIOMD0000000027", "BIOMD0000000029", "BIOMD0000000031", "BIOMD0000000033", "BIOMD0000000036", "BIOMD0000000038", "BIOMD0000000043", "BIOMD0000000044", "BIOMD0000000045", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000076", "BIOMD0000000084", "BIOMD0000000100", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000213", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000258", "BIOMD0000000270", "BIOMD0000000284", "BIOMD0000000292", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000423", "BIOMD0000000428", "BIOMD0000000432", "BIOMD0000000433", "BIOMD0000000440", "BIOMD0000000441", "BIOMD0000000442", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000448", "BIOMD0000000449", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000458", "BIOMD0000000459", "BIOMD0000000460", "BIOMD0000000461", "BIOMD0000000483", "BIOMD0000000484", "BIOMD0000000485", "BIOMD0000000486", "BIOMD0000000487", "BIOMD0000000580", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000640", "BIOMD0000000678", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823", "BIOMD0000000853", "BIOMD0000000854", "BIOMD0000000979", "BIOMD0000000980"]
-77
+Any["BIOMD0000000009", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000033", "BIOMD0000000038", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000231", "BIOMD0000000292", "BIOMD0000000428", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000483", "BIOMD0000000487", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000692", "BIOMD0000000704", "BIOMD0000000823"]
+26
 
 Binomiality for all positive:
-Any["BIOMD0000000004", "BIOMD0000000006", "BIOMD0000000009", "BIOMD0000000010", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000024", "BIOMD0000000027", "BIOMD0000000029", "BIOMD0000000031", "BIOMD0000000033", "BIOMD0000000036", "BIOMD0000000038", "BIOMD0000000043", "BIOMD0000000044", "BIOMD0000000045", "BIOMD0000000057", "BIOMD0000000060", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000076", "BIOMD0000000084", "BIOMD0000000100", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000213", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000224", "BIOMD0000000231", "BIOMD0000000258", "BIOMD0000000270", "BIOMD0000000284", "BIOMD0000000292", "BIOMD0000000306", "BIOMD0000000307", "BIOMD0000000308", "BIOMD0000000309", "BIOMD0000000310", "BIOMD0000000311", "BIOMD0000000423", "BIOMD0000000428", "BIOMD0000000432", "BIOMD0000000433", "BIOMD0000000440", "BIOMD0000000441", "BIOMD0000000442", "BIOMD0000000443", "BIOMD0000000444", "BIOMD0000000448", "BIOMD0000000449", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000458", "BIOMD0000000459", "BIOMD0000000460", "BIOMD0000000461", "BIOMD0000000483", "BIOMD0000000484", "BIOMD0000000485", "BIOMD0000000486", "BIOMD0000000487", "BIOMD0000000580", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000640", "BIOMD0000000678", "BIOMD0000000692", "BIOMD0000000823", "BIOMD0000000853", "BIOMD0000000854", "BIOMD0000000979", "BIOMD0000000980"]
-76
+Any["BIOMD0000000009", "BIOMD0000000011", "BIOMD0000000023", "BIOMD0000000033", "BIOMD0000000038", "BIOMD0000000066", "BIOMD0000000068", "BIOMD0000000167", "BIOMD0000000201", "BIOMD0000000218", "BIOMD0000000219", "BIOMD0000000221", "BIOMD0000000222", "BIOMD0000000231", "BIOMD0000000292", "BIOMD0000000428", "BIOMD0000000454", "BIOMD0000000455", "BIOMD0000000456", "BIOMD0000000483", "BIOMD0000000487", "BIOMD0000000622", "BIOMD0000000629", "BIOMD0000000692", "BIOMD0000000823"]
+25
