@@ -9,7 +9,7 @@ function write_both(file, msg)
     println(file, msg)   # Write to file
 end
 
-# Function for reading files of the ODE base format
+# Function for reading files of the ODEbase format
 function read_matrix(path)
     file_content = read(path, String)
     cleaned_content = replace(file_content, r"[<>\;]" => "")
@@ -18,7 +18,7 @@ function read_matrix(path)
 end
 
 # Function for saving a csv file
-function save_as_csv(vector::Vector, filename::String)
+function save_as_txt(vector::Vector, filename::String)
     open(filename, "w") do file
         write(file, join(vector, "\n"))
     end
@@ -58,6 +58,7 @@ dzt = []
 dot = []
 nondegenerate = []
 degenerate = []
+inf_cosets = []
 nonconserved_in_invariance_space = []
 fulldimensional_invariance_space = []
 skipped_injectivity = []
@@ -67,14 +68,45 @@ multistat = []
 multistat_precluded = []
 acr = []
 local_acr = []
+non_bin = []
 generic_bin = []
 bin_for_all = []
 has_irrelevant_species = []
+gb_skip = [
+    "BIOMD0000000002",
+    "BIOMD0000000028",
+    "BIOMD0000000030",
+    "BIOMD0000000032",
+    "BIOMD0000000048",
+    "BIOMD0000000061",
+    "BIOMD0000000070",
+    "BIOMD0000000085",
+    "BIOMD0000000086",
+    "BIOMD0000000108",
+    "BIOMD0000000123",
+    "BIOMD0000000161",
+    "BIOMD0000000162",
+    "BIOMD0000000164",
+    "BIOMD0000000165",
+    "BIOMD0000000182",
+    "BIOMD0000000200",
+    "BIOMD0000000237",
+    "BIOMD0000000250",
+    "BIOMD0000000294",
+    "BIOMD0000000409",
+    "BIOMD0000000430",
+    "BIOMD0000000431",
+    "BIOMD0000000500",
+    "BIOMD0000000530",
+    "BIOMD0000000637",
+    "BIOMD0000000638",
+    "BIOMD0000000835"]
 
 # Run the analysis on each model
 mkdir(timestamp_str * "_" * choice_of_models)
 open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
     for model_id in list_of_models
+        current_model_id = model_id
         write_both(file, "")
         write_both(file, model_id)
 
@@ -128,14 +160,14 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
             continue
         end
 
-        push!(analyzed, model_id)
-
         # Check for linear kinetics
         if is_linear(M)
             write_both(file, "Linear kinetics")
             push!(linear, model_id)
-            #continue
+            continue
         end
+
+        push!(analyzed, model_id)
 
         # The deficiency zero theorem
         if covered_by_deficiency_zero_theorem(N, M)
@@ -157,7 +189,8 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
         W = kernel(N, side=:left)
 
         # Generic nondegeneracy
-        if has_nondegenerate_zero(N, M)
+        nondeg_zero_flag = has_nondegenerate_zero(N, M)
+        if nondeg_zero_flag
             write_both(file, "Generically nondegenerate")
             push!(nondegenerate, model_id)
         else
@@ -172,7 +205,14 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
 
         # Toric invariance space
         Atilde = toric_invariance_space(Ctilde, Mtilde)
-        A = lift_exponent_matrix(Atilde, M, intermediates_result)
+        A = toric_invariance_space(C, M)
+
+        Alifted = lift_exponent_matrix(Atilde, M, intermediates_result)
+        if row_space(A) != row_space(Alifted)
+            write_both(file, "Error in toric invariance space")
+            continue
+        end 
+        
         write_both(file, "Dimension of toric invariance space: $(rank(A))")
 
         if !all(is_zero, A * N)
@@ -180,6 +220,10 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
             push!(nonconserved_in_invariance_space, model_id)
         end
 
+        if rank(A) < d && nondeg_zero_flag
+            write_both(file, "Infinitely many cosets in open region")
+            push!(inf_cosets, model_id)
+        end
 
         if rank(A) == d
             write_both(file, "Full-dimensional toric invariance space")
@@ -188,35 +232,31 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
             toricity_flag = false
             all_nondeg = false
 
-            if model_id in ["BIOMD0000000161", "BIOMD0000000250", "BIOMD0000000409", "BIOMD0000000428", "BIOMD0000000505", "BIOMD0000000594", "BIOMD0000000835", "BIOMD0000000640"]
-                write_both(file, "Too slow for injectivity test! Skipped")
-                push!(skipped_injectivity, model_id)
+            # Analyze the coset counting system for the reduced network
+            if rank(Ctilde) + rank(Atilde) == nrows(Mtilde)
+
+                result = coset_counting_analysis(Ntilde, Mtilde, Atilde, printing_function=s -> write_both(file, s))
+                toricity_flag = result.toricity
+                finite_flag = result.finite
+
+            end
+
+            # Analyze the coset counting system for the full network
+            if !toricity_flag && rank(C) + rank(A) == nrows(M)
+                result = coset_counting_analysis(N, M, A, printing_function=s -> write_both(file, s))
+
+                toricity_flag = result.toricity
+                finite_flag = result.finite
+
+            end
+
+            toricity_flag && push!(toric, model_id)
+            finite_flag && push!(finite, model_id)
+
+            # Capacity for multistationarity
+            if model_id in ["BIOMD0000000161"]
+                write_both(file, "Skipped multistationarity test!")
             else
-
-                # Analyze the coset counting system for the reduced network
-                if rank(Ctilde) + rank(Atilde) == nrows(Mtilde)
-
-                    result = coset_counting_analysis(Ntilde, Mtilde, Atilde, printing_function=s -> write_both(file, s))
-                    toricity_flag = result.toricity
-                    finite_flag = result.finite
-
-                end
-
-                # Todo: Conclusion about infinitely many cosets?
-
-                # Analyze the coset counting system for the full network
-                if !toricity_flag && rank(C) + rank(A) == nrows(M)
-                    result = coset_counting_analysis(N, M, A, printing_function=s -> write_both(file, s))
-
-                    toricity_flag = result.toricity
-                    finite_flag = result.finite
-
-                end
-
-                toricity_flag && push!(toric, model_id)
-                finite_flag && push!(finite, model_id)
-
-                # Capacity for multistationarity
                 if coset_with_multistationarity(A, W)
                     write_both(file, "Coset with multistationarity found")
                     push!(multistat, model_id)
@@ -227,59 +267,31 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
                         push!(multistat_precluded, model_id)
                     end
                 end
-
-                # (Local) ACR checks
-                local_acr_species = zero_columns(A)
-                if !isempty(local_acr_species)
-                    if toricity_flag
-                        write_both(file, "Species with ACR: $(local_acr_species)")
-                        push!(acr, model_id)
-                        push!(local_acr, model_id)
-                    elseif finite_flag
-                        write_both(file, "Species with local ACR: $(local_acr_species)")
-                        push!(local_acr, model_id)
-                    end
-                end
             end
+
+            # (Local) ACR checks
+            local_acr_species = zero_columns(A)
+            if !isempty(local_acr_species)
+                if toricity_flag
+                    write_both(file, "Species with ACR: $(local_acr_species)")
+                    push!(acr, model_id)
+                    push!(local_acr, model_id)
+                elseif finite_flag
+                    write_both(file, "Species with local ACR: $(local_acr_species)")
+                    push!(local_acr, model_id)
+                end
+            end 
         end
 
-        if model_id ∉ [
-            "BIOMD0000000002",
-            "BIOMD0000000028",
-            "BIOMD0000000030",
-            "BIOMD0000000032",
-            "BIOMD0000000048",
-            "BIOMD0000000061",
-            "BIOMD0000000070",
-            "BIOMD0000000085",
-            "BIOMD0000000086",
-            "BIOMD0000000108",
-            "BIOMD0000000123",
-            "BIOMD0000000161",
-            "BIOMD0000000162",
-            "BIOMD0000000164",
-            "BIOMD0000000165",
-            "BIOMD0000000182",
-            "BIOMD0000000200",
-            "BIOMD0000000237",
-            "BIOMD0000000250",
-            "BIOMD0000000294",
-            "BIOMD0000000409",
-            "BIOMD0000000430",
-            "BIOMD0000000431",
-            "BIOMD0000000500",
-            "BIOMD0000000530",
-            "BIOMD0000000637",
-            "BIOMD0000000638",
-            "BIOMD0000000835"]
-            if nrows(Ctilde) ==0 || ncols(Mtilde) == 0 
+        if !(current_model_id in gb_skip)
+            if nrows(Ctilde) == 0 || ncols(Mtilde) == 0 
                 write_both(file, "Gröbner basis: Generically binomial!")
                 write_both(file, "Specialization for all rate constants: Verified")
-                push!(generic_bin, model_id)
-                push!(bin_for_all, model_id)
+                push!(generic_bin, current_model_id)
+                push!(bin_for_all, current_model_id)
             else
-                binomiality_result = binomiality_check(vertical_system(Ctilde, Mtilde), printing_function=s -> write_both(file, s))
-                binomiality_result.generically && push!(generic_bin, model_id)
+                binomiality_result = binomiality_check(vertical_system(Ctilde, Mtilde), printing_function=s -> write_both(file, s), verbose=true)
+                binomiality_result.generically ? push!(generic_bin, current_model_id) : push!(non_bin, current_model_id)
                 binomiality_result.for_all_positive && push!(bin_for_all, model_id)
             end
         else
@@ -318,6 +330,9 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
     write_both(file, "\nDegenerate models:\n$(degenerate)")
     write_both(file, length(degenerate))
 
+    write_both(file, "\nInfinitely many cosets:\n$(inf_cosets)")
+    write_both(file, length(inf_cosets))
+
     write_both(file, "\nNonconserved in invariance space:\n$(nonconserved_in_invariance_space)")
     write_both(file, length(nonconserved_in_invariance_space))
 
@@ -333,6 +348,12 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
     write_both(file, "\nLocal toricity:\n$(finite)")
     write_both(file, length(finite))
 
+    write_both(file, "\nLocally toric but not toric:\n$(setdiff(finite, toric))")
+    write_both(file, length(setdiff(finite, toric)))
+
+    write_both(file, "\nToric but not covered by dzt or dot:\n$(setdiff(toric, union(dzt, dot)))")
+    write_both(file, length(setdiff(toric, union(dzt, dot))))
+
     write_both(file, "\nMultistationarity:\n$(multistat)")
     write_both(file, length(multistat))
 
@@ -345,6 +366,9 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
     write_both(file, "\nLocal ACR:\n$(local_acr)")
     write_both(file, length(local_acr))
 
+    write_both(file, "\nNon-binomial:\n$(non_bin)")
+    write_both(file, length(non_bin))
+
     write_both(file, "\nGeneric binomiality:\n$(generic_bin)")
     write_both(file, length(generic_bin))
 
@@ -353,25 +377,27 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
 
 end
 
-save_as_csv(analyzed, timestamp_str * "_" * choice_of_models * "/analyzed.csv")
-save_as_csv(toric, timestamp_str * "_" * choice_of_models * "/toric_networks.csv")
-save_as_csv(finite, timestamp_str * "_" * choice_of_models * "/locally_toric_networks.csv")
-save_as_csv(multistat, timestamp_str * "_" * choice_of_models * "/multistationary_networks.csv")
-save_as_csv(multistat_precluded, timestamp_str * "_" * choice_of_models * "/non_multistationarity_networks.csv")
-save_as_csv(acr, timestamp_str * "_" * choice_of_models * "/acr_networks.csv")
-save_as_csv(local_acr, timestamp_str * "_" * choice_of_models * "/local_acr_networks.csv")
-save_as_csv(generic_bin, timestamp_str * "_" * choice_of_models * "/generic_binomiality_networks.csv")
-save_as_csv(bin_for_all, timestamp_str * "_" * choice_of_models * "/binomiality_for_all_positive_networks.csv")
-save_as_csv(has_irrelevant_species, timestamp_str * "_" * choice_of_models * "/irrelevant_species.csv")
-save_as_csv(error_reading, timestamp_str * "_" * choice_of_models * "/error_reading.csv")
-save_as_csv(too_large, timestamp_str * "_" * choice_of_models * "/too_large.csv")
-save_as_csv(inconsistent, timestamp_str * "_" * choice_of_models * "/inconsistent.csv")
-save_as_csv(full_rank, timestamp_str * "_" * choice_of_models * "/full_rank.csv")
-save_as_csv(linear, timestamp_str * "_" * choice_of_models * "/linear.csv")
-save_as_csv(dzt, timestamp_str * "_" * choice_of_models * "/dzt.csv")
-save_as_csv(dot, timestamp_str * "_" * choice_of_models * "/dot.csv")
-save_as_csv(nondegenerate, timestamp_str * "_" * choice_of_models * "/nondegenerate.csv")
-save_as_csv(degenerate, timestamp_str * "_" * choice_of_models * "/degenerate.csv")
-save_as_csv(nonconserved_in_invariance_space, timestamp_str * "_" * choice_of_models * "/nonconserved_in_invariance_space.csv")
-save_as_csv(fulldimensional_invariance_space, timestamp_str * "_" * choice_of_models * "/fulldimensional_invariance_space.csv")
-save_as_csv(skipped_injectivity, timestamp_str * "_" * choice_of_models * "/skipped_injectivity.csv")
+save_as_txt(analyzed, timestamp_str * "_" * choice_of_models * "/analyzed.txt")
+save_as_txt(toric, timestamp_str * "_" * choice_of_models * "/toric.txt")
+save_as_txt(finite, timestamp_str * "_" * choice_of_models * "/locally_toric.txt")
+save_as_txt(multistat, timestamp_str * "_" * choice_of_models * "/multistationary.txt")
+save_as_txt(multistat_precluded, timestamp_str * "_" * choice_of_models * "/non_multistationarity.txt")
+save_as_txt(acr, timestamp_str * "_" * choice_of_models * "/acr.txt")
+save_as_txt(local_acr, timestamp_str * "_" * choice_of_models * "/local_acr.txt")
+save_as_txt(non_bin, timestamp_str * "_" * choice_of_models * "/non_binomial.txt")
+save_as_txt(generic_bin, timestamp_str * "_" * choice_of_models * "/generic_binomiality.txt")
+save_as_txt(bin_for_all, timestamp_str * "_" * choice_of_models * "/binomiality_for_all_positive.txt")
+save_as_txt(has_irrelevant_species, timestamp_str * "_" * choice_of_models * "/irrelevant_species.txt")
+save_as_txt(error_reading, timestamp_str * "_" * choice_of_models * "/error_reading.txt")
+save_as_txt(too_large, timestamp_str * "_" * choice_of_models * "/too_large.txt")
+save_as_txt(inconsistent, timestamp_str * "_" * choice_of_models * "/inconsistent.txt")
+save_as_txt(full_rank, timestamp_str * "_" * choice_of_models * "/full_rank.txt")
+save_as_txt(linear, timestamp_str * "_" * choice_of_models * "/linear.txt")
+save_as_txt(dzt, timestamp_str * "_" * choice_of_models * "/dzt.txt")
+save_as_txt(dot, timestamp_str * "_" * choice_of_models * "/dot.txt")
+save_as_txt(nondegenerate, timestamp_str * "_" * choice_of_models * "/nondegenerate.txt")
+save_as_txt(degenerate, timestamp_str * "_" * choice_of_models * "/degenerate.txt")
+save_as_txt(inf_cosets, timestamp_str * "_" * choice_of_models * "/inf_cosets.txt")
+save_as_txt(nonconserved_in_invariance_space, timestamp_str * "_" * choice_of_models * "/nonconserved_in_invariance_space.txt")
+save_as_txt(fulldimensional_invariance_space, timestamp_str * "_" * choice_of_models * "/fulldimensional_invariance_space.txt")
+save_as_txt(skipped_injectivity, timestamp_str * "_" * choice_of_models * "/skipped_injectivity.txt")
