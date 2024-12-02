@@ -162,9 +162,9 @@ function coset_counting_analysis(N::QQMatrix, M::ZZMatrix, A::ZZMatrix; printing
     end
 
     if finite_flag
-        # Mixed volume bound on the number of cosets
         F = coset_counting_system(C, M, A)
         mv = HC.mixed_volume(F)
+
         printing_function("Mixed volume bound on the number of cosets: $(mv)")
         grc = HC.nsolutions(HC.solve(F, only_non_zero=true, target_parameters=rand(ComplexF64, length(F.parameters)), show_progress=false))
         printing_function("Estimation of generic root count: $(grc)")
