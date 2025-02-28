@@ -47,7 +47,7 @@ function fundamental_partition(C::QQMatrix)
     @req Set(union(supports...)) == Set(1:ncols(C)) "The supports do not cover all columns"
 
     # Compute the transitive closure
-    return transitive_closure(supports)
+    return sort.(transitive_closure(supports))
 end
 
 
