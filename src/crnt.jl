@@ -1,11 +1,11 @@
 
 # General CRNT functions
 
-function product_matrix(N::QQMatrix, B::ZZMatrix)
-    @req size(N) == size(B) "Stoichiometric and kinetic matrix must have the same size"
+function product_matrix(N::QQMatrix, M::ZZMatrix)
+    @req size(N) == size(M) "Stoichiometric and kinetic matrix must have the same size"
     @req all(is_one, denominator.(N)) "Stoichiometric matrix needs to have integer entries"
     N = ZZ.(N)
-    return B + N
+    return M + N
 end
 
 function reaction_pairs(N::QQMatrix, B::ZZMatrix)
