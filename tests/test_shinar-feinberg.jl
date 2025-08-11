@@ -72,7 +72,7 @@ function run_tests()
         @test zero_columns(A) == [7]
 
         # The deficiency one theorem
-        @test convered_by_deficiency_one_theorem(N, M) == false
+        @test covered_by_deficiency_one_theorem(N, M) == false
 
         # binomiality
         F = vertical_system(C, M)

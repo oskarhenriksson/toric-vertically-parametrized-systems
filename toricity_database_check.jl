@@ -41,11 +41,11 @@ number_of_models = length(list_of_models)
 
 # Function for collecting the kinetic and stoichiometric matrices given a model id
 function collect_matrices(model_id)
-    B_path = joinpath(model_directory, model_id, "kinetic_matrix.txt")
+    M_path = joinpath(model_directory, model_id, "kinetic_matrix.txt")
     N_path = joinpath(model_directory, model_id, "reconfigured_stoichiometric_matrix.txt")
-    B = matrix(ZZ, read_matrix(B_path))
+    M = matrix(ZZ, read_matrix(M_path))
     N = matrix(QQ, read_matrix(N_path))
-    return B, N
+    return M, N
 end
 
 error_reading = []
@@ -110,7 +110,7 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
         write_both(file, "")
         write_both(file, model_id)
 
-        # Read and parse the kinetic matrix (B) and stoichiometric matrix (N)
+        # Read and parse the kinetic matrix (M) and stoichiometric matrix (N)
         M = nothing
         N = nothing
         try
@@ -178,7 +178,7 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
         end
 
         # The deficiency one theorem
-        if convered_by_deficiency_one_theorem(N, M)
+        if covered_by_deficiency_one_theorem(N, M)
             write_both(file, "DOT: Covered")
             push!(dot, model_id)
         else

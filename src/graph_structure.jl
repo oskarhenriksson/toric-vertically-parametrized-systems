@@ -75,7 +75,7 @@ function covered_by_deficiency_zero_theorem(N::QQMatrix, M::ZZMatrix)
 end
 
 # Check if a network is covered by the deficiency one theorem
-function convered_by_deficiency_one_theorem(N::QQMatrix, M::ZZMatrix)
+function covered_by_deficiency_one_theorem(N::QQMatrix, M::ZZMatrix)
     g, embedding = reaction_graph(N, M)
 
     # There should be one terminal strong compolnent per weak component    

@@ -8,9 +8,9 @@ function product_matrix(N::QQMatrix, M::ZZMatrix)
     return M + N
 end
 
-function reaction_pairs(N::QQMatrix, B::ZZMatrix)
-    P = product_matrix(N, B)
-    reactions = [(reactant=B[:, j], product=P[:, j]) for j in 1:size(B, 2)]
+function reaction_pairs(N::QQMatrix, M::ZZMatrix)
+    P = product_matrix(N, M)
+    reactions = [(reactant=M[:, j], product=P[:, j]) for j in 1:size(M, 2)]
     return reactions
 end
 
