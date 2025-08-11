@@ -1,5 +1,7 @@
 using Test
 
+include("../src/main.jl")
+
 include("test_crnt.jl")
 include("test_toricity.jl")
 include("test_graph_structure.jl")
