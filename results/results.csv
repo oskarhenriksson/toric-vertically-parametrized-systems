@@ -1,0 +1,71 @@
+ID,OriginallyMassAction,IrrelevantSpecies,NumberOfSpeices,NumberOfReactions,Consistent,Nondegenerate,ToricRank,MaximalToricRank,Toric,LocallyToric,TrivialFundamentalPartition,Quasihomogeneous,Multistationarity,ACR,LocalACR,GenericallyBinomial,Binomial,CoveredByDZT,CoveredByDOT
+BIOMD0000000002,true,Int64[],13,34,true,true,1,false,false,false,true,true,false,false,false,false,false,false,false
+BIOMD0000000002,true,Int64[],13,34,true,true,1,false,false,false,true,true,false,false,false,,,false,false
+BIOMD0000000009,false,"[23, 24, 25, 26]",22,30,true,true,7,true,true,true,false,true,true,false,false,true,true,false,false
+BIOMD0000000011,true,Int64[],22,30,true,true,7,true,true,true,false,true,true,false,false,true,true,false,false
+BIOMD0000000023,false,Int64[],13,22,true,true,3,true,true,true,false,true,false,false,false,true,true,true,true
+BIOMD0000000026,true,Int64[],11,16,true,true,2,false,false,false,false,true,false,false,false,false,false,false,false
+BIOMD0000000028,true,Int64[],16,27,true,true,2,false,false,false,true,true,false,false,false,,,false,false
+BIOMD0000000030,true,Int64[],18,32,true,true,2,false,false,false,true,true,false,false,false,,,false,false
+BIOMD0000000032,false,Int64[],37,94,true,true,6,false,false,false,false,true,false,false,false,,,false,false
+BIOMD0000000033,false,"[13, 30, 31, 32]",28,48,true,true,15,true,true,true,false,true,false,false,false,true,true,true,true
+BIOMD0000000038,true,Int64[],17,20,true,true,7,true,true,true,false,true,false,false,false,true,true,true,true
+BIOMD0000000041,false,Int64[],10,17,true,true,0,false,false,false,true,false,false,false,false,false,false,false,false
+BIOMD0000000048,false,Int64[],23,47,true,true,2,false,false,false,false,true,false,false,false,,,false,false
+BIOMD0000000061,false,Int64[],25,48,true,true,0,false,false,false,false,false,false,false,false,,,false,false
+BIOMD0000000066,false,Int64[],11,14,true,true,4,true,true,true,false,true,false,false,false,true,true,true,true
+BIOMD0000000068,false,"[7, 8, 9]",6,6,true,true,3,true,true,true,false,true,false,false,false,true,true,true,true
+BIOMD0000000070,false,Int64[],45,76,true,true,6,false,false,false,false,true,false,false,false,,,false,false
+BIOMD0000000075,false,"[4, 9, 10]",10,16,true,true,2,false,false,false,false,true,false,false,false,false,false,false,false
+BIOMD0000000085,true,Int64[],17,34,true,true,1,false,false,false,true,true,false,false,false,,,false,false
+BIOMD0000000086,true,Int64[],17,48,true,true,1,false,false,false,true,true,false,false,false,,,false,false
+BIOMD0000000092,true,Int64[],4,6,true,true,1,false,false,false,true,true,false,false,false,false,false,false,false
+BIOMD0000000123,false,Int64[],14,34,true,true,0,false,false,false,true,false,false,false,false,,,false,false
+BIOMD0000000146,false,"[34, 35, 36]",33,47,true,true,9,false,false,false,false,true,false,false,false,false,false,false,false
+BIOMD0000000161,false,"[4, 34]",44,86,true,true,14,true,true,true,false,true,false,true,true,true,true,true,true
+BIOMD0000000163,false,Int64[],16,26,true,true,0,false,false,false,false,false,false,false,false,false,false,false,false
+BIOMD0000000164,false,"[3, 8, 25]",23,58,true,true,0,false,false,false,false,false,false,false,false,,,false,false
+BIOMD0000000165,false,[18],36,60,true,true,8,false,false,false,false,true,false,false,false,,,false,false
+BIOMD0000000167,false,"[3, 8]",7,14,true,true,1,true,true,true,false,true,false,true,true,true,true,true,true
+BIOMD0000000182,false,"[9, 11, 26, 34, 36]",32,64,true,true,9,false,false,false,false,true,false,false,false,,,false,false
+BIOMD0000000192,false,[9],12,18,true,true,3,false,false,false,false,true,false,false,false,false,false,false,false
+BIOMD0000000200,true,[22],21,46,true,true,0,false,false,false,false,false,false,false,false,,,false,false
+BIOMD0000000201,false,"[17, 18, 19, 20, 21, 22, 23, 25, 26]",17,36,true,true,1,true,true,true,false,true,false,true,true,true,true,true,true
+BIOMD0000000216,false,[6],5,17,true,true,0,false,false,false,false,false,false,false,false,false,false,false,false
+BIOMD0000000217,false,Int64[],22,32,true,true,7,false,false,false,false,true,false,false,false,false,false,false,false
+BIOMD0000000218,false,Int64[],13,28,true,true,1,true,true,true,false,true,false,true,true,true,true,true,true
+BIOMD0000000219,false,Int64[],13,30,true,true,1,true,true,true,false,true,false,true,true,true,true,true,true
+BIOMD0000000221,false,Int64[],12,22,true,true,1,true,true,true,false,true,false,true,true,true,true,true,true
+BIOMD0000000222,false,Int64[],12,22,true,true,1,true,true,true,false,true,false,true,true,true,true,true,true
+BIOMD0000000231,false,Int64[],6,8,true,true,2,true,true,true,false,true,false,true,true,true,true,true,true
+BIOMD0000000237,false,Int64[],26,62,true,true,4,false,false,false,false,true,false,false,false,,,false,false
+BIOMD0000000250,false,"[1, 2]",47,93,true,true,10,true,true,true,false,true,false,true,true,,,false,false
+BIOMD0000000292,false,Int64[],6,4,true,true,3,true,true,true,true,true,false,false,false,true,true,false,false
+BIOMD0000000405,true,[6],5,8,true,true,0,false,false,false,false,false,false,false,false,false,false,false,false
+BIOMD0000000409,false,"[22, 24]",22,62,true,true,4,true,true,true,false,true,false,true,true,,,true,true
+BIOMD0000000413,true,Int64[],5,9,true,true,0,false,false,false,false,false,false,false,false,false,false,false,false
+BIOMD0000000428,false,[21],30,46,true,true,7,true,true,true,false,true,false,false,false,true,true,true,true
+BIOMD0000000430,true,Int64[],27,44,true,true,5,false,false,false,false,true,false,false,false,,,false,false
+BIOMD0000000431,true,Int64[],27,44,true,true,2,false,false,false,false,true,false,false,false,,,false,false
+BIOMD0000000454,false,Int64[],8,8,true,true,4,true,true,true,false,true,false,false,false,true,true,true,true
+BIOMD0000000455,false,Int64[],9,10,true,true,4,true,true,true,false,true,false,false,false,true,true,true,true
+BIOMD0000000456,false,Int64[],11,12,true,true,5,true,true,true,false,true,false,false,false,true,true,true,true
+BIOMD0000000483,false,Int64[],8,8,true,true,4,true,true,true,false,true,false,false,false,true,true,true,true
+BIOMD0000000487,true,Int64[],6,6,true,true,3,true,true,true,true,true,false,false,false,true,true,false,false
+BIOMD0000000500,true,Int64[],14,36,true,true,1,false,false,false,false,true,false,false,false,,,false,false
+BIOMD0000000539,false,Int64[],6,11,true,true,1,true,true,true,false,true,false,true,true,false,false,false,true
+BIOMD0000000622,false,[5],10,19,true,true,1,true,true,true,false,true,false,true,true,true,true,false,false
+BIOMD0000000629,true,Int64[],5,4,true,true,3,true,true,true,false,true,false,false,false,true,true,true,true
+BIOMD0000000637,true,Int64[],12,35,true,true,0,false,false,false,true,false,false,false,false,,,false,false
+BIOMD0000000638,true,Int64[],21,81,true,true,0,false,false,false,true,false,false,false,false,,,false,false
+BIOMD0000000646,false,"[10, 11, 12, 15, 16, 17, 18]",11,28,true,true,0,false,false,false,false,false,false,false,false,false,false,false,false
+BIOMD0000000647,true,Int64[],11,11,true,true,4,false,false,false,true,true,false,false,false,false,false,false,false
+BIOMD0000000658,false,[16],15,22,true,true,3,false,false,false,false,true,false,false,false,false,false,false,false
+BIOMD0000000692,true,Int64[],8,10,true,true,3,true,true,true,false,true,false,false,false,true,true,true,true
+BIOMD0000000704,false,[17],16,33,true,true,1,true,true,true,false,true,false,true,true,true,false,false,false
+BIOMD0000000823,false,[12],15,20,true,true,5,true,true,true,false,true,false,true,true,true,true,true,true
+BIOMD0000000832,false,Int64[],20,29,true,true,5,false,false,false,false,true,false,false,false,false,false,false,false
+BIOMD0000000835,false,"[8, 9, 10, 11, 15, 16, 20, 21, 25, 26, 30, 31, 35, 36, 40, 45, 50, 51, 52, 53, 54]",34,74,true,true,2,true,false,true,false,true,false,false,true,true,true,true,true
+BIOMD0000000842,false,"[19, 20, 21]",18,26,true,true,4,false,false,false,false,true,false,false,false,false,false,false,false
+BIOMD0000000871,true,Int64[],8,17,true,true,0,false,false,false,true,false,false,false,false,false,false,false,false
+BIOMD0000000896,false,Int64[],9,15,true,true,1,false,false,false,false,true,false,false,false,false,false,false,false

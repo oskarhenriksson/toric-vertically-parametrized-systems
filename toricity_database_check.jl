@@ -70,7 +70,6 @@ df = DataFrame(
     ACR = Union{Bool,Missing}[],
     LocalACR = Union{Bool,Missing}[],
     #####
-    Linear = Bool[],
     GenericallyBinomial = Union{Bool,Missing}[],
     Binomial = Union{Bool,Missing}[],
     CoveredByDZT = Bool[],
@@ -117,7 +116,6 @@ gb_skip_list = [
     "BIOMD0000000086",
     "BIOMD0000000108",
     "BIOMD0000000123",
-    "BIOMD0000000161",
     "BIOMD0000000162",
     "BIOMD0000000164",
     "BIOMD0000000165",
@@ -132,8 +130,7 @@ gb_skip_list = [
     "BIOMD0000000500",
     "BIOMD0000000530",
     "BIOMD0000000637",
-    "BIOMD0000000638",
-    "BIOMD0000000835"]
+    "BIOMD0000000638"]
 
 # Run the analysis on each model
 mkdir(timestamp_str * "_" * choice_of_models)
@@ -359,12 +356,12 @@ open(timestamp_str * "_" * choice_of_models * "/report.txt", "w") do file
             write_both(file, "Specialization for all rate constants: Verified")
             push!(generic_bin_list, current_model_id)
             push!(bin_for_all_list, current_model_id)
-        elseif !(current_model_id in gb_skip_list)
+        elseif current_model_id in gb_skip_list
+            write_both(file, "Gröbner basis: Skipped")
+        else
             binomiality_result = binomiality_check(vertical_system(Ctilde, Mtilde), printing_function=s -> write_both(file, s), verbose=true)
             binomiality_result.generically ? push!(generic_bin_list, current_model_id) : push!(non_bin_list, current_model_id)
             binomiality_result.for_all_positive && push!(bin_for_all_list, model_id)
-        else
-            write_both(file, "Gröbner basis: Skipped")
         end
 
     end
@@ -457,67 +454,37 @@ for model_id in analyzed_list
     A = toric_invariance_group(C, M)
     rank(A)
     new_entry = (ID=model_id,
-            OriginallyMassAction = (model_id in list_of_mass_action_models),
-            IrrelevantSpecies = irrelevant_species,
-            NumberOfSpeices = nrows(M),
-            NumberOfReactions = ncols(M),
-            Consistent = !(model_id in inconsistent_list),
-            Nondegenerate = (model_id in nondegenerate_list),
-            ####
-            ToricRank = rank(A),
-            MaximalToricRank = (model_id in maximal_toric_rank_list),
-            Toric = (model_id in toric_list),
-            LocallyToric = (model_id in locally_toric_list),
-            TrivialFundamentalPartition = (model_id in trivial_fundamental_partition_list),
-            Quasihomogeneous = (model_id in quasi_homogeneous_list),
-            ####
-            Multistationarity = (model_id in multistat_list),
-            ACR = (model_id in acr_list),
-            LocalACR = (model_id in local_acr_list),
-            ####
-            Linear = (model_id in linear_list),
-            GenericallyBinomial = (model_id in generic_bin_list),
-            Binomial = (model_id in bin_for_all_list),
-            CoveredByDZT = (model_id in dzt_list),
-            CoveredByDOT = (model_id in dot_list)
-            )
-
-    # TODO: Think about how to handle skipped groebner bases
-    # if model_id is in skipped_grobner_basis_list
-    #     new_entry.GenericallyBinomial = missing
-    #     new_entry.Binomial = missing
-    # end
+        OriginallyMassAction = (model_id in list_of_mass_action_models),
+        IrrelevantSpecies = irrelevant_species,
+        NumberOfSpeices = nrows(M),
+        NumberOfReactions = ncols(M),
+        Consistent = !(model_id in inconsistent_list),
+        Nondegenerate = (model_id in nondegenerate_list),
+        ####
+        ToricRank = rank(A),
+        MaximalToricRank = (model_id in maximal_toric_rank_list),
+        Toric = (model_id in toric_list),
+        LocallyToric = (model_id in locally_toric_list),
+        TrivialFundamentalPartition = (model_id in trivial_fundamental_partition_list),
+        Quasihomogeneous = (model_id in quasi_homogeneous_list),
+        ####
+        Multistationarity = (model_id in multistat_list),
+        ACR = (model_id in acr_list),
+        LocalACR = (model_id in local_acr_list),
+        ####
+        GenericallyBinomial = (model_id in generic_bin_list),
+        Binomial = (model_id in bin_for_all_list),
+        CoveredByDZT = (model_id in dzt_list),
+        CoveredByDOT = (model_id in dot_list)
+    )
 
     push!(df, new_entry)
 
+    if model_id in gb_skip_list
+        last(df).GenericallyBinomial = missing
+        last(df).Binomial = missing
+    end
+
 end
-
-
-
-save_as_txt(analyzed_list, timestamp_str * "_" * choice_of_models * "/analyzed.txt")
-save_as_txt(toric_list, timestamp_str * "_" * choice_of_models * "/toric.txt")
-save_as_txt(locally_toric_list, timestamp_str * "_" * choice_of_models * "/locally_toric.txt")
-save_as_txt(multistat_list, timestamp_str * "_" * choice_of_models * "/multistationary.txt")
-save_as_txt(multistat_precluded_list, timestamp_str * "_" * choice_of_models * "/non_multistationarity.txt")
-save_as_txt(acr_list, timestamp_str * "_" * choice_of_models * "/acr.txt")
-save_as_txt(local_acr_list, timestamp_str * "_" * choice_of_models * "/local_acr.txt")
-save_as_txt(non_bin_list, timestamp_str * "_" * choice_of_models * "/non_binomial.txt")
-save_as_txt(generic_bin_list, timestamp_str * "_" * choice_of_models * "/generic_binomiality.txt")
-save_as_txt(bin_for_all_list, timestamp_str * "_" * choice_of_models * "/binomiality_for_all_positive.txt")
-save_as_txt(has_irrelevant_species_list, timestamp_str * "_" * choice_of_models * "/irrelevant_species.txt")
-save_as_txt(error_reading_list, timestamp_str * "_" * choice_of_models * "/error_reading.txt")
-save_as_txt(too_large_list, timestamp_str * "_" * choice_of_models * "/too_large.txt")
-save_as_txt(inconsistent_list, timestamp_str * "_" * choice_of_models * "/inconsistent.txt")
-save_as_txt(full_rank_list, timestamp_str * "_" * choice_of_models * "/full_rank.txt")
-save_as_txt(linear_list, timestamp_str * "_" * choice_of_models * "/linear.txt")
-save_as_txt(dzt_list, timestamp_str * "_" * choice_of_models * "/dzt.txt")
-save_as_txt(dot_list, timestamp_str * "_" * choice_of_models * "/dot.txt")
-save_as_txt(nondegenerate_list, timestamp_str * "_" * choice_of_models * "/nondegenerate.txt")
-save_as_txt(degenerate_list, timestamp_str * "_" * choice_of_models * "/degenerate.txt")
-save_as_txt(inf_cosets_list, timestamp_str * "_" * choice_of_models * "/inf_cosets.txt")
-save_as_txt(nonconserved_in_invariance_space_list, timestamp_str * "_" * choice_of_models * "/nonconserved_in_invariance_space.txt")
-save_as_txt(maximal_toric_rank_list, timestamp_str * "_" * choice_of_models * "/fulldimensional_invariance_space.txt")
-save_as_txt(skipped_injectivity_list, timestamp_str * "_" * choice_of_models * "/skipped_injectivity.txt")
-
 
 CSV.write(timestamp_str * "_" * choice_of_models * "/results.csv", df)

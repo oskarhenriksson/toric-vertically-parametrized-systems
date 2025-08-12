@@ -26,7 +26,6 @@ The csv file `results.csv` contains a summary of the analysis of the networks fr
 * `LocalACR` is true if we were able to vertify that the network has local ACR with the methods in Section 7.2.
 
 ## Other properties of the network
-* `Linear` is true if all rectant complexes are monomolecular.
 * `GenericallyBinomial` is true if we were able to prove that the steady state ideal is generically binomial[^1]. 
 * `Binomial` is true if we were able to prove that the steady state ideal is binomial for all positive choices of rate constants[^1].
 * `CoveredByDZT` is true if the network is covered by the deficiency zero theorem. 
@@ -34,10 +33,10 @@ The csv file `results.csv` contains a summary of the analysis of the networks fr
 
 
 
-[^1]: We tested for binomiality of the steady state ideal in the following way. 
+[^1]: We tested for binomiality of the steady state ideal in the following way:
 
-1. We checked if putting the coefficient matrix C of the steady state system in row reduced form gives a binomial system. If this is the case, the ideal is both generically binomial and binomial for all positive rate constants. 
-2. We plugged in a random choice of rate constants, and checking if the resulting ideal is binomial (by computing a reduced Gröbner basis with respect to the reverse lexicographic ordering). If this is the case, the ideal is generically binomial. 
-3. We checked for binomiality using the method described in Remark 3.7 in the paper.
+    1. We checked if putting the coefficient matrix C of the steady state system in row reduced form gives a binomial system. If this is the case, the ideal is both generically binomial and binomial for all positive rate constants. 
+    2. We plugged in a random choice of rate constants, and checking if the resulting ideal is binomial (by computing a reduced Gröbner basis with respect to the reverse lexicographic ordering). If this is the case, the ideal is generically binomial. 
+    3. We checked for binomiality using the method described in Remark 3.7 in the paper.
 
 
