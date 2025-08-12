@@ -11,7 +11,7 @@ The repository contains the following files:
 See the notebook `IDH_example.ipynb`.
 
 ## Dependencies
-The code is based on `Oscar v1.1.1` and `DataStructures v0.18.20`, `Graphs v1.12.0` and `HomotopyContinuation v2.15.0`. 
+The code is based on `Oscar v1.3.1` and `DataStructures v0.18.22`, `Graphs v1.13.0` and `HomotopyContinuation v2.15.0`. 
 
 For exact dependencies, see the file `Manifest.toml`.
 
