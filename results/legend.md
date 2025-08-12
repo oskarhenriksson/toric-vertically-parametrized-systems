@@ -39,4 +39,6 @@ The csv file `results.csv` contains a summary of the analysis of the networks fr
     2. We plugged in a random choice of rate constants, and checking if the resulting ideal is binomial (by computing a reduced Gröbner basis with respect to the reverse lexicographic ordering). If this is the case, the ideal is generically binomial. 
     3. We checked for binomiality using the method described in Remark 3.7 in the paper.
 
+    Missing values indicate that we were not able to obtain a Gröbner basis after 30 minutes in step 3.
+
 
