@@ -39,10 +39,10 @@ function run_tests()
         @test Set(Set.(FP)) == Set([Set(collect(3:14)), Set([1, 2])])
 
         # Toric invariance space
-        A = toric_invariance_space(C, M)
+        A = toric_invariance_group(C, M)
         @test rref(A)[2] == matrix(ZZ, [1 1 1 0 1 1 0 1 1; 0 0 0 1 -1 0 0 0 0])
 
-        Atilde = toric_invariance_space(Ntilde, Mtilde)
+        Atilde = toric_invariance_group(Ntilde, Mtilde)
         Atilde_lifted = lift_exponent_matrix(Atilde, M, intermediates_result)
         @test rref(Atilde_lifted)[2] == matrix(ZZ, [1 1 1 0 1 1 0 1 1; 0 0 0 1 -1 0 0 0 0])
 

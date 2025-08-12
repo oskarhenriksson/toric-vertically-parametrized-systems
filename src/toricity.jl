@@ -51,7 +51,7 @@ function fundamental_partition(C::QQMatrix)
 end
 
 
-function toric_invariance_space(C::QQMatrix, M::ZZMatrix)
+function toric_invariance_group(C::QQMatrix, M::ZZMatrix)
     @req ncols(C) == ncols(M) "C and M need to have the same number of columns"
     if ncols(C) == 0
         return identity_matrix(ZZ, nrows(M))
@@ -220,3 +220,21 @@ function coset_with_multistationarity(A::ZZMatrix, W::QQMatrix)
     end
 
 end
+
+
+function is_quasi_homogeneous(C::QQMatrix, M::ZZMatrix, A::ZZMatrix)
+    for i in 1:nrows(C)
+        if all(is_zero, C[i, :])
+            continue
+        end
+        S = supp(C[i, :])
+        j₀ = first(S)
+        for j in S
+            if any(!is_zero, A*(M[:,j]-M[:,j₀]))
+                return false
+            end
+        end
+    end
+    return true
+end
+   
