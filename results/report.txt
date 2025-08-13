@@ -4,7 +4,7 @@ n=13,r=34,d=2
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Quasi-homogeneous with respect to A (and positive toric rank)
 Toric rank: 1
 Infinitely many cosets in open region
@@ -136,7 +136,7 @@ n=16,r=27,d=3
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Quasi-homogeneous with respect to A (and positive toric rank)
 Toric rank: 2
 Infinitely many cosets in open region
@@ -152,7 +152,7 @@ n=18,r=32,d=3
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Quasi-homogeneous with respect to A (and positive toric rank)
 Toric rank: 2
 Infinitely many cosets in open region
@@ -228,7 +228,7 @@ n=10,r=17,d=3
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Toric rank: 0
 Infinitely many cosets in open region
 Gröbner basis: Not binomial!
@@ -433,7 +433,7 @@ n=17,r=34,d=5
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Quasi-homogeneous with respect to A (and positive toric rank)
 Toric rank: 1
 Infinitely many cosets in open region
@@ -444,7 +444,7 @@ n=17,r=48,d=5
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Quasi-homogeneous with respect to A (and positive toric rank)
 Toric rank: 1
 Infinitely many cosets in open region
@@ -468,7 +468,7 @@ n=4,r=6,d=2
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Quasi-homogeneous with respect to A (and positive toric rank)
 Toric rank: 1
 Infinitely many cosets in open region
@@ -547,7 +547,7 @@ n=14,r=34,d=3
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Toric rank: 0
 Infinitely many cosets in open region
 Gröbner basis: Skipped
@@ -1156,7 +1156,7 @@ n=6,r=4,d=3
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Quasi-homogeneous with respect to A (and positive toric rank)
 Toric rank: 3
 Non-conserved quantities in toric invariance space
@@ -1774,7 +1774,7 @@ n=6,r=6,d=3
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Quasi-homogeneous with respect to A (and positive toric rank)
 Toric rank: 3
 Non-conserved quantities in toric invariance space
@@ -2149,7 +2149,7 @@ n=12,r=35,d=3
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Toric rank: 0
 Infinitely many cosets in open region
 Gröbner basis: Skipped
@@ -2159,7 +2159,7 @@ n=21,r=81,d=4
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Toric rank: 0
 Infinitely many cosets in open region
 Gröbner basis: Skipped
@@ -2194,7 +2194,7 @@ n=11,r=11,d=5
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Quasi-homogeneous with respect to A (and positive toric rank)
 Toric rank: 4
 Non-conserved quantities in toric invariance space
@@ -2921,7 +2921,7 @@ n=8,r=17,d=1
 DZT: Not covered
 DOT: Not covered
 Generically nondegenerate
-Trivial fundamental partition
+Trivial toric invariance partition
 Toric rank: 0
 Infinitely many cosets in open region
 Gröbner basis: Not binomial!

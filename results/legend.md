@@ -15,8 +15,9 @@ The csv file `results.csv` contains a summary of the analysis of the networks fr
 ## Toricity
 * `ToricRank` is the toric rank of the network (i.e., the rank of the toric invariance group)
 * `MaximalToricRank` is true if the toric rank equals the number of species minus the rank of the network.
-* `Toric` is true if we were able to verify that the network is toric with Algorithm 6.7 in the paper.
+* `GenericallyLocallyToric` is true if the network is generically locally toric in the sense of Theorem 5.3 of the paper. 
 * `LocallyToric` is true if we have able to verify that the networ is locally toric with Algorithm 6.7 in the paper.
+* `Toric` is true if we were able to verify that the network is toric with Algorithm 6.7 in the paper.
 * `TrivialFundamentalPartition` is true if the fundamental partition consists of a single block.
 * `Quasihomogeneous` is true if the toric rank is positive and the steady state system is quasihomogeneous with respect to the elements of the toric invariance group.
 

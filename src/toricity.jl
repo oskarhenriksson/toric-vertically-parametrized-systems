@@ -31,7 +31,7 @@ function transitive_closure(relation)
     return collect(values(closure))
 end
 
-function fundamental_partition(C::QQMatrix)
+function toric_invariance_partition(C::QQMatrix)
 
     if ncols(C) == 0
         return Vector{Int}[]
@@ -56,7 +56,7 @@ function toric_invariance_group(C::QQMatrix, M::ZZMatrix)
     if ncols(C) == 0
         return identity_matrix(ZZ, nrows(M))
     end
-    FP = fundamental_partition(C)
+    FP = toric_invariance_partition(C)
     directions = Vector{ZZRingElem}[]
     for block in FP
         for i in 1:(length(block)-1)

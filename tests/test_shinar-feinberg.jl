@@ -35,7 +35,7 @@ function run_tests()
 
 
         # Fundamental partition
-        FP = fundamental_partition(N)
+        FP = toric_invariance_partition(N)
         @test Set(Set.(FP)) == Set([Set(collect(3:14)), Set([1, 2])])
 
         # Toric invariance space
