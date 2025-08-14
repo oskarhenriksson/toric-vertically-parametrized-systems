@@ -1,7 +1,7 @@
 using Oscar
 using DataStructures
 
-# Fundamental partition
+# Toric invariance partition
 
 # Transitive closure of a relation
 function transitive_closure(relation)

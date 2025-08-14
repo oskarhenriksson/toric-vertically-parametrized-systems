@@ -34,7 +34,7 @@ function run_tests()
         @test length(complexes(Ntilde, Mtilde)) == 10
 
 
-        # Fundamental partition
+        # Toric invariance partition
         FP = toric_invariance_partition(N)
         @test Set(Set.(FP)) == Set([Set(collect(3:14)), Set([1, 2])])
 

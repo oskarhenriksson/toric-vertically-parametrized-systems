@@ -18,7 +18,7 @@ The csv file `results.csv` contains a summary of the analysis of the networks fr
 * `GenericallyLocallyToric` is true if the network is generically locally toric in the sense of Theorem 5.3 of the paper. 
 * `LocallyToric` is true if we have able to verify that the networ is locally toric with Algorithm 6.7 in the paper.
 * `Toric` is true if we were able to verify that the network is toric with Algorithm 6.7 in the paper.
-* `TrivialFundamentalPartition` is true if the fundamental partition consists of a single block.
+* `TrivialToricinvariancePartition` is true if the toric invariance partition consists of a single block.
 * `Quasihomogeneous` is true if the toric rank is positive and the steady state system is quasihomogeneous with respect to the elements of the toric invariance group.
 
 ## Consequences of toricity
