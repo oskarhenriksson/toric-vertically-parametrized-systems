@@ -5,10 +5,9 @@ The csv file `results.csv` contains a summary of the analysis of the networks fr
 ## Basic information about the network
 * `ID` is the name of the network in the BioModels database.
 * `OriginallyMassAction` is true if the network is registered with mass-action kinetics in BioModels (regardless of this, we use mass-action kinetics for our analysis).
-* `NumberReactions` is the number of reactions after irrelevant species (that do not participate in any reactions) have been removed.
 * `IrrelevantSpecies` is a list of those species that does not participate in any reaction (and therefore is ignored in our analysis).
 * `NumberOfSpecies` is the number of species of the network (after removing the irrelevant ones).
-* `NumberOfReactions` is the number of reactions. 
+* `NumberOfReactions` is the number of reactions after irrelevant species (that do not participate in any reactions) have been removed.
 * `Consistent` is true if the network is consistent (i.e., admits positive steady states for some choice of rate constants).
 * `Nondegenerate` is true if the (vertically parametrized) steady state system admits a nondegenerate zero.
 
@@ -18,7 +17,7 @@ The csv file `results.csv` contains a summary of the analysis of the networks fr
 * `GenericallyLocallyToric` is true if the network is generically locally toric in the sense of Definition 3.4 and Theorem 5.3 of the paper. 
 * `LocallyToric` is true if we were able to verify that the network is locally toric with Algorithm 6.7 in the paper.
 * `Toric` is true if we were able to verify that the network is toric with Algorithm 6.7 in the paper.
-* `TrivialToricinvariancePartition` is true if the matroid partition consists of a single block.
+* `TrivialPartition` is true if the matroid partition consists of a single block.
 * `Quasihomogeneous` is true if the toric rank is positive and the steady state system is quasihomogeneous with respect to the elements of the toric invariance group.
 
 ## Consequences of toricity
