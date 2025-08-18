@@ -1,7 +1,7 @@
 using Oscar
 using DataStructures
 
-# Toric invariance partition
+# Matroid partition
 
 # Transitive closure of a relation
 function transitive_closure(relation)
@@ -31,17 +31,17 @@ function transitive_closure(relation)
     return collect(values(closure))
 end
 
-function toric_invariance_partition(C::QQMatrix)
+function matroid_partition(C::QQMatrix)
 
     if ncols(C) == 0
         return Vector{Int}[]
     end
 
-    # Basis of elementary vectors of ker(C)
+    # Basis of circuit vectors of ker(C)
     G = kernel(C, side=:right)
     E = transpose(rref(transpose(G))[2])
 
-    # Supports of the elementary vectors
+    # Supports of the circuit vectors
     supports = supp.(Vector.(eachcol(E)))
 
     @req Set(union(supports...)) == Set(1:ncols(C)) "The supports do not cover all columns"
@@ -56,7 +56,7 @@ function toric_invariance_group(C::QQMatrix, M::ZZMatrix)
     if ncols(C) == 0
         return identity_matrix(ZZ, nrows(M))
     end
-    FP = toric_invariance_partition(C)
+    FP = matroid_partition(C)
     directions = Vector{ZZRingElem}[]
     for block in FP
         for i in 1:(length(block)-1)
@@ -146,7 +146,7 @@ function coset_counting_analysis(N::QQMatrix, M::ZZMatrix, A::ZZMatrix; printing
     finite_flag = false
     @req nrows(N) == nrows(M) "The stoichiometric and kinetic matrix must have the same number of rows"
     C = row_space(N)
-    @req rank(C) + rank(A) == nrows(M) "Too small toric invariance space"
+    @req rank(C) + rank(A) == nrows(M) "Too small toric invariance group"
 
     if injectivity_test(C, M, A)
         printing_function("Injectivity test passed for reduced network")
