@@ -34,11 +34,11 @@ function run_tests()
         @test length(complexes(Ntilde, Mtilde)) == 10
 
 
-        # Toric invariance partition
-        FP = toric_invariance_partition(N)
+        # Matroid partition
+        FP = matroid_partition(N)
         @test Set(Set.(FP)) == Set([Set(collect(3:14)), Set([1, 2])])
 
-        # Toric invariance space
+        # Toric invariance group
         A = toric_invariance_group(C, M)
         @test rref(A)[2] == matrix(ZZ, [1 1 1 0 1 1 0 1 1; 0 0 0 1 -1 0 0 0 0])
 
