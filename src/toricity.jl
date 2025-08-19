@@ -56,9 +56,9 @@ function toric_invariance_group(C::QQMatrix, M::ZZMatrix)
     if ncols(C) == 0
         return identity_matrix(ZZ, nrows(M))
     end
-    FP = matroid_partition(C)
+    MP = matroid_partition(C)
     directions = Vector{ZZRingElem}[]
-    for block in FP
+    for block in MP
         for i in 1:(length(block)-1)
             push!(directions, M[:, block[i]] - M[:, block[i+1]])
         end

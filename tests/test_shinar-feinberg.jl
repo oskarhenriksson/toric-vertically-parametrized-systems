@@ -35,8 +35,8 @@ function run_tests()
 
 
         # Matroid partition
-        FP = matroid_partition(N)
-        @test Set(Set.(FP)) == Set([Set(collect(3:14)), Set([1, 2])])
+        MP = matroid_partition(N)
+        @test Set(Set.(MP)) == Set([Set(collect(3:14)), Set([1, 2])])
 
         # Toric invariance group
         A = toric_invariance_group(C, M)
